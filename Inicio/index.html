@@ -79,34 +79,34 @@
         As tags de formatação em HTML são usadas para alterar a aparência e o estilo do texto, sem necessariamente mudar sua estrutura semântica.
         Abaixo, são apresentadas algumas dessas tags. <br>
 
-        Tag <code>&ltb&gt</code> -
+        Tag <code>&ltb&gt</code> —
         Serve para colocar o texto em <b>negrito</b> <br>
 
-        Tag <code>&ltstrong&gt</code> -
+        Tag <code>&ltstrong&gt</code> —
         Também coloca o texto em <strong>negrito</strong>, mas dá mais <strong>ênfase</strong> em buscas em aplicativos de textos/internet <br>
 
-        Tag <code>&lti&gt</code> -
+        Tag <code>&lti&gt</code> —
         Coloca o texto em <i>itálico</i> <br>
 
-        Tag <code>&lti&gt</code> -
+        Tag <code>&lti&gt</code> —
         Coloca o texto em <i>itálico</i>. <br>
 
-        Tag <code>&ltem&gt</code> -
+        Tag <code>&ltem&gt</code> —
         Também coloca o texto em <em>itálico</em>, mas com <em>ênfase</em> para aplicativos de texto/internet <br>
 
-        Tag <code>&ltmark&gt</code> -
+        Tag <code>&ltmark&gt</code> —
         Marca o <mark>texto</mark> como um marca-texto <br>
 
-        Tag <code>&ltsmall&gt</code> -
+        Tag <code>&ltsmall&gt</code> —
         Diminui o tamanho do texto <br>
 
-        Tag <code>&ltsup&gt</code> -
+        Tag <code>&ltsup&gt</code> —
         Coloca o texto <sup>superior, dessa forma</sup> <br>
 
-        Tag <code>&ltsub&gt</code> -
+        Tag <code>&ltsub&gt</code> —
         Coloca o texto <sub>inferior, assim</sub> <br>
 
-        Tag <code>&ltdel&gt</code> -
+        Tag <code>&ltdel&gt</code> —
         "Risca" o <del>texto</del> <br>
 
     </p>
@@ -140,10 +140,10 @@
     <h2>5) Como adicionar links?</h2>
 
     <p>
-        Para adicionar links, basta colocar a tag <code>&lta href="" target="" &gtnome do link &gtNome do link&lt/a&gt</code>, que não é autofechante. Nessa tag, há: 
+        Para adicionar links, basta colocar a tag <code>&lta href="" target="" &gtnome_do_link&lt/a&gt</code>, que não é autofechante. Nessa tag, há: 
         <b>href</b>, o qual informa o endereço do link; <b>target</b>, que define como o link será aberto (_self = abre o link na mesma página, se target não for 
         explicitado, é determinado como _self; _blank = abre na nova página). É possível estilizar os links, colocando <b>tittle</b>, o qual coloca uma "legenda" no link, quando o mouse 
-        é passado por cima dele, e <b>Nome do link</b>, que é o texto escrito antre a abertura e o fechamento da tag, é o nome visível do link.
+        é passado por cima dele, e <b>nome_do_link</b>, que é o texto escrito antre a abertura e o fechamento da tag, é o nome visível do link.
     </p>
 
     <h3>5.1) Caracteristicas dos links</h3>
@@ -205,9 +205,9 @@
     <p>
         É possível fazer com que imagens sejam links clicáveis. Para isso, juntamos as tag de link e de imagem, conforme exemplo abaixo, em que redirecionamos o Ícone
         do G-mail para o envio de um e-mail: <br>
-        <code>&lt;a href="mailto:fulano@gmail.com"&gt;
-            &lt;img src="./img/gmail_icon.png" alt="Ícone do G-mail" style="height: 50px;"&gt;
-        &lt;/a&gt;
+        <code>&lt;a href="mailto:fulano@gmail.com"&gt; <br>
+            &lt;img src="./img/gmail_icon.png" alt="Ícone do G-mail" style="height: 50px;"&gt <br>
+        &lt/a&gt
         </code> <br>
         Assim, obtemos: <br>
         <a href="./index.html">
@@ -219,53 +219,78 @@
 
     <h2>6) Listas em HTML</h2>
 
-    <h2>
-        Lista ordenada
-    </h2>
-
     <p>
-        Explicaçao lista ordenada
+        Em HTML, listas são usadas para organizar e agrupar conteúdos relacionados. Existem três tipos
+        principais de listas: listas ordenada (<code>&ltol&gt</code>); lista não-ordenada (<code>&ltul&gt</code>) e
+        lista de definição (<code>&ltdl&gt</code>). Elas são apresentadas abaixo.
     </p>
 
-    <ol type="1" start="0">
-        <li>item 1</li>
-        <li>item 2</li>
-        <li>item 3</li>
-    </ol>
-
-    <h2>
-        Lista nao ordenada
-    </h2>
+    <h3>6.1) Lista ordenada</h3>
 
     <p>
-        Explicaçao lista nao ordenada
+        Listas ordenadas apresentam ordem, como o próprio nome indica! Para escrevê-las, basta colocar <code>&ltol&gt</code>,
+        (Order List) uma tag que não é autofechante. Para colocar cada item da lista, dentro da tag anterior, coloca-se <code>&ltli&gt</code> (que também
+        não é autofechante) e dentro dela o item propriamente dito. <br>
+        É possível determinar qual a ordem da lista, com o atributo <b>style=""</b>, que pode ser 1 (números literais),
+        i (números romanos) e a (letras), sendo que os dois últimos podem ser em maiúsculo ou minúsculo, que há diferenças.
+        É possível determinar como a contagem começa, com o atributo <b>start=""</b>. Um exemplo é visto abaixo, para iniciar
+        a lista de exemplo. <br>
+
+        <b>Exemplo:</b> <code>&ltol type="1" start="0"&gt</code> — contagem númerica, começando em 0. <br>
+        
+        <ol type="1" start="0">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ol>
     </p>
 
-    <ul style="list-style-type: square;">
-        <li>item 1</li>
-        <li>item 2</li>
-        <li>item 3</li>
-    </ul>
-
-    <h2>
-        Lista de descrição
-    </h2>
+    <h3>6.2) Lista não-ordenada</h3>
 
     <p>
-        Explicaçao lista de descriçao
+        Essa lista não possui ordem, são apenas tópicos. Ela é aberta com <code>&ltul&gt</code> (Unorder List) e 
+        também não é autofechante. Dentro dela, também colocamos a tag <code>&ltli&gt</code>, para elencar os
+        itens da lista. É possível estilizar a lista com o atributo <b>list-style-type:""</b>, em que se define
+        a forma do início dos tópicos (square, circle, none, entre outras). Abaixo, um exemplo disso. <br>
+
+        <b>Exemplo:</b> <code>&ltul style="list-style-type: square&gt</code> — lista com quadrados de icones. <br>
+
+        <ul style="list-style-type: square">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
     </p>
 
-    <dl>
-        <dt>
-            Item 1
-        </dt>
-        <dd> Descriçao do item 1</dd>
+    <h3>6.3) Lista de descrição</h3>
 
-        <dt>
-            Item 2
-        </dt>
-        <dd> Descriçao do item 2</dd>
-        <dd> Descriçao 2 do item 2</dd>
-    </dl>
+    <p>
+        Essa lista é usada para apresentar termos seguidos de suas definições. Ela é aberta com a tag <code>&ltdl&gt</code>
+        (Definition List) e também não é autofechante. Dentro dela, usamos a tag <code>&ltdt&gt</code> para indicar o 
+        termo, e a tag <code>&ltdd&gt</code> para descrever ou definir esse termo, sendo possível adicionar mais de
+        uma descrição. Abaixo, um exemplo disso. <br>
+
+        <b>Exemplo:</b>
+        <code><br>
+            &ltdl&gt <br>
+            &ltdt&gtItem 1&lt/dt&gt<br>
+            &ltdd&gtDescrição do item 1, explicando o que ele significa ou representa.&lt/dd&gt <br>
+            &lt/dl&gt
+        </code>
+        <dl>
+            <dt>
+                Item 1
+            </dt>
+            <dd> Descrição do item 1, explicando o que ele significa ou representa.</dd>
+    
+            <dt>
+                Item 2
+            </dt>
+            <dd> Descriçao do item 2</dd>
+            <dd> Descriçao 2 do item 2</dd>
+        </dl>
+    </p>
+
+    <hr>
 </body>
 </html>
