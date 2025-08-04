@@ -1,62 +1,12 @@
-<!DOCTYPE html>
-<html lang="PT-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guia de conceitos HTML</title>
-    <link rel="icon" href="./img/fav_icon.jpg">
+    <title>Principais tags de texto HTML</title>
 </head>
 
 <body>
-    <h1>Guia de conceitos para o corpo HTML!</h1>
-
-    <p>
-        Este é um guia de conceitos iniciais para o <strong>corpo do html</strong>, isto é, o corpo da tag <b><code>&ltbody&gt&lt/body&gt</code></b>.
-        A ideia desse arquivo é funcionar como um "dicionário", que possa ser visitado quando alguma dúvida surgir.
-        Portanto, sinta-se à vontade para usar!
-    </p>
-
-    <hr>
-
-    <h2>1) O que é HTML?</h2>
-
-    <p>
-        HTML (HyperText Markup Language) é a linguagem padrão usada para criar páginas na web. Ele serve para 
-        estruturar o conteúdo, organizando textos, imagens, links, tabelas, vídeos e outros elementos de forma 
-        que os navegadores possam exibir corretamente. Basicamente, o HTML define o que vai aparecer em uma 
-        página e como esses elementos estão organizados
-    </p>
-
-    <hr>
-
-    <h2>2) O que são tags em HTML?</h2>
-
-    <p>
-        Tags em HTML são usadas para estruturar o conteúdo de uma página. 
-        A maioria das tags possui uma abertura <code>&lt;tag&gt;</code> e um fechamento <code>&lt;/tag&gt;</code>, 
-        como por exemplo: <code>&lt;p&gt;Este é um parágrafo&lt;/p&gt;</code>.
-    </p>
-
-    <h3>2.1) Tags autofechantes</h3>
-
-    <p>
-        Algumas tags são <strong>autofechantes</strong>, ou seja, não precisam de uma tag de fechamento separada. 
-        Elas são encerradas dentro da própria abertura. Exemplos:
-
-        <ul>
-            <li><code>&lt;br /&gt;</code> — quebra de linha</li>
-            <li><code>&lt;img src="imagem.jpg" alt="Descrição" /&gt;</code> — imagem</li>
-            <li><code>&lt;input type="text" /&gt;</code> — campo de entrada</li>
-            <li><code>&lt;meta charset="UTF-8" /&gt;</code> — metadados</li>
-            <li><code>&lt;hr /&gt;</code> — linha horizontal</li>
-        </ul>
-    </p>
-
-    <hr>
-
-    <h2>3) Principais tags e exemplos:</h2>
-
-    <h3>3.1) Tags de header</h3>
+    <h1>1) Tags de header</h1>
 
     <p>
         Tags de header em HTML são usadas para definir títulos e subtítulos em uma página, organizando o conteúdo
@@ -73,11 +23,11 @@
         <h6>Esta é uma tag h6</h6>
     </p>
 
-    <h3 id="inicio-tags">3.2) Principais tags de formatação</h3>
+    <h2 id="inicio-tags">2) Principais tags de formatação</h2>
 
     <p>
         As tags de formatação em HTML são usadas para alterar a aparência e o estilo do texto, sem necessariamente mudar sua estrutura semântica.
-        Abaixo, são apresentadas algumas dessas tags. <br>
+        Abaixo, são apresentadas algumas dessas tags, sendo que nenhuma é autofechante. <br>
 
         Tag <code>&ltb&gt</code> —
         Serve para colocar o texto em <b>negrito</b> <br>
@@ -101,13 +51,13 @@
         Diminui o tamanho do texto <br>
 
         Tag <code>&ltsup&gt</code> —
-        Coloca o texto <sup>superior, dessa forma</sup> <br>
+        Coloca o texto <sup>superior</sup>, dessa forma <br>
 
         Tag <code>&ltsub&gt</code> —
-        Coloca o texto <sub>inferior, assim</sub> <br>
+        Coloca o texto <sub>inferior</sub>, assim <br>
 
         Tag <code>&ltdel&gt</code> —
-        "Risca" o <del>texto</del> <br>
+        "Risca" o <del>texto</del>, dessa maneira <br>
 
     </p>
 
@@ -142,8 +92,8 @@
     <p>
         Para adicionar links, basta colocar a tag <code>&lta href="" target="" &gtnome_do_link&lt/a&gt</code>, que não é autofechante. Nessa tag, há: 
         <b>href</b>, o qual informa o endereço do link; <b>target</b>, que define como o link será aberto (_self = abre o link na mesma página, se target não for 
-        explicitado, é determinado como _self; _blank = abre na nova página). É possível estilizar os links, colocando <b>tittle</b>, o qual coloca uma "legenda" no link, quando o mouse 
-        é passado por cima dele, e <b>nome_do_link</b>, que é o texto escrito antre a abertura e o fechamento da tag, é o nome visível do link.
+        explicitado, é determinado como _self; _blank = abre na nova página; há outros dois que serão abordados depois). É possível estilizar os links, colocando
+        <b>tittle</b>, o qual coloca uma "legenda" no link, quando o mouse é passado por cima dele, e <b>nome_do_link</b>, é o nome visível do link.
     </p>
 
     <h3>5.1) Caracteristicas dos links</h3>
@@ -167,7 +117,7 @@
         <a href="./contato.html" title="Página de contato">Contato</a>
         <br> <br>
 
-        Para retornar para um item da página arual, é preciso que um "id" seja atribuido a essa parte. Para isso, foi feito 
+        Para retornar para um item da página atual, é preciso que um "id" seja atribuido a essa parte. Para isso, foi feito 
         <code>&lth2 id="inicio-tags"&gt3.2) Principais tags de formatação&lt/h2&gt</code>. Assim, o <code>href</code> do link é justamente esse id,
         acrescido de uma <code>#</code> na frente. <br> <br>
         <code>&lta href="#inicio-tags" target="_blank"&gtVoltar para as principais tags de formatação&lt/a&gt</code> - 
@@ -180,21 +130,21 @@
     <p>
         <dl>
             <dt>Contato por e-mail:</dt>
-            <dd>Colocar no endereço do link (href): <code>mailto:endeco_email@arroba.com</code></dd>
+            <dd>Colocar no endereço do link (href): "mailto:email_pessoa", o que é <code>mailto:endeco_email@arroba.com</code></dd>
             <dd>Um exemplo é: <code>&lta href="mailto:endereco_email@arroba.com" target="_self" &gtnome do link &gtNome do link&lt/a&gt</code></dd>
             <dd>Exemplo: <a href="mailto:fulano@gmail.com" title="Enviar e-mail para fulano"> Mandar email!</a></dd>
         </dl>
 
         <dl>
             <dt>Contato por telefone:</dt>
-            <dd>Colocar no endereço do link (href): <code>tel:+559999999999</code></code></dd>
+            <dd>Colocar no endereço do link (href): "tel:numero_telefone", isto é, <code>tel:+559999999999</code></code></dd>
             <dd>Exemplificando: <code>&lta href="tel:554899999999999" target="_self" &gtnome do link &gtNome do link&lt/a&gt</code></dd>
             <dd>Exemplo: <a href="tel:+554899999999" title="Telefonar para beltrano">Telefonar para fulano</a></dd>
         </dl>
 
         <dl>
             <dt>Contato por SMS:</dt>
-            <dd>Colocar no endereço do link (href): <code>sms:+559999999999</code></dd>
+            <dd>Colocar no endereço do link (href): "sms:numero_telefone", ou seja, <code>sms:+559999999999</code></dd>
             <dd>Um exemplo é: <code>&lta href="sms:554899999999999" target="_self" &gtnome do link &gtNome do link&lt/a&gt</code></dd>
             <dd>Exemplo: <a href="sms:+554899999999" title="Enviar um SMS para cicrano"> Envia um sms</a></dd>
         </dl>
@@ -292,5 +242,6 @@
     </p>
 
     <hr>
+
 </body>
 </html>
