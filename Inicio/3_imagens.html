@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens em HTML</title>
+    <link rel="icon" href="./img/fav_icon.jpg">
+</head>
+<body>
+    <h1>1) Como adicionar uma imagem?</h1>
+
+    <p>
+        Para adicionar uma imagem, basta colocar a tag <code>&ltimg src= alt= &gt</code>, que é autofechante.
+        O atributo <b>src</b> define o caminho da imagem, que pode ser uma URL, enquanto o atributo <b>alt</b> é uma descrição
+        da imagem, para fins de erro no carregamento da imagem e acessibilidade. Para alterar o tamanho da imagem, podemos
+        usar o atributo <b>width</b>, que define a largura da imagem, e <b>height</b>, o qual define a altura da imagem. Para 
+        esses dois casos, é preciso definir uma medida de tamanho (pixel ou outras). No atributo <b>style</b>, também é possível
+        usar essas definições de altura e largura. <br>
+
+        <br>
+
+        Abaixo são inseridas duas imagens, com os respectivos códigos: <br>
+        <code>&ltimg src="./img/michael_scott.jpg" alt="Steve Carell como Michael Scott, na série 'The Office'" height="200px"&gt</code> <br>
+        <code>&ltimg src="./img/pyramid_the_office_meme.jpg" alt="Meme 'é um esquema de pirâmide', da série The Office" style="height: 200px;"&gt</code> <br>
+
+        <br>
+
+        <img src="./img/michael_scott.jpg" alt="Steve Carell como Michael Scott, na série 'The Office'" height="200px">
+        <img src="./img/pyramid_the_office_meme.jpg" alt="Meme 'é um esquema de pirâmide', da série The Office" style="height: 200px;">
+    </p>
+    
+    <hr>
+
+    <h1>2) O que é um favicon?</h1>
+
+    <p>
+        Favicon é uma pequena imagem (ícone) exibida na guia do navegador ao lado do título da página. Os tipos aceitos são: ico, png, jpeg, gif e svg.
+        Para adicionar um favicon, usamos a tag <code>&ltlink rel="icon" href="caminho_do_favicon"&gt</code>, que não é autofechante.
+        O atributo <b>rel</b> define o tipo de link, que é "icon"; o atributo <b>href</b> define o caminho do favicon. Essa tag deve ser colocada dentro da tag <code>&lthead&gt&lt/head&gt</code>.
+    </p>
+
+    <hr>
+
+    <p>
+        Próxima página: <a href="4_links.html">Links em HTML</a>
+    </p>
+</body>
+</html>
