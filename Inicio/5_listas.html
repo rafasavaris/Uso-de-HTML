@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas em HTML</title>
+    <link rel="icon" href="./img/fav_icon.jpg">
+</head>
+<body>
+    <h1>1) Listas em HTML</h1>
+
+    <p>
+        Em HTML, listas são usadas para organizar e agrupar conteúdos relacionados. Existem três tipos
+        principais de listas: listas ordenada (<code>&ltol&gt</code>); lista não-ordenada (<code>&ltul&gt</code>) e
+        lista de definição (<code>&ltdl&gt</code>). Elas são apresentadas abaixo.
+    </p>
+
+    <h2>1.1) Lista ordenada</h2>
+
+    <p>
+        Listas ordenadas apresentam ordem, como o próprio nome indica! Para escrevê-las, basta colocar <code>&ltol&gt</code>,
+        (Order List) uma tag que não é autofechante. Para colocar cada item da lista, dentro da tag anterior, coloca-se <code>&ltli&gt</code> (que também
+        não é autofechante) e dentro dela o item propriamente dito. <br>
+        É possível determinar qual a ordem da lista, com o atributo <b>style=""</b>, que pode ser 1 (números literais),
+        i (números romanos) e a (letras), sendo que os dois últimos podem ser em maiúsculo ou minúsculo, que há diferenças.
+        É possível determinar como a ordem começa, com o atributo <b>start=""</b>. Um exemplo é visto abaixo, para iniciar
+        a lista de exemplo. <br>
+
+        <b>Exemplo:</b> <code>&ltol type="1" start="0"&gt</code> — contagem númerica, começando em 0. <br>
+        
+        <ol type="1" start="0">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ol>
+    </p>
+
+    <h3>6.2) Lista não-ordenada</h3>
+
+    <p>
+        Essa lista não possui ordem, são apenas tópicos. Ela é aberta com <code>&ltul&gt</code> (Unorder List) e 
+        também não é autofechante. Dentro dela, também colocamos a tag <code>&ltli&gt</code>, para elencar os
+        itens da lista. É possível estilizar a lista com o atributo <b>list-style-type:""</b>, em que se define
+        a forma do início dos tópicos (square, circle, none, entre outras). Abaixo, um exemplo disso. <br>
+
+        <b>Exemplo:</b> <code>&ltul style="list-style-type: square&gt</code> — lista com quadrados de icones. <br>
+
+        <ul style="list-style-type: square">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+    </p>
+
+    <h3>6.3) Lista de descrição</h3>
+
+    <p>
+        Essa lista é usada para apresentar termos seguidos de suas definições. Ela é aberta com a tag <code>&ltdl&gt</code>
+        (Definition List) e também não é autofechante. Dentro dela, usamos a tag <code>&ltdt&gt</code> para indicar o 
+        termo, e a tag <code>&ltdd&gt</code> para descrever ou definir esse termo, sendo possível adicionar mais de
+        uma descrição. Abaixo, um exemplo disso. <br>
+
+        <b>Exemplo:</b>
+        <code><br>
+            &ltdl&gt <br>
+            &ltdt&gtItem 1&lt/dt&gt<br>
+            &ltdd&gtDescrição do item 1, explicando o que ele significa ou representa.&lt/dd&gt <br>
+            &lt/dl&gt
+        </code>
+        <dl>
+            <dt>
+                Item 1
+            </dt>
+            <dd> Descrição do item 1, explicando o que ele significa ou representa.</dd>
+    
+            <dt>
+                Item 2
+            </dt>
+            <dd> Descriçao do item 2</dd>
+            <dd> Descriçao 2 do item 2</dd>
+        </dl>
+    </p>
+
+    <hr>
+
+    <p>
+        Próxima página: <a href="6_tabelas.html">Tabelas HTML</a>
+    </p>
+</body>
+</html>
