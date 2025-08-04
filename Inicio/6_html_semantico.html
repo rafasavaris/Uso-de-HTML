@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML semântico</title>
+    <link rel="icon" href="./img/fav_icon.jpg">
+</head>
+<body>
+    <header>
+        <h1>
+            HTML semântico
+        </h1>
+        <!-- Cabeçalho da página-->
+        <nav>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li>
+                    <a href="#exemplo-tags">Exemplo de tags:</a>
+                    <ul>
+                        <li><a href="#tag-header">Tag header</a></li>
+                        <li><a href="#tag-nav">Tag nav</a></li>
+                        <li><a href="#tag-main">Tag main</a></li>
+                        <li><a href="#tag-article">Tag article</a></li>
+                        <li><a href="#tag-section">Tag section</a></li>
+                        <li><a href="#tag-aside">Tag aside</a></li>
+                        <li><a href="#tag-footer">Tag footer</a></li>
+                    </ul>
+                </li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Principal da página-->
+    <main>
+        <section id="introducao">
+            <article>
+                <header>
+                    <h2>
+                        O que é HTML semântico?
+                    </h2>
+                </header>
+                <p>
+                    HTML semântico é uma abordagem de marcação que utiliza elementos HTML de forma a transmitir o significado do conteúdo.
+                    Em vez de usar tags genéricas, como `div` e `span`, o HTML semântico utiliza tags específicas, como `article`, `section`,
+                    `header`, `footer`, entre outras, para descrever a estrutura e o propósito do conteúdo.
+                </p>
+                <h3>
+                    Vantagens do HTML semântico
+                </h3>
+                <ul>
+                    <li>Acessibilidade: melhora a navegação popr tecnologias asssistivas;</li>
+                    <li>Otimização para motores de busca: algoritmos podem entender melhor a estrutura e o conteúdo, priorizando no ranking de buscas;</li>
+                    <li>Manutenção: códigos semanticamente estruturados são mais limpos e organizados, facilitando a manutenção;</li>
+                    <li>Compatibilidade: garante que o conteúdo da página será exibido igual em diferentes navegadores.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Seção de exemplos de tags semânticas. Faz sentido usar uma section para cada tag pois, nesse contexto, elas NÃO são independentes -->
+        <section id="exemplos-tags">
+            <article>
+                <header>
+                    <h2>
+                        Exemplos de tags utilizadas no HTML semântico
+                    </h2>
+                    <p>
+                        Abaixo estão algumas das principais tags semânticas do HTML5 e suas descrições. É importante ressaltar que essas tags não são autofechantes.
+                    </p>
+                </header>
+
+                <section id="tag-header">
+                    <h3>
+                        &ltHeader&gt 
+                    </h3>
+                    <p>
+                        A tag &ltheader&gt é usada para definir o cabeçalho de uma página ou seção. Ela geralmente contém o título, logotipo e navegação principal.
+                    </p>
+                </section>
+
+                <section id="tag-nav">
+                    <h3>
+                        &ltNav&gt
+                    </h3>
+                    <p>
+                        A tag &ltnav&gt é utilizada para blocos de navegação, como menus principais ou de rodapé, estruturando links externos/internos de forma organizada.
+                    </p>
+                </section>
+
+                <section id="tag-main">
+                    <h3>
+                        &ltMain&gt
+                    </h3>
+                    <p>
+                        A tag &ltmain&gt é usada para definir o conteúdo principal de uma página. Ela deve conter o conteúdo mais relevante e único, excluindo cabeçalhos, rodapés e barras laterais.
+                    </p>
+                </section>
+
+                <section id="tag-article">
+                    <h3>
+                        &ltArticle&gt 
+                    </h3>
+                    <p>
+                        A tag &ltarticle&gt é usada para conteúdos <b>independentes</b> e autossuficientes.
+                    </p>
+                </section>
+
+                <section id="tag-section">
+                    <h3>
+                        &ltSection&gt 
+                    </h3>
+                    <p>
+                        A tag &ltsection&gt é usada para definir seções dentro de um documento, agrupando conteúdo relacionado.
+                    </p>
+                </section>
+
+                <section id="tag-aside">
+                    <h3>
+                        &ltAside&gt
+                    </h3>
+                    <p>
+                        A tag &ltaside&gt é usada para definir conteúdo relacionado, mas não essencial, ao conteúdo principal da página. É frequentemente usado para barras laterais, citações ou links adicionais.
+                    </p>
+                </section>
+
+                <section id="tag-footer">
+                    <h3>
+                        &ltFooter&gt
+                    </h3>
+                    <p>
+                        A tag &ltfooter&gt é usada para definir o rodapé de uma página ou seção. Ela geralmente contém informações de copyright, links de contato e outras informações complementares.
+                    </p>
+                </section>
+            </article>
+        </section>
+    </main>
+
+    <!-- Conteúdo tangencial da página-->
+    <aside id="sobre">
+        <h2>
+            Sobre a autora
+        </h2>
+        <p>
+            Esta séria de arquivos HTML foram desenvolvidos com o objetivo de aprender (e talvez ensinar) HTML. Assim, os arquivos seguem uma linha
+            lógica de desenvolvimento e aprendizado, começando com o básico e avançando para conceitos mais complexos.
+            A autora é uma estudante de Engenharia de Computação, apaixonada por tecnologia, desenvolvimento web e pelo seu time de coração.
+        </p>
+    </aside>
+
+    <!-- Rodapé da página-->
+    <footer>
+        <section id="contato">
+            <h2>
+                Contato
+            </h2>
+            <address>
+                Email: <a href="mailto:savarisf.rafaela@gmail.com">savarisf.rafaela@gmail.com</a> <br>
+                Telefone: <a href="tel:+5511999999999">+55 11 99999-9999</a> <br>
+                LinkedIn: <a href="https://www.linkedin.com/in/rafaela-fernandes-savaris">Acesse aqui!</a> <br>
+            </address>
+        </section>
+
+        <p>
+            Proxima pagina: <a href="7_tabelas.html">Tabelas em HTML</a>
+        </p>
+    </footer>
+
+    <hr>
+
+</body>
+</html>
