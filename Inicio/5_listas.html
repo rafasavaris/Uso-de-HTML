@@ -35,7 +35,7 @@
         </ol>
     </p>
 
-    <h3>6.2) Lista não-ordenada</h3>
+    <h3>1.2) Lista não-ordenada</h3>
 
     <p>
         Essa lista não possui ordem, são apenas tópicos. Ela é aberta com <code>&ltul&gt</code> (Unorder List) e 
@@ -52,7 +52,7 @@
         </ul>
     </p>
 
-    <h3>6.3) Lista de descrição</h3>
+    <h3>1.3) Lista de descrição</h3>
 
     <p>
         Essa lista é usada para apresentar termos seguidos de suas definições. Ela é aberta com a tag <code>&ltdl&gt</code>
@@ -79,6 +79,39 @@
             <dd> Descriçao do item 2</dd>
             <dd> Descriçao 2 do item 2</dd>
         </dl>
+    </p>
+
+    <h2>1.4) Listas aninhadas</h2>
+
+    <p>
+        Listas aninhadas são listas dentro de outras listas. Elas podem ser ordenadas ou não-ordenadas, e são úteis
+        para organizar informações de forma hierárquica. Para criar uma lista aninhada, basta colocar uma nova lista
+        dentro de um item de lista existente, respeitando a sintaxe de cada uma. Assim, é possível por qualquer tipo
+        de lista dentro de outra. Veja o exemplo abaixo:
+
+        <code>
+            &lt;ul&gt; <br>
+            &lt;li&gt; <br>
+                HTML Semântico <br>
+                &lt;ol&gt; <br> 
+                &lt;li&gt;section&lt;/li&gt; <br>
+                &lt;li&gt;article&lt;/li&gt; <br>
+                &lt;/ol&gt; <br>
+            &lt;/li&gt; <br>
+            &lt;li&gt;CSS&lt;/li&gt; <br>
+            &lt;/ul&gt; <br>
+        </code>
+
+        <ul>
+            <li>
+                HTML Semântico
+                <ol>    
+                    <li>section</li>
+                    <li>article</li>
+                </ol>
+            </li>
+            <li>CSS</li>
+        </ul>
     </p>
 
     <hr>
