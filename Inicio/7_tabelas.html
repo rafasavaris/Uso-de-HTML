@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em HTML</title>
+    <link rel="icon" href="./img/fav_icon.jpg">
+</head>
+<body>
+    <header>
+        <h1>
+            Como montar tabelas em HTML?
+        </h1>
+        <p>
+            Tabelas são usadas para organizar informações em linhas e colunas. Em HTML, as tabelas são criadas a partir da tag
+            &lt;table&gt;, que não é autofechante.
+        </p>
+        <h2>
+            Índice
+        </h2>
+        <nav>
+            <ul>
+                <li><a href="#estrutura-tabela">Estrutura básica de uma tabela</a></li>
+                <li><a href="#exemplo-tabela-simples">Exemplo de tabela simples</a></li>
+                <li><a href="#exemplo-tabela-estilizada">Exemplo de tabela estilizada</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="estrutura-tabela">
+            <article>
+                <h2>
+                    Estrutura básica de uma tabela
+                </h2>
+                <p>
+                    A estrutura básica de uma tabela é composta por várias tags, que são:
+                    <ul>
+                        <li><b>&lt;table&gt;</b> - define o início e o final da tebla;</li>
+                        <li><b>&lt;tr&gt;</b> - define uma linha na tabela;</li>
+                        <li><b>&lt;th&gt;</b> - define um cabeçalho de coluna;</li>
+                        <li><b>&lt;td&gt;</b> - define uma célula de dados;</li>
+                        <li><b>&lt;tbody&gt;</b> - define o corpo da tabela, onde ficam as linhas de dados;</li>
+                        <li><b>&lt;thead&gt;</b> - define o cabeçalho da tabela, onde ficam os títulos das colunas;</li>
+                        <li><b>&lt;tfoot&gt;</b> - define o rodapé da tabela, onde ficam informações adicionais ou totais.</li>
+                    </ul>
+                </p>
+                <h3>
+                    Porque usar &lt;thead&gt;, &lt;tbody&gt; e &lt;tfoot&gt;?
+                </h3>
+                <p>
+                    Caso você tenha reparado, as tags &lt;thead&gt;, &lt;tbody&gt; e &lt;tfoot&gt; não são obrigatórias para a criação de uma tabela.
+                    Elas são usadas para melhorar a semântica e a acessibilidade da tabela, além de facilitar a estilização com CSS.
+                    A tag &lt;thead&gt; é usada para agrupar os cabeçalhos das colunas, a tag &lt;tbody&gt; é usada para agrupar as linhas de dados e
+                    a tag &lt;tfoot&gt; é usada para agrupar informações adicionais ou totais.
+                </p>
+            </article>
+        </section>
+
+        <section id="exemplo-tabela-simples">
+            <article>
+                <h2>
+                    Exemplo de tabela
+                </h2>
+                <p>
+                    Abaixo, um exemplo de tabela simples, com três colunas (Nome, Função e Idade) e três linhas de dados. A tabela
+                    utiliza as tags &lt;thead&gt; e &lt;tbody&gt; para organizar o conteúdo, mas não apresenta &lt;tfoot&gt;.
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Função</th>
+                            <th>Idade</th> 
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Fulano A</td>
+                            <td>Profissão A</td>
+                            <td>Idade A</td>
+                        </tr>
+                        <tr>
+                            <td>Fulano B</td>
+                            <td>Profissão B</td>
+                            <td>Idade B</td>
+                        </tr>
+                        <tr>
+                            <td>Fulano C</td>
+                            <td>Profissão C</td>
+                            <td>Idade C</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    O código para essa tabela é: <br>
+                    <code>
+                        &lt;table&gt; <br>
+                        &lt;thead&gt; <br>
+                        &lt;tr&gt; <br>
+                        &lt;th&gt;Nome&lt;/th&gt; <br>
+                        &lt;th&gt;Função&lt;/th&gt; <br>
+                        &lt;th&gt;Idade&lt;/th&gt; <br>
+                        &lt;/tr&gt; <br>
+                        &lt;/thead&gt; <br>
+                        &lt;tbody&gt; <br>
+                        &lt;tr&gt; <br>
+                        &lt;tdFulano&gt; <br>
+                        &lt;td&gt;Profissão A&lt;/td&gt; <br>
+                        &lt;td&gt;Idade A&lt;/td&gt; <br>
+                        &lt;/tr&gt; <br>
+                        &lt;tr&gt; <br>
+                        &lt;td&gt;Fulano B&lt;/td&gt; <br>
+                        &lt;td&gt;Profissão B&lt;/td&gt; <br>
+                        &lt;td&gt;Idade B&lt;/td&gt; <br>
+                        &lt;/tr&gt; <br>
+                        &lt;tr&gt; <br>
+                        &lt;td&gt;Fulano C&lt;/td&gt; <br>
+                        &lt;td&gt;Profissão C&lt;/td&gt; <br>
+                        &lt;td&gt;Idade C&lt;/td&gt; <br>
+                        &lt;/tr&gt; <br>
+                        &lt;/tbody&gt; <br>
+                        &lt;/table&gt; <br>
+                    </code>
+                </p>
+            </article>
+        </section>
+
+        <section id="exemplo-tabela-estilizada">
+            <article>
+                <header>
+                    <h2>
+                        Como estilizar tabelas?
+                    </h2>
+                    <p>
+                        A tabela mostrada anteriormente é simples e sem estilo. Para melhorar
+                        a aparência das tabelas, é possível utilizar atributos para adicionar
+                        cores, bordas, espaçamentos e outros efeitos visuais em HTML puro.
+                    </p>
+
+                </header>
+                <h3>
+                    Principais atributos para estilizar tabelas
+                </h3>
+                <p>
+                    Alguns dos principais atributos que podem ser usados para estilizar tabelas são:
+                    <ul>
+                        <li><b>border</b>: define a largura da borda da tabela. Apenas números inteiros;</li>
+                        <li><b>cellpadding</b>: define o espaçamento interno entre o conteúdo da célula e a borda;</li>
+                        <li><b>cellspacing</b>: define o espaçamento entre as células da tabela;</li>
+                        <li><b>width</b>: define a largura da tabela;</li>
+                        <li><b>height</b>: define a altura da tabela;</li>
+                        <li><b>bgcolor</b>: define a cor de fundo da tabela ou das células;</li>
+                        <li><b>align</b>: define o alinhamento do conteúdo dentro das células (left, center, right);</li>
+                        <li><b>valign</b>: define o alinhamento vertical do conteúdo dentro das células (top, middle, bottom).</li>
+                    </ul>
+                </p>
+
+                <p>
+                    Abaixo, um exemplo de tabela estilizada com bordas, cores e espaçamentos. O código HTML é o mesmo da tabela anterior,
+                    mas com a adição dos seguintes atributos na tag &lt;table&gt;:
+                    <code>border="1" width="300" height="300" bgcolor="pink" align="center" cellpadding="10" cellspacing="5"</code>.
+                    Esses atributos definem a largura da borda, a largura e altura da tabela, a cor de fundo, o alinhamento da tabela e o
+                    espaçamento interno e entre as células.
+
+                    <table border="1" width="300" height="300" bgcolor="pink" align="center" cellpadding="10" cellspacing="5">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Função</th>
+                                <th>Idade</th> 
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Fulano A</td>
+                                <td>Profissão A</td>
+                                <td>Idade A</td>
+                            </tr>
+                            <tr>
+                                <td>Fulano B</td>
+                                <td>Profissão B</td>
+                                <td>Idade B</td>
+                            </tr>
+                            <tr>
+                                <td>Fulano C</td>
+                                <td>Profissão C</td>
+                                <td>Idade C</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </p>
+            </article>
+        </section>
+    </main>
+    
+    <hr>
+
+    <aside id="sobre">
+        <h2>
+            Sobre a autora
+        </h2>
+        <p>
+            Esta séria de arquivos HTML foram desenvolvidos com o objetivo de aprender (e talvez ensinar) HTML. Assim, os arquivos seguem uma linha
+            lógica de desenvolvimento e aprendizado, começando com o básico e avançando para conceitos mais complexos.
+            A autora é uma estudante de Engenharia de Computação, apaixonada por tecnologia, desenvolvimento web e pelo seu time de coração.
+        </p>
+    </aside>
+
+    <footer>
+        <section id="contato">
+            <h2>
+                Contato
+            </h2>
+            <address>
+                Email: <a href="mailto:savarisf.rafaela@gmail.com">savarisf.rafaela@gmail.com</a> <br>
+                LinkedIn: <a href="https://www.linkedin.com/in/rafaela-fernandes-savaris">Acesse aqui!</a> <br>
+            </address>
+        </section>
+
+        <p>
+            <a href="./8_divisoes.html" title="Acessar próxima página">Próxima página</a> <br>
+            <a href="./1_principais_conceitos.html" title="Voltar para a pagina de inicio">Voltar para o início</a>
+        </p>
+        </footer>
+</body>
+</html>
