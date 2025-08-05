@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seções em HTML</title>
+    <link rel="icon" href="./img/fav_icon.jpg">
+</head>
+<body>
+    <header>
+        <h1>
+            Formas de seccionar partes de um documento HTML
+        </h1>
+
+        <p>
+            Neste arquivo, será apresentado como seccionar (dividir) partes de um documento HTML utilizando as tags <code>div</code>, <code>span</code> e <code>iframe</code>.
+            Essas tags são fundamentais para organizar o conteúdo e melhorar a estrutura do documento, facilitando a leitura e a manutenção do código.
+        </p>
+
+        <h2>
+            Sumário
+        </h2>
+        <nav>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#tag-div">Tag <code>&lt;div&gt;</code></a></li>
+                <li><a href="#tag-span">Tag <code>&lt;span&gt;</code></a></li>
+                <li><a href="#tag-iframe">Tag <code>&lt;iframe&gt;</code></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="introducao">
+            <article>
+                <header>
+                    <h2>
+                        Introdução às tags de seccionamento
+                    </h2>
+                </header>
+                <p>
+                    As tags de seccionamento são essenciais para organizar o conteúdo de uma página HTML.
+                    Elas permitem que o desenvolvedor agrupe elementos relacionados, facilitando a leitura
+                    e a compreensão do documento tanto para usuários quanto para motores de busca. <br>
+                    Neste documento, vamos explorar três tags importantes: <code>&lt;div&gt;</code>,
+                    <code>&lt;span&gt;</code> e <code>&lt;iframe&gt;</code>, sendo que nenhuma é autofechante.                </p>
+            </article>
+        </section>
+
+        <section id="tag-div">
+            <article>
+                <h2>
+                    Tag <code>&lt;div&gt;</code>
+                </h2>
+                <p>
+                    A Tag <code>&lt;div&gt;</code> é um contêiner genérico, usado para agrupar
+                    outros elementos HTML. É amplamente utilizada para aplicar estilos CSS e
+                    scripts JavaScript a um bloco. O bloco abaixo exemplifica o uso da tag <code>&lt;div&gt;</code>,
+                    em que o conteúdo é agrupado dentro de um contêiner com um fundo colorido e texto estilizado,
+                    a partir do CSS in-line, que é aplicado na tag de abertura. O atributo CSS é:
+                    <code>style="background-color: darkmagenta; color: white; padding: 20px;</code>.
+                    <br>
+
+                    <div style="background-color: darkmagenta; color: white; padding: 20px;">
+                        <h4>
+                            Exemplo de uso da tag <code>&lt;div&gt;</code>
+                        </h4>
+                        <p>
+                            Texto de descrição de algo. Também poderia ser uma lista, imagem, ou qualquer outro elemento HTML. 
+                        </p>
+                    </div>
+                </p>
+            </article>
+        </section>
+
+        <section id="tag-span">
+            <article>
+                <h2>
+                    Tag <code>&lt;span&gt;</code>
+                </h2>
+                <p>
+                    A Tag <code>&lt;span&gt;</code> é um contêiner em linha, usado para agrupar
+                    partes de texto ou outros elementos dentro de um bloco. É útil para aplicar estilos
+                    específicos a uma parte do conteúdo sem afetar o layout geral. O exemplo abaixo mostra
+                    como usar a tag <code>&lt;span&gt;</code> para destacar uma frase específica dentro de um parágrafo.
+                    O atributo CSS é: <code>style="background-color: darkmagenta; color: white;</code>. Cabe
+                    ressaltar que essa tag não aceita atributos de alinhamento.
+                    <br>
+
+                    <p>
+                        Este elemento é um span!
+                        <span style="background-color: darkmagenta; color: white;">
+                            Olá mundo
+                        </span> <br>
+                        Mesmo estando dentro de um parágrafo.
+                    </p>
+                </p>
+            </article>
+        </section>
+
+        <section id="tag-iframe">
+            <article>
+                <h2>
+                    Tag <code>&lt;iframe&gt;</code>
+                </h2>
+                <p>
+                    A Tag <code>&lt;iframe&gt;</code> é um "quadro"embutido. Ela é usada para incorporar
+                    outro documento HTML dentro de uma página. É útil para exibir conteúdo externo, como
+                    vídeos, mapas ou outros sites. O exemplo abaixo mostra como usar a tag 
+                    <code>&lt;iframe&gt;</code> para incorporar um álbum do Spotify.
+
+                    <br> 
+                    <code>&lt;iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/5o7rJ8g9O5ltC3QJeTfvjD?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"&gt;&lt/iframe&gt;</code>
+                    Nessa tag, o atributo:
+                    <ul>
+                        <li>
+                            <code>
+                                data-testid="embed-iframe"
+                            </code>
+                            - é usado para identificar o iframe para testes automatizados.
+                        </li>
+
+                        <li>
+                            <code>
+                                title="Spotify Album KM2 - Ebony"
+                            </code>
+                            - fornece uma descrição do conteúdo do iframe, importante para acessibilidade.
+                        </li>
+
+                        <li>
+                            <code>
+                                style="border-radius:12px"
+                            </code>
+                             - define o raio de borda do quadro, dando um efeito arredondado.
+                        </li>
+                        <li>
+                            <code>
+                                src="https://open.spotify.com/embed/album/5o7rJ8g9O5ltC3QJeTfvjD?utm_source=generator"
+                            </code>
+                             - especifica a URL do conteúdo a ser incorporado.
+                        </li>
+                        <li>
+                            <code>
+                                width="100%" height="352"
+                            </code>
+                             - define a largura e altura do quadro.
+                        </li>
+                        <li>
+                            <code>
+                                frameBorder="0"
+                            </code>
+                             - remove a borda do quadro.
+                        </li>
+                        <li>
+                            <code>
+                                allowfullscreen=""
+                            </code>
+                             - permite que o conteúdo incorporado seja exibido em tela cheia.
+                        </li>
+                        <li>
+                            <code>
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            </code>
+                             - especifica as permissões para o conteúdo incorporado, como reprodução automática,
+                             escrita na área de transferência, reprodução de mídia protegida, tela cheia e vídeo flutuante.
+                        </li>
+                        <li>
+                            <code>
+                                loading="lazy"
+                            </code>
+                             - indica que o carregamento do iframe será feito quando estiver próximo de aparecer na tela,
+                            melhorando o desempenho da página.
+                        </li>
+                    </ul>
+
+                    Normalmente, para o uso de <code>&lt;iframe&gt;</code> é necessário apenas o uso dos
+                    atribudos <code>src</code>, <code>width</code> e <code>height</code>. Em muitas mídias,
+                    como o Spotify e o Youtube, o código de incorporação já vem pronto para ser copiado e colado.
+                    
+                    <br> <br>
+
+                    <iframe data-testid="embed-iframe" style="border-radius:12px"
+                            src="https://open.spotify.com/embed/album/5o7rJ8g9O5ltC3QJeTfvjD?utm_source=generator"
+                            title="Spotify Album KM2 - Ebony"
+                            width="100%" height="352"
+                            frameBorder="0" 
+                            allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy">
+                    </iframe>
+
+                    <br> <br>
+                </p>
+            </article>
+        </section>
+    </main>
+    
+    <hr>
+
+    <aside id="sobre">
+        <h2>
+            Sobre a autora
+        </h2>
+        <p>
+            Esta séria de arquivos HTML foram desenvolvidos com o objetivo de aprender (e talvez ensinar) HTML. Assim, os arquivos seguem uma linha
+            lógica de desenvolvimento e aprendizado, começando com o básico e avançando para conceitos mais complexos.
+            A autora é uma estudante de Engenharia de Computação, apaixonada por tecnologia, desenvolvimento web e pelo seu time de coração.
+        </p>
+    </aside>
+
+    <hr>
+
+    <footer>
+        <section id="contato">
+            <h2>
+                Contato
+            </h2>
+            <address>
+                Email: <a href="mailto:savarisf.rafaela@gmail.com">savarisf.rafaela@gmail.com</a> <br>
+                LinkedIn: <a href="https://www.linkedin.com/in/rafaela-fernandes-savaris">Acesse aqui!</a> <br>
+            </address>
+        </section>
+
+        <p>
+            <a href="./9_formularios_botoes.html" title="Acessar próxima página">Próxima página: Formulários e botões em HTML</a> <br>
+            <a href="./1_principais_conceitos.html" title="Voltar para a pagina de inicio">Voltar para o início</a>
+        </p>
+    </footer>
+</body>
+</html>
