@@ -146,7 +146,7 @@
                         dentro do formulário, em que também é associado a um rótulo. Além disso,
                         o atributo <code>placeholder</code> pode ser usado para exibir um texto
                         de exemplo dentro do campo de entrada, indicando ao usuário o que deve ser
-                        inserido. Isso pode ser visto abaixo: <br>
+                        inserido. Isso pode ser visto abaixo:
                     </p>
                     <form action="">
                         <label for="input_nome">Digite seu nome:</label>
@@ -166,7 +166,7 @@
                     <p>
                         O exemplo abaixo adiciona ao exemplo anterior os atributos <code>maxlength="10"</code>
                         e <code>size="7"</code>, limitando o campo de entrada a 10 caracteres e definindo
-                        o tamanho da caixa de texto para 7 caracteres: <br> <br>
+                        o tamanho da caixa de texto para 7 caracteres:
                     </p>
                     <form action="">
                         <label for="input_texto">Digite um texto:</label>
@@ -226,7 +226,7 @@
                     </ul>
                     <p>
                         O exemplo abaixo adiciona ao exemplo anterior os atributos <code>min="0"</code>,
-                        <code>max="100"</code> e <code>step="5"</code> ao exemplo anterior. <br> <br>
+                        <code>max="100"</code> e <code>step="5"</code> ao exemplo anterior.
                     </p>
                     <form action="">
                         <label for="input_number2">Digite um número:</label>
@@ -311,6 +311,69 @@
                     <form action="">
                         <label for="input_data">Escolha uma data:</label>
                         <input type="date" name="data" id="input_data">
+                    </form>
+                </article>
+            </section>
+
+            <section id="tipos-input-radio">
+                <article>
+                    <h3>
+                        Type Radio
+                    </h3>
+                    <p>
+                        O tipo de campo de entrada Radio Button solicita que o usuário escolha um valor
+                        dentre um grupo de opções disponíveis. Cada opção do tipo Radio é
+                        definido por um input do tipo <code>radio</code>, e todos os inputs
+                        do mesmo grupo devem ter o mesmo atributo <code>nome</code>, sendo que
+                        APENAS UMA opção pode ser selecionada. Normalmente, cada Radio Button
+                        é associado a um rótulo para identificar a opção. Além disso, nesse tipo
+                        de campo de entrada, o atributo <code>value</code> é essencial, pois define
+                        o valor enviado ao servidor quando o formulário é enviado. Se ele não for
+                        especificado, é enviado "on". Assim, uma forma de criar radio buttons é: <br>
+                        <code>
+                            &lt;input type="radio" name="opcoes" id="opcao1" value="1"&gt; <br>
+                            &lt;label for="opcao1"&gt;Opção 1&gt; <br>
+                            &lt;input type="radio" name="opcoes" id="opcao2" value="2"&gt; <br>
+                            &lt;label for="opcao2"&gt;Opção 2&gt; <br>
+                        </code>
+                        Em que o resultado pode ser visto abaixo:
+                    </p>
+                    <form action="">
+                        <input type="radio" name="opcoes" id="opcao1" value="1" checked>
+                        <label for="opcao1">Opção 1</label>
+
+                        <input type="radio" name="opcoes" id="opcao2" value="2">
+                        <label for="opcao2">Opção 2</label>
+                    </form>
+                </article>
+            </section>
+
+            <section id="tipos-input-checkbox">
+                <article>
+                    <h3>
+                        Type Checkbox
+                    </h3>
+                    <p>
+                        Os inputs de tipo <code>checkbox</code> permitem a seleção de valores
+                        dentro de um grupo. A diferença dele para <code>radio</code> é que
+                        o usuário pode selecionar múltiplas opções, ou nenhuma. Assim,
+                        para opções do mesmo grupo, cada input deve ter o mesmo atributo
+                        <code>name</code>, mas cada um deve ter um valor diferente no atributo
+                        <code>value</code>. Além disso, cada input deve ter um rótulo associado.
+                        Um exemplo de como criar checkboxes é: <br>
+                        <code>
+                            &lt;input type="checkbox" name="grupo" id="opcao1_checkbox" value="1"&gt; <br>
+                            &lt;label for="opcao1"&gt;Opção 1&gt; <br>
+                            &lt;input type="checkbox" name="grupo" id="opcao2_checkbox" value="2"&gt; <br>
+                            &lt;label for="opcao2"&gt;Opção 2&gt; <br>
+                        </code>
+                    </p>
+                    <form action="">
+                        <input type="checkbox" name="grupo" id="opcao1_checkbox" value="1">
+                        <label for="opcao1_checkbox">Opção 1</label>
+
+                        <input type="checkbox" name="grupo" id="opcao2_checkbox" value="2">
+                        <label for="opcao2_checkbox">Opção 2</label>
                     </form>
                 </article>
             </section>
