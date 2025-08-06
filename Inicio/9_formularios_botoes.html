@@ -147,29 +147,31 @@
                         o atributo <code>placeholder</code> pode ser usado para exibir um texto
                         de exemplo dentro do campo de entrada, indicando ao usuário o que deve ser
                         inserido. Isso pode ser visto abaixo: <br>
-                        <form action="">
-                            <label for="input_nome">Digite seu nome:</label>
-                            <input type="text" name="nome" placeholder="Digite seu nome aqui" id="input_nome">
-                        </form>
                     </p>
+                    <form action="">
+                        <label for="input_nome">Digite seu nome:</label>
+                        <input type="text" name="nome" placeholder="Digite seu nome aqui" id="input_nome">
+                    </form>
+
                     <h4>
                         Atributos específicos do tipo texto
                     </h4>
                     <p>
                         Existem atributos específicos e comuns ao tipo texto, sendo os principais:
-                        <ul>
-                            <li><b>maxlength</b> - limite o número de caracteres do campo;</li>
-                            <li><b>size</b> - define o tamanho da caixa de texto.</li>
-                        </ul>
+                    </p>
+                    <ul>
+                        <li><b>maxlength</b> - limite o número de caracteres do campo;</li>
+                        <li><b>size</b> - define o tamanho da caixa de texto.</li>
+                    </ul>
+                    <p>
                         O exemplo abaixo adiciona ao exemplo anterior os atributos <code>maxlength="10"</code>
                         e <code>size="7"</code>, limitando o campo de entrada a 10 caracteres e definindo
                         o tamanho da caixa de texto para 7 caracteres: <br> <br>
-
-                        <form action="">
-                            <label for="input_texto">Digite um texto:</label>
-                            <input type="text" name="texto" placeholder="Digite uma palavra aqui" id="input_texto" maxlength="10" size="7">
-                        </form>
                     </p>
+                    <form action="">
+                        <label for="input_texto">Digite um texto:</label>
+                        <input type="text" name="texto" placeholder="Digite uma palavra aqui" id="input_texto" maxlength="10" size="7">
+                    </form>
                 </article>
             </section>
 
@@ -186,11 +188,11 @@
                     envia o formulário. Para criar um campo de entrada do tipo e-mail, usamos a tag
                     <code>&lt;input type="email" name="email" placeholder="Digite seu e-mail aqui" id="input_email"&gt;</code>
                     dentro do formulário, em que também é associado a um rótulo, como no exemplo abaixo:
-                    <form action="">
-                        <label for="input_email">Digite seu e-mail:</label>
-                        <input type="email" name="email" placeholder="Digite seu e-mail" id="input_email">
-                    </form>
                 </p>
+                <form action="">
+                    <label for="input_email">Digite seu e-mail:</label>
+                    <input type="email" name="email" placeholder="Digite seu e-mail" id="input_email">
+                </form>
             </section>
 
             <section id="tipos-input-number">
@@ -205,30 +207,31 @@
                         navegador). Para criar um campo de entrada do tipo número, usamos a tag
                         <code>&lt;input type="number" name="numero" placeholder="Digite um número" id="input_numero"&gt;</code>
                         dentro do formulário, em que também é associado a um rótulo, como no exemplo abaixo:
-
-                        <form action="">
-                            <label for="input_number">Digite um número:</label>
-                            <input type="number" name="numero" placeholder="Digite um número" id="input_number">
-                        </form>
                     </p>
+                    <form action="">
+                        <label for="input_number">Digite um número:</label>
+                        <input type="number" name="numero" placeholder="Digite um número" id="input_number">
+                    </form>
+
                     <h4>
                         Atributos específicos do tipo number
                     </h4>
                     <p>
                         Os principais atributos do tipo <code>number</code> são:
-                        <ul>
-                            <li><b>min</b> - define o valor mínimo;</li>
-                            <li><b>max</b> - define o valor máximo;</li>
-                            <li><b>step</b> - define o incremento entre os valores.</li>
-                        </ul>
+                    </p>
+                    <ul>
+                        <li><b>min</b> - define o valor mínimo;</li>
+                        <li><b>max</b> - define o valor máximo;</li>
+                        <li><b>step</b> - define o incremento entre os valores.</li>
+                    </ul>
+                    <p>
                         O exemplo abaixo adiciona ao exemplo anterior os atributos <code>min="0"</code>,
                         <code>max="100"</code> e <code>step="5"</code> ao exemplo anterior. <br> <br>
-
-                        <form action="">
-                            <label for="input_number2">Digite um número:</label>
-                            <input type="number" name="numero" placeholder="Digite um número" id="input_number2" min="0" max="100" step="5">
-                        </form>
                     </p>
+                    <form action="">
+                        <label for="input_number2">Digite um número:</label>
+                        <input type="number" name="numero" placeholder="Digite um número" id="input_number2" min="0" max="100" step="5">
+                    </form>
                 </article>
             </section>
 
@@ -243,11 +246,11 @@
                         Para criar um campo de entrada do tipo senha, usamos a tag
                         <code>&lt;input type="password" name="senha" placeholder="Digite sua senha" id="input_senha"&gt;</code>
                         dentro do formulário, em que também é associado a um rótulo, como no exemplo abaixo:
-                        <form action="">
-                            <label for="input_senha">Digite sua senha:</label>
-                            <input type="password" name="senha" placeholder="Digite sua senha" id="input_senha">
-                        </form>
                     </p>
+                    <form action="">
+                        <label for="input_senha">Digite sua senha:</label>
+                        <input type="password" name="senha" placeholder="Digite sua senha" id="input_senha">
+                    </form>
                 </article>
             </section>
 
@@ -264,12 +267,11 @@
                         <code>&lt;input type="hidden" name="dados_ocultos" value="valor_oculto"&gt;</code>
                         dentro do formulário, em que o atributo <code>value</code> é o valor que deve
                         ser enviado. Ele também é associado a um rótulo, como no exemplo abaixo:
-
-                        <form action="">
-                            <label for="input_hidden">Valor escondido (ID do usuário)</label>
-                            <input type="hidden" name="dado_escondido" value="123456" id="input_hidden"> 
-                        </form>
                     </p>
+                    <form action="">
+                        <label for="input_hidden">Valor escondido (ID do usuário)</label>
+                        <input type="hidden" name="dado_escondido" value="123456" id="input_hidden"> 
+                    </form>
                 </article>
             </section>
 
@@ -285,12 +287,11 @@
                         campo de entrada do tipo arquivo, usamos a tag
                         <code>&lt;input type="file" name="arquivo" id="input_arquivo"&gt;</code>
                         dentro do formulário, associando também a um rótulo, como no exemplo abaixo:
-                        
-                        <form action="">
-                            <label for="input_arquivo">Envie seu arquivo:</label>
-                            <input type="file" name="arquivo" id="input_arquivo">
-                        </form>
                     </p>
+                    <form action="">
+                        <label for="input_arquivo">Envie seu arquivo:</label>
+                        <input type="file" name="arquivo" id="input_arquivo">
+                    </form>
                 </article>
             </section>
 
@@ -306,12 +307,11 @@
                         de entrada do tipo data, usamos a tag
                         <code>&lt;input type="date" name="data" id="input_data"&gt;</code>
                         dentro do formulário, associando também a um rótulo, como no exemplo abaixo:
-
-                        <form action="">
-                            <label for="input_data">Escolha uma data:</label>
-                            <input type="date" name="data" id="input_data">
-                        </form>
                     </p>
+                    <form action="">
+                        <label for="input_data">Escolha uma data:</label>
+                        <input type="date" name="data" id="input_data">
+                    </form>
                 </article>
             </section>
         </section>
