@@ -500,7 +500,7 @@
                 </article>
             </section>
 
-            <section>
+            <section id="tipos-input-time">
                 <article>
                     <h3>
                         Tipo Time
@@ -516,6 +516,94 @@
                         <label for="input_horario">Escolha um horário:</label>
                         <input type="time" name="horario" id="input_horario">
                     </form>
+                </article>
+            </section>
+
+            <section id="tipos-input-url">
+                <article>
+                    <h3>
+                        Tipo URL
+                    </h3>
+                    <p>
+                        O tipo de campo de entrada <code>URL</code> permite que o usuário insira
+                        uma ou mais URL. O campo passa por uma validação quando o formulário é
+                        enviado, verificando se o texto possui um protocolo. Em smartphones, o
+                        teclado é adaptado, aparecendo ".com" e outros símbolos úteis. Para usar
+                        esse tipo, fazemos 
+                        <code>
+                            &lt;input type="url" name="link" id="input_url"&gt;
+                        </code>
+                        que gera o formulário abaixo.
+                    </p>
+                    <form action="">
+                        <label for="input_url">Insira uma URL válida:</label>
+                        <input type="url" name="link" id="input_url">
+                    </form>
+                    <p>
+                        Caso deseja-se que o usuário insira múltiplas URL, separadas por
+                        vírgulas, adiciona-se o atributo <code>multiple</code>, da seguinte forma:
+                        <code>
+                            &lt;input type="url" name="link" id="input_url" multiple&gt;
+                        </code>
+                        que gera o formulário abaixo.
+                    </p>
+                    <form action="">
+                        <label for="input_url2">Insira mais de uma URL válida separados por vírgula:</label>
+                        <input type="url" name="link2" id="input_url2" multiple>
+                    </form>
+                </article>
+            </section>
+
+            <section id="tipos-input-tel">
+                <article>
+                    <h3>
+                        Tipo Tel
+                    </h3>
+                    <p>
+                        O tipo de campo de entrada <code>tel</code> é utilizado para inserir
+                        números de telefone. Ele permite que o usuário digite um número de
+                        telefone em qualquer formato, pois não realiza validação automática
+                        do padrão do número. Em smartphones, ao focar nesse campo, o teclado
+                        numérico é exibido, facilitando a digitação. Para criar um campo de
+                        telefone, utiliza-se a tag 
+                        <code>&lt;input type="tel" name="telefone" id="input_tel" placeholder="(99) 99999-9999"&gt;</code>,
+                        normalmente associada a um rótulo, como no exemplo abaixo:
+                    </p>
+                    <form action="">
+                        <label for="input_tel">Digite seu telefone:</label>
+                        <input type="tel" name="telefone" id="input_tel" placeholder="(99) 99999-9999">
+                    </form>
+                </article>
+            </section>
+
+            <section id="tipos-input-search">
+                <article>
+                    <h3>
+                        Tipo Search
+                    </h3>
+                    <p>
+                        O tipo de campo de entrada <code>search</code> é utilizado para
+                        inserir termos de busca em formulários. Ele é semelhante ao campo
+                        de texto padrão (<code>text</code>), mas pode apresentar estilos
+                        e funcionalidades específicas para pesquisas, como um botão de limpar
+                        o campo em alguns navegadores. A pesquisa em si é tratada com um script
+                        em JavaScript. Para criar um campo de busca, utiliza-se a tag 
+                        <code>&lt;input type="search" name="pesquisa" id="input_search" placeholder="Digite sua pesquisa"&gt;</code>,
+                        normalmente associada a um rótulo, como no exemplo abaixo:
+                    </p>
+                    <form action="">
+                        <label for="input_search">Digite sua pesquisa:</label>
+                        <input type="search" name="pesquisa" id="input_search" placeholder="Digite sua pesquisa">
+                    </form>
+                    <h4>
+                        Diferenças pro tipo <code>text</code>
+                    </h4>
+                    <p>
+                        Tecnicamente, o tipo <code>search</code> é igual ao <code>text</code>,
+                        uma vez que os dois aceitam textos. A principal diferença se encontra
+                        na acessabilidade: o navegador e tecnologias assistivas vão saber que
+                        o campo é para pesquisa.
+                    </p>
                 </article>
             </section>
         </section>
