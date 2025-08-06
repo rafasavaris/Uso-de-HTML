@@ -46,7 +46,7 @@
                     e podem conter diveros tipos de campos, como texto, senha, checkboxes, etc.
                     Essa tag por si só apenas destaca um formulário na página, mas não realiza
                     nenhuma ação. Assim, para que o formulário funcione, é necessário adicionar
-                    os campos de entrada e botões apropriados (sendo o botão de "summit"
+                    os campos de entrada e botões apropriados (sendo o botão de "submit"
                     essencial para o nevio de dados).
                 </p>
                 <h3>
@@ -55,28 +55,31 @@
                 <p>
                     A tag <code>&lt;form&gt;</code> pode conter diversos atributos que definem seu
                     comportamento e aparência. Alguns dos mais comuns são:
-                    <ul>
-                        <li>
-                            <code>action</code> - define para onde (qual servidor) os dados do
-                            formulário serão enviados quando o usuário clicar um botão de envio.
-                        </li>
-                        <li>
-                            <code>method</code> - especifica o método HTTP a ser usado ao enviar
-                            os dados do formulário. Os métodos mais comuns são <code>GET</code> e
-                            <code>POST</code>. O método <code>GET</code> envia os dados como
-                            parte da URL (ficam visíveis), enquanto o <code>POST</code> envia os
-                            dados no corpo da requisição, tornando-o mais seguro.
-                        </li>
-                    </ul>
                 </p>
-                <h3>
+                <ul>
+                    <li>
+                        <code>action</code> - define para onde (qual servidor) os dados do
+                        formulário serão enviados quando o usuário clicar um botão de envio.
+                    </li>
+                    <li>
+                        <code>method</code> - especifica o método HTTP a ser usado ao enviar
+                        os dados do formulário. Os métodos mais comuns são <code>GET</code> e
+                        <code>POST</code>. O método <code>GET</code> envia os dados como
+                        parte da URL (ficam visíveis), sendo o método padrão, enquanto o
+                        <code>POST</code> envia os dados no corpo da requisição, tornando-o mais seguro.
+                    </li>
+                </ul>
+                
+                <section id="campos-entrada">
+                    <h3>
                     Campos de entrada
-                </h3>
-                <p>
-                    Os campos de entradas são elementos dentro do formulário que permitem ao usuário
-                    inserir dados. A criação de campos de entrada é feita com a tag <code>&lt;input&gt;</code>,
-                    que pode ter diferentes tipos, dependendo do atributo <code>type</code>. Alguns dos
-                    tipos mais comuns são:
+                    </h3>
+                    <p>
+                        Os campos de entradas são elementos dentro do formulário que permitem ao usuário
+                        inserir dados. A criação de campos de entrada é, em geral, feita com a tag
+                        <code>&lt;input&gt;</code>, que pode ter diferentes tipos, dependendo do atributo
+                        <code>type</code>. Alguns dos tipos mais comuns são:
+                    </p>
                     <ul>
                         <li><b>text</b> - textos em geral;</li>
                         <li><b>email</b> - textos no formato de e-mail;</li>
@@ -85,207 +88,232 @@
                         com o conteúdo escondido; </li>
                         <li><b>hidden</b> - um campo de texto que não aparece na página;</li>
                         <li><b>file</b> - campo para seleção de arquivo; </li>
-                        <li><b>date</b> calendário para a escolha de uma data.</li>
+                        <li><b>date</b> - calendário para a escolha de uma data;</li>
+                        <li><b>radio</b> - escolha de um único valor de um grupo;</li>
+                        <li><b>checkbox</b> - escolha de valores de um grupo.</li>
                     </ul>
-                    Os quais serão abordados com mais detalhes em sequência. É também importante
-                    mencionar que a tag <code>&lt;input&gt;</code> não possui uma tag de fechamento,
-                    ou seja, ela é uma tag auto-fechante. Além disso, é importante definir o
-                    atributo <code>name</code>, o qual define um nome para o campo de entrada. É com esse
-                    nome que o servidor irá identificar os dados enviados pelo formulário.
-                </p>
-                <h3>
-                    Label
-                </h3>
-                <p>
-                    A tag <code>&lt;label&gt;</code> é usada para associar um rótulo a um campo de entrada.
-                    Isso melhora a acessibilidade e a usabilidade do formulário, pois permite que os
-                    usuários cliquem no rótulo para focar no campo de entrada correspondente. Para associar
-                    um rótulo a um campo de entrada, usamos o atributo <code>for</code> na tag <code>&lt;label&gt;</code>
-                    com o valor igual ao atributo <code>id</code> do campo de entrada. <br>
-                    Um exemplo dessa tag é: <code>&lt;label for="id_input"&gt; Texto do label&lt;label&gt;</code>
-                </p>
-            </article>
-        </section>
-
-        <section id="tipos-input-text">
-            <article>
-                <h2>
-                    Type Text
-                </h2>
-                <p>
-                    É o tipo de campo de entrada mais comum, usado para inserir textos
-                    em geral. Para criar um campo de entrada do tipo texto, usamos a tag
-                    <code>&lt;input type="text" name="nome" placeholder="Digite seu nome aqui" id="input_nome"&gt;</code>
-                    dentro do formulário, em que também é associado a um rótulo. Além disso,
-                    o atributo <code>placeholder</code> pode ser usado para exibir um texto
-                    de exemplo dentro do campo de entrada, indicando ao usuário o que deve ser
-                    inserido. Isso pode ser visto abaixo: <br>
-                    <form action="">
-                        <label for="input_nome">Digite seu nome:</label>
-                        <input type="text" name="nome" placeholder="Digite seu nome aqui" id="input_nome">
-                    </form>
-                </p>
-                <h3>
-                    Atributos específicos do tipo texto
-                </h3>
-                <p>
-                    Existem atributos específicos e comuns ao tipo texto, sendo os principais:
+                    <p>
+                        Os quais serão abordados com mais detalhes em sequência. É também importante
+                        mencionar que a tag <code>&lt;input&gt;</code> não possui uma tag de fechamento,
+                        ou seja, ela é uma tag auto-fechante. Além disso, é importante definir o
+                        atributo <code>name</code>, o qual define um nome para o campo de entrada. É com esse
+                        nome que o servidor irá identificar os dados enviados pelo formulário.
+                    </p>
+                    <p>
+                        Além disso, é possível ter outros tipos de campos de entrada, sem o uso de <code>&lt;input&gt;</code>.
+                        Os principais são:
+                    </p>
                     <ul>
-                        <li><b>maxlength</b> - limite o número de caracteres do campo;</li>
-                        <li><b>size</b> - define o tamanho da caixa de texto.</li>
+                        <li>
+                            <code>&ltselect&gt;</code> - seleção de um valor de uma lista, em que seu aspecto visual
+                            é um campo de texto com uma seta para baixo;
+                        </li>
+                        <li>
+                            <code>&lt;textarea&gt;</code> - escrita de textos maiores;
+                        </li>
                     </ul>
-                    O exemplo abaixo adiciona ao exemplo anterior os atributos <code>maxlength="10"</code>
-                    e <code>size="7"</code>, limitando o campo de entrada a 10 caracteres e definindo
-                    o tamanho da caixa de texto para 7 caracteres: <br> <br>
-
-                    <form action="">
-                        <label for="input_texto">Digite um texto:</label>
-                        <input type="text" name="texto" placeholder="Digite uma palavra aqui" id="input_texto" maxlength="10" size="7">
-                    </form>
-                </p>
+                </section>
+                
+                <section id="rotulos">
+                    <h3>
+                        Label
+                    </h3>
+                    <p>
+                        A tag <code>&lt;label&gt;</code> é usada para associar um rótulo a um campo de entrada.
+                        Isso melhora a acessibilidade e a usabilidade do formulário, pois permite que os
+                        usuários cliquem no rótulo para focar no campo de entrada correspondente. Para associar
+                        um rótulo a um campo de entrada, usamos o atributo <code>for</code> na tag <code>&lt;label&gt;</code>
+                        com o valor igual ao atributo <code>id</code> do campo de entrada. <br>
+                        Um exemplo dessa tag é: <code>&lt;label for="id_input"&gt; Texto do label&lt;label&gt;</code>
+                    </p>
+                </section>
             </article>
         </section>
 
-        <section id="tipos-input-email">
-            <article>
-                <h2>
-                    Type Email
-                </h2>
-            </article>
-            <p>
-                O tipo de campo de entrada <code>email</code> é usado para inserir endereços
-                de e-mail. Ele valida, quando enviado o formulário, o formato do e-mail inserido
-                pelo usuário. Caso não seja um valor adequado, mostra uma mensagem de erro e não
-                envia o formulário. Para criar um campo de entrada do tipo e-mail, usamos a tag
-                <code>&lt;input type="email" name="email" placeholder="Digite seu e-mail aqui" id="input_email"&gt;</code>
-                dentro do formulário, em que também é associado a um rótulo, como no exemplo abaixo:
-                <form action="">
-                    <label for="input_email">Digite seu e-mail:</label>
-                    <input type="email" name="email" placeholder="Digite seu e-mail" id="input_email">
-                </form>
-            </p>
-        </section>
+        <section id="tipos-input">
+            <h2>
+                Tipos de <code>&lt;input&gt;</code>
+            </h2>
+            <section id="tipos-input-text">
+                <article>
+                    <h3>
+                        Type Text
+                    </h3>
+                    <p>
+                        É o tipo de campo de entrada mais comum, usado para inserir textos
+                        em geral. Para criar um campo de entrada do tipo texto, usamos a tag
+                        <code>&lt;input type="text" name="nome" placeholder="Digite seu nome aqui" id="input_nome"&gt;</code>
+                        dentro do formulário, em que também é associado a um rótulo. Além disso,
+                        o atributo <code>placeholder</code> pode ser usado para exibir um texto
+                        de exemplo dentro do campo de entrada, indicando ao usuário o que deve ser
+                        inserido. Isso pode ser visto abaixo: <br>
+                        <form action="">
+                            <label for="input_nome">Digite seu nome:</label>
+                            <input type="text" name="nome" placeholder="Digite seu nome aqui" id="input_nome">
+                        </form>
+                    </p>
+                    <h4>
+                        Atributos específicos do tipo texto
+                    </h4>
+                    <p>
+                        Existem atributos específicos e comuns ao tipo texto, sendo os principais:
+                        <ul>
+                            <li><b>maxlength</b> - limite o número de caracteres do campo;</li>
+                            <li><b>size</b> - define o tamanho da caixa de texto.</li>
+                        </ul>
+                        O exemplo abaixo adiciona ao exemplo anterior os atributos <code>maxlength="10"</code>
+                        e <code>size="7"</code>, limitando o campo de entrada a 10 caracteres e definindo
+                        o tamanho da caixa de texto para 7 caracteres: <br> <br>
 
-        <section id="tipos-input-number">
-            <article>
-                <h2>
-                    Type Number
-                </h2>
+                        <form action="">
+                            <label for="input_texto">Digite um texto:</label>
+                            <input type="text" name="texto" placeholder="Digite uma palavra aqui" id="input_texto" maxlength="10" size="7">
+                        </form>
+                    </p>
+                </article>
+            </section>
+
+            <section id="tipos-input-email">
+                <article>
+                    <h3>
+                        Type Email
+                    </h3>
+                </article>
                 <p>
-                    O tipo de campo de entrada <code>number</code> é usado para inserir apenas números.
-                    Ele permite que o usuário insira valores numéricos e pode incluir limites
-                    mínimo e máximo, além de incrementos (quando há o mecanismo de "setas" no
-                    navegador). Para criar um campo de entrada do tipo número, usamos a tag
-                    <code>&lt;input type="number" name="numero" placeholder="Digite um número" id="input_numero"&gt;</code>
-                    dentro do formulário, em que também é associado a um rótulo, como no exemplo abaixo:
-
-                    <form action="">
-                        <label for="input_number">Digite um número:</label>
-                        <input type="number" name="numero" placeholder="Digite um número" id="input_number">
-                    </form>
-                </p>
-                <h3>
-                    Atributos específicos do tipo number
-                </h3>
-                <p>
-                    Os principais atributos do tipo <code>number</code> são:
-                    <ul>
-                        <li><b>min</b> - define o valor mínimo;</li>
-                        <li><b>max</b> - define o valor máximo;</li>
-                        <li><b>step</b> - define o incremento entre os valores.</li>
-                    </ul>
-                    O exemplo abaixo adiciona ao exemplo anterior os atributos <code>min="0"</code>,
-                    <code>max="100"</code> e <code>step="5"</code> ao exemplo anterior. <br> <br>
-
-                    <form action="">
-                        <label for="input_number2">Digite um número:</label>
-                        <input type="number" name="numero" placeholder="Digite um número" id="input_number2" min="0" max="100" step="5">
-                    </form>
-                </p>
-            </article>
-        </section>
-
-        <section id="tipos-input-password">
-            <article>
-                <h2>
-                    Type Password
-                </h2>
-                <p>
-                    O tipo de campo de entrada <code>password</code> é usado para inserir senhas.
-                    Ele oculta o texto inserido pelo usuário, substituindo os caracteres por asteriscos.
-                    Para criar um campo de entrada do tipo senha, usamos a tag
-                    <code>&lt;input type="password" name="senha" placeholder="Digite sua senha" id="input_senha"&gt;</code>
+                    O tipo de campo de entrada <code>email</code> é usado para inserir endereços
+                    de e-mail. Ele valida, quando enviado o formulário, o formato do e-mail inserido
+                    pelo usuário. Caso não seja um valor adequado, mostra uma mensagem de erro e não
+                    envia o formulário. Para criar um campo de entrada do tipo e-mail, usamos a tag
+                    <code>&lt;input type="email" name="email" placeholder="Digite seu e-mail aqui" id="input_email"&gt;</code>
                     dentro do formulário, em que também é associado a um rótulo, como no exemplo abaixo:
                     <form action="">
-                        <label for="input_senha">Digite sua senha:</label>
-                        <input type="password" name="senha" placeholder="Digite sua senha" id="input_senha">
+                        <label for="input_email">Digite seu e-mail:</label>
+                        <input type="email" name="email" placeholder="Digite seu e-mail" id="input_email">
                     </form>
                 </p>
-            </article>
-        </section>
+            </section>
 
-        <section id="tipos-input-hidden">
-            <article>
-                <h2>
-                    Type Hidden
-                </h2>
-                <p>
-                    O tipo de campo de entrada <code>hidden</code> é usado para armazenar dados
-                    que não devem ser exibidos ao usuário, mas que precisam ser enviados ao servidor
-                    quando o formulário é enviado. Ele não é visível na página, mas ainda faz parte
-                    do formulário. Para criar um campo de entrada do tipo oculto, usamos a tag
-                    <code>&lt;input type="hidden" name="dados_ocultos" value="valor_oculto"&gt;</code>
-                    dentro do formulário, em que o atributo <code>value</code> é o valor que deve
-                    ser enviado. Ele também é associado a um rótulo, como no exemplo abaixo:
+            <section id="tipos-input-number">
+                <article>
+                    <h3>
+                        Type Number
+                    </h3>
+                    <p>
+                        O tipo de campo de entrada <code>number</code> é usado para inserir apenas números.
+                        Ele permite que o usuário insira valores numéricos e pode incluir limites
+                        mínimo e máximo, além de incrementos (quando há o mecanismo de "setas" no
+                        navegador). Para criar um campo de entrada do tipo número, usamos a tag
+                        <code>&lt;input type="number" name="numero" placeholder="Digite um número" id="input_numero"&gt;</code>
+                        dentro do formulário, em que também é associado a um rótulo, como no exemplo abaixo:
 
-                    <form action="">
-                        <label for="input_hidden">Valor escondido (ID do usuário)</label>
-                        <input type="hidden" name="dado_escondido" value="123456" id="input_hidden"> 
-                    </form>
-                </p>
-            </article>
-        </section>
+                        <form action="">
+                            <label for="input_number">Digite um número:</label>
+                            <input type="number" name="numero" placeholder="Digite um número" id="input_number">
+                        </form>
+                    </p>
+                    <h4>
+                        Atributos específicos do tipo number
+                    </h4>
+                    <p>
+                        Os principais atributos do tipo <code>number</code> são:
+                        <ul>
+                            <li><b>min</b> - define o valor mínimo;</li>
+                            <li><b>max</b> - define o valor máximo;</li>
+                            <li><b>step</b> - define o incremento entre os valores.</li>
+                        </ul>
+                        O exemplo abaixo adiciona ao exemplo anterior os atributos <code>min="0"</code>,
+                        <code>max="100"</code> e <code>step="5"</code> ao exemplo anterior. <br> <br>
 
-        <section id="tipos-input-file">
-            <article>
-                <h2>
-                    Type File
-                </h2>
-                <p>
-                    O tipo de campo de entrada <code>file</code> é usado para permitir que o usuário
-                    selecione um arquivo do seu dispositivo para enviar ao servidor. Ele exibe um botão
-                    de seleção de arquivo e permite que o usuário escolha um arquivo. Para criar um
-                    campo de entrada do tipo arquivo, usamos a tag
-                    <code>&lt;input type="file" name="arquivo" id="input_arquivo"&gt;</code>
-                    dentro do formulário, associando também a um rótulo, como no exemplo abaixo:
-                    
-                    <form action="">
-                        <label for="input_arquivo">Envie seu arquivo:</label>
-                        <input type="file" name="arquivo" id="input_arquivo">
-                    </form>
-                </p>
-            </article>
-        </section>
+                        <form action="">
+                            <label for="input_number2">Digite um número:</label>
+                            <input type="number" name="numero" placeholder="Digite um número" id="input_number2" min="0" max="100" step="5">
+                        </form>
+                    </p>
+                </article>
+            </section>
 
-        <section id="tipos-input-date">
-            <article>
-                <h2>
-                    Type Date
-                </h2>
-                <p>
-                    O tipo de campo de entrada <code>date</code> é usado para permitir que o usuário
-                    selecione uma data de um calendário. Ele exibe um seletor de data que permite ao
-                    usuário escolher uma data específica de forma fácil e visual. Para criar um campo
-                    de entrada do tipo data, usamos a tag
-                    <code>&lt;input type="date" name="data" id="input_data"&gt;</code>
-                    dentro do formulário, associando também a um rótulo, como no exemplo abaixo:
+            <section id="tipos-input-password">
+                <article>
+                    <h3>
+                        Type Password
+                    </h3>
+                    <p>
+                        O tipo de campo de entrada <code>password</code> é usado para inserir senhas.
+                        Ele oculta o texto inserido pelo usuário, substituindo os caracteres por asteriscos.
+                        Para criar um campo de entrada do tipo senha, usamos a tag
+                        <code>&lt;input type="password" name="senha" placeholder="Digite sua senha" id="input_senha"&gt;</code>
+                        dentro do formulário, em que também é associado a um rótulo, como no exemplo abaixo:
+                        <form action="">
+                            <label for="input_senha">Digite sua senha:</label>
+                            <input type="password" name="senha" placeholder="Digite sua senha" id="input_senha">
+                        </form>
+                    </p>
+                </article>
+            </section>
 
-                    <form action="">
-                        <label for="input_data">Escolha uma data:</label>
-                        <input type="date" name="data" id="input_data">
-                    </form>
-                </p>
-            </article>
+            <section id="tipos-input-hidden">
+                <article>
+                    <h3>
+                        Type Hidden
+                    </h3>
+                    <p>
+                        O tipo de campo de entrada <code>hidden</code> é usado para armazenar dados
+                        que não devem ser exibidos ao usuário, mas que precisam ser enviados ao servidor
+                        quando o formulário é enviado. Ele não é visível na página, mas ainda faz parte
+                        do formulário. Para criar um campo de entrada do tipo oculto, usamos a tag
+                        <code>&lt;input type="hidden" name="dados_ocultos" value="valor_oculto"&gt;</code>
+                        dentro do formulário, em que o atributo <code>value</code> é o valor que deve
+                        ser enviado. Ele também é associado a um rótulo, como no exemplo abaixo:
+
+                        <form action="">
+                            <label for="input_hidden">Valor escondido (ID do usuário)</label>
+                            <input type="hidden" name="dado_escondido" value="123456" id="input_hidden"> 
+                        </form>
+                    </p>
+                </article>
+            </section>
+
+            <section id="tipos-input-file">
+                <article>
+                    <h3>
+                        Type File
+                    </h3>
+                    <p>
+                        O tipo de campo de entrada <code>file</code> é usado para permitir que o usuário
+                        selecione um arquivo do seu dispositivo para enviar ao servidor. Ele exibe um botão
+                        de seleção de arquivo e permite que o usuário escolha um arquivo. Para criar um
+                        campo de entrada do tipo arquivo, usamos a tag
+                        <code>&lt;input type="file" name="arquivo" id="input_arquivo"&gt;</code>
+                        dentro do formulário, associando também a um rótulo, como no exemplo abaixo:
+                        
+                        <form action="">
+                            <label for="input_arquivo">Envie seu arquivo:</label>
+                            <input type="file" name="arquivo" id="input_arquivo">
+                        </form>
+                    </p>
+                </article>
+            </section>
+
+            <section id="tipos-input-date">
+                <article>
+                    <h3>
+                        Type Date
+                    </h3>
+                    <p>
+                        O tipo de campo de entrada <code>date</code> é usado para permitir que o usuário
+                        selecione uma data de um calendário. Ele exibe um seletor de data que permite ao
+                        usuário escolher uma data específica de forma fácil e visual. Para criar um campo
+                        de entrada do tipo data, usamos a tag
+                        <code>&lt;input type="date" name="data" id="input_data"&gt;</code>
+                        dentro do formulário, associando também a um rótulo, como no exemplo abaixo:
+
+                        <form action="">
+                            <label for="input_data">Escolha uma data:</label>
+                            <input type="date" name="data" id="input_data">
+                        </form>
+                    </p>
+                </article>
+            </section>
         </section>
     </main>
     <aside>
