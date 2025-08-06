@@ -90,7 +90,8 @@
                         <li><b>file</b> - campo para seleção de arquivo; </li>
                         <li><b>date</b> - calendário para a escolha de uma data;</li>
                         <li><b>radio</b> - escolha de um único valor de um grupo;</li>
-                        <li><b>checkbox</b> - escolha de valores de um grupo.</li>
+                        <li><b>checkbox</b> - escolha de valores de um grupo;</li>
+                        <li><b>color</b> - escolha de uma cor.</li>
                     </ul>
                     <p>
                         Os quais serão abordados com mais detalhes em sequência. É também importante
@@ -124,7 +125,7 @@
                         usuários cliquem no rótulo para focar no campo de entrada correspondente. Para associar
                         um rótulo a um campo de entrada, usamos o atributo <code>for</code> na tag <code>&lt;label&gt;</code>
                         com o valor igual ao atributo <code>id</code> do campo de entrada. <br>
-                        Um exemplo dessa tag é: <code>&lt;label for="id_input"&gt; Texto do label&lt;label&gt;</code>
+                        Um exemplo dessa tag é: <code>&lt;label for="id_input"&gt; Texto do label&lt;/label&gt;</code>
                     </p>
                 </section>
             </article>
@@ -233,6 +234,40 @@
                         <input type="number" name="numero" placeholder="Digite um número" id="input_number2" min="0" max="100" step="5">
                     </form>
                 </article>
+
+                <section id="tipo-input-number-range">
+                    <article>
+                        <h4>
+                            Type Range
+                        </h4>
+                        <p>
+                            O tipo de campo de entrada <code>range</code> é usado para selecionar um valor
+                            numérico dentro de um intervalo. Ele exibe um controle deslizante que permite ao usuário
+                            escolher um valor entre um mínimo e um máximo, ou seja, sua diferença principal para
+                            o tipo <code>number</code> é a forma visual. Para criar um campo de entrada do
+                            tipo range, usamos a tag: <br>
+                            <code>&lt;input type="range" name="intervalo" id="input_range"&gt;</code> <br>
+                            dentro do formulário, associando também a um rótulo. Cabe ressaltar que o valor
+                            escolhido apenas irá aparecer na tela se for determinado em JavaScript.
+                        </p>
+                        <form action="">
+                            <label for="input_range">Escolha um valor dentro do intervalo:</label>
+                            <input type="range" name="intervalo" id="input_range">
+                        </form>
+                        <p>
+                            Além disso, é possível, também, definir os atributos <code>min</code>,
+                            <code>max</code> e <code>step</code>, como no exemplo abaixo: <br>
+                            <code>&lt;input type="range" name="intervalo" id="input_range" min="0" max="100" step="2"&gt;</code> <br>
+                            Em que o valor mínimo é 0, o máximo é 100 e o incremento é de 2. Apesar
+                            dessas configurações serem feitas, não é efeito visual prático, pois não
+                            há nenhum script feito para mostrar o valor selecionado.
+                        </p>
+                        <form action="">
+                            <label for="input_range2">Escolha um valor dentro do intervalo:</label>
+                            <input type="range" name="intervalo" id="input_range2" min="0" max="100" step="2">
+                        </form>
+                    </article>
+                </section>
             </section>
 
             <section id="tipos-input-password">
@@ -313,6 +348,65 @@
                         <input type="date" name="data" id="input_data">
                     </form>
                 </article>
+
+                <section id="tipos-input-date-time">
+                    <article>   
+                        <h4>
+                            Type Datetime-local
+                        </h4>
+                        <p>
+                            O tipo de campo de entrada <code>datetime-local</code> é usado para permitir que o
+                            usuário selecione uma data e hora local. Ele exibe um seletor de data e hora que
+                            permite ao usuário escolher uma data e hora específica (sem fuso horário).
+                            Para criar um campo de entrada do tipo data e hora local, usamos a tag
+                            <code>&lt;input type="datetime-local" name="data_hora" id="input_data_hora"&gt;</code>
+                            dentro do formulário, associando também a um rótulo, como no exemplo abaixo:
+                        </p>
+                        <form action="">
+                            <label for="data_hora">Escolha uma data e um horário:</label>
+                            <input type="datetime-local" name="data_hora" id="data_hora">
+                        </form>
+                    </article>
+                </section>
+
+                <section id="tipos-input-date-month">
+                    <article>
+                        <h4>
+                            Type Month
+                        </h4>
+                        <p>
+                            O tipo de campo de entrada <code>month</code> é usado para permitir que o usuário
+                            selecione um mês e um ano. Ele exibe um seletor de mês que permite ao usuário escolher
+                            um mês e ano específicos. Para criar um campo de entrada do tipo mês, usamos a tag
+                            <code>&lt;input type="month" name="mes" id="input_mes"&gt;</code>
+                            dentro do formulário, associando também a um rótulo, como no exemplo abaixo:
+                        </p>
+                        <form action="">
+                            <label for="input_mes">Escolha um mês e um ano:</label>
+                            <input type="month" name="mes" id="input_mes">
+                        </form>
+                    </article>
+                </section>
+
+                <section id="tipos-input-date-week">
+                    <article>
+                        <h4>
+                            Type Week
+                        </h4>
+                        <p>
+                            O tipo de campo de entrada <code>week</code> é usado para permitir que o usuário
+                            selecione uma semana específica de um ano. Ele exibe um seletor de semana que
+                            permite ao usuário escolher uma semana e ano específicos. Para criar um campo
+                            de entrada do tipo semana, usamos a tag
+                            <code>&lt;input type="week" name="semana" id="input_semana"&gt;</code>
+                            dentro do formulário, associando também a um rótulo, como no exemplo abaixo:
+                        </p>
+                        <form action="">
+                            <label for="input_semana">Escolha uma semana de um ano:</label>
+                            <input type="week" name="semana" id="input_semana">
+                        </form>
+                    </article>
+                </section>
             </section>
 
             <section id="tipos-input-radio">
@@ -332,9 +426,9 @@
                         especificado, é enviado "on". Assim, uma forma de criar radio buttons é: <br>
                         <code>
                             &lt;input type="radio" name="opcoes" id="opcao1" value="1"&gt; <br>
-                            &lt;label for="opcao1"&gt;Opção 1&gt; <br>
+                            &lt;label for="opcao1"&gt;Opção 1&lt;/label&gt; <br>
                             &lt;input type="radio" name="opcoes" id="opcao2" value="2"&gt; <br>
-                            &lt;label for="opcao2"&gt;Opção 2&gt; <br>
+                            &lt;label for="opcao2"&gt;Opção 2&lt;/label&gt; <br>
                         </code>
                         Em que o resultado pode ser visto abaixo:
                     </p>
@@ -363,9 +457,9 @@
                         Um exemplo de como criar checkboxes é: <br>
                         <code>
                             &lt;input type="checkbox" name="grupo" id="opcao1_checkbox" value="1"&gt; <br>
-                            &lt;label for="opcao1"&gt;Opção 1&gt; <br>
+                            &lt;label for="opcao1"&gt;Opção 1&lt;/label&gt; <br>
                             &lt;input type="checkbox" name="grupo" id="opcao2_checkbox" value="2"&gt; <br>
-                            &lt;label for="opcao2"&gt;Opção 2&gt; <br>
+                            &lt;label for="opcao2"&gt;Opção 2&lt;/label&gt; <br>
                         </code>
                     </p>
                     <form action="">
@@ -374,6 +468,53 @@
 
                         <input type="checkbox" name="grupo" id="opcao2_checkbox" value="2">
                         <label for="opcao2_checkbox">Opção 2</label>
+                    </form>
+                </article>
+            </section>
+            
+            <section id="tipos-input-color">
+                <article>
+                    <h3>
+                        Type Color
+                    </h3>
+                    <p>
+                        O tipo de campo de entrada <code>color</code> permite que o usuário escolha
+                        uma cor através de um seletor de cores. Ele exibe um campo de entrada com
+                        um seletor de cores, permitindo que o usuário selecione uma cor específica.
+                        Para criar um campo de entrada do tipo cor, usamos a tag
+                        <code>&lt;input type="color" name="cor" id="input_color"&gt;</code>
+                        dentro do formulário, associando também a um rótulo. É possível determinar
+                        uma cor como pré-selecionada com o atributo "value", que deve ser o código
+                        hex da cor desejada. Abaixo, é visto um exemplo desse tipo de campo: <br>
+                        <code>
+                            &lt;input type="color" name="cor" id="input_color"&gt; <br>
+                            &lt;label for="input_color"&gt;Escolha uma cor:&lt;/label&gt; <br>
+                        </code>
+                        No caso desse trecho, exibido a baixo, não há uma cor pré-selecionada,
+                        então, irá aparecer a cor preta como padrão.
+                    </p>
+                    <form action="">
+                        <input type="color" name="cor" id="input_color">
+                        <label for="input_color">Escolha uma cor:</label>
+                    </form>
+                </article>
+            </section>
+
+            <section>
+                <article>
+                    <h3>
+                        Tipo Time
+                    </h3>
+                    <p>
+                        O tipo de campo de entrada <code>time</code> é usado para permitir que o usuário
+                        selecione uma hora específica. Ele exibe um seletor de hora que permite ao usuário
+                        escolher uma hora específica. Para criar um campo de entrada do tipo hora, usamos a tag
+                        <code>&lt;input type="time" name="hora" id="input_hora"&gt;</code>
+                        dentro do formulário, associando também a um rótulo, como no exemplo abaixo:
+                    </p>
+                    <form action="">
+                        <label for="input_horario">Escolha um horário:</label>
+                        <input type="time" name="horario" id="input_horario">
                     </form>
                 </article>
             </section>
