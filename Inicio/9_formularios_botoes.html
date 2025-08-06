@@ -78,7 +78,7 @@
                         Os campos de entradas são elementos dentro do formulário que permitem ao usuário
                         inserir dados. A criação de campos de entrada é, em geral, feita com a tag
                         <code>&lt;input&gt;</code>, que pode ter diferentes tipos, dependendo do atributo
-                        <code>type</code>. Alguns dos tipos mais comuns são:
+                        <code>type</code>. Os tipos são:
                     </p>
                     <ul>
                         <li><b>text</b> - textos em geral;</li>
@@ -91,14 +91,23 @@
                         <li><b>date</b> - calendário para a escolha de uma data;</li>
                         <li><b>radio</b> - escolha de um único valor de um grupo;</li>
                         <li><b>checkbox</b> - escolha de valores de um grupo;</li>
-                        <li><b>color</b> - escolha de uma cor.</li>
+                        <li><b>color</b> - escolha de uma cor;</li>
+                        <li><b>time</b> - escolha um horário (sem fuso);</li>
+                        <li><b>url</b> - urls;</li>
+                        <li><b>tel</b> - telefone;</li>
+                        <li><b>search</b> - campo de pesquisa;</li>
                     </ul>
                     <p>
-                        Os quais serão abordados com mais detalhes em sequência. É também importante
-                        mencionar que a tag <code>&lt;input&gt;</code> não possui uma tag de fechamento,
-                        ou seja, ela é uma tag auto-fechante. Além disso, é importante definir o
-                        atributo <code>name</code>, o qual define um nome para o campo de entrada. É com esse
-                        nome que o servidor irá identificar os dados enviados pelo formulário.
+                        Eles serão abordados com mais detalhes em sequência. Há também outros
+                        tipos que são "variações" de outros, como 
+                        <code>
+                            datatime-local, month, week   
+                        </code> (variações de <code>date</code>) e <code>range</code> (variação
+                        de input). É também importante mencionar que a tag <code>&lt;input&gt;</code>
+                        não possui uma tag de fechamento, ou seja, ela é uma tag auto-fechante. 
+                        Além disso, é importante definir o atributo <code>name</code>, o qual 
+                        define um nome para o campo de entrada. É com esse nome que o servidor 
+                        irá identificar os dados enviados pelo formulário.
                     </p>
                     <p>
                         Além disso, é possível ter outros tipos de campos de entrada, sem o uso de <code>&lt;input&gt;</code>.
