@@ -52,6 +52,7 @@
     </header>
 
     <main>
+        <hr>
         <section id="introducao-formulario">
             <article>
                 <h2>
@@ -156,6 +157,72 @@
                 </section>
             </article>
         </section>
+
+        <hr>
+
+        <section id="botoes">
+            <h3>
+                Button
+            </h3>
+            <p>
+                A tag <code>&lt;button&gt;</code>, que não é autofechante, é utilizada
+                para criar botões em formulários ou em outras partes da página. Ela
+                pode ser usada para enviar formulários (estando dentro da tag <code>&lt;form&gt;</code>),
+                redefinir campos ou executar ações personalizadas com JavaScript. Existem
+                três tipos principais de botões, definidos pelo atributo <code>type</code>:
+            </p>
+            <ul>
+                <li><b>submit</b>: envia o formulário ao servidor (padrão quando dentro de um formulário);</li>
+                <li><b>reset</b>: redefine todos os campos do formulário para seus valores iniciais;</li>
+                <li><b>button</b>: não realiza nenhuma ação por padrão, sendo usado para scripts personalizados.</li>
+            </ul>
+            <p>
+                Um exemplo de uso é:
+                <code><pre>
+                    &lt;button type="submit"&gt;Aperte aqui para enviar!&lt;/button&gt;
+                    &lt;button type="reset"&gt;Aperte aqui para resetar!&lt;/button&gt;
+                    &lt;button type="button"&gt;Botão sem função.&lt;/button&gt;
+                </pre></code>
+                O resultado pode ser visto abaixo:
+            </p>
+            <form action="">
+                <label for="input_texto_button">Escreva seu nome:</label>
+                <input type="text" name="nome" id="input_texto_button" placeholder="Seu nome">
+                
+                <button type="submit">Aperte aqui para enviar!</button>
+                <button type="reset">Aperte aqui para resetar!</button>
+                <button type="button">Botão sem função.</button>
+            </form>
+
+            <h4>
+                Diferença entre <code>&lt;button&gt;</code> e
+                <code>&lt;input&gt;</code> dos tipos submit, reset e button
+            </h4>
+            <p>
+                A principal diferença entre usar a tag <code>button</code> e <code>input</code>
+                dos tipos submit, reset ou button está na diferença que <code>button</code>
+                aceita HTML interno. Isso significa que é possível adicionar ícones nos botões,
+                utilizar a tag <code>span</code>, entre outras personalizações. Assim, se deseja-se
+                um estilo personalizado para o botão, o uso de <code>&lt;button&gt;</code> é melhor. <br>
+                Um exemplo de uso de botão com HTML interno é: <br>
+
+                <code>
+                    &lt;button type="submit"&gt; <br>
+                        &lt;img src="./img/icon_gato.jpg" alt="Icon de envio" height="10"&gt; <br>
+                        Aperte aqui para enviar! <br>
+                    &lt;/button&gt; <br>
+                </code>
+                O que resulta em:
+            </p>
+            <form action="">
+                <button type="submit">
+                    <img src="./img/icon_gato.jpg" alt="Icon de envio" height="15" width="15">
+                    Aperte aqui para enviar!
+                </button>
+            </form>
+        </section>
+        
+        <hr>
 
         <section id="tipos-input">
             <h2>
