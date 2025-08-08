@@ -13,7 +13,8 @@
     <p>
         Este é um guia de conceitos iniciais para o <strong>corpo do html</strong>, isto é, o corpo da tag <b><code>&ltbody&gt&lt/body&gt</code></b>.
         A ideia desse arquivo é funcionar como um "dicionário", que possa ser visitado quando alguma dúvida surgir. Portanto, sinta-se à vontade para usar!
-        <br>A ideia deste arquivo é ser simples, pois o foco são as principais tags e conceitos HTML.
+        A ideia deste arquivo é ser simples, pois o foco são as principais tags e conceitos HTML. Conforme o conteúdo
+        é aprofundado, melhor os documentos se tornam!
     </p>
 
     <hr>
@@ -24,7 +25,8 @@
         HTML (HyperText Markup Language) é a linguagem padrão usada para criar páginas na web. Ele serve para 
         estruturar o conteúdo, organizando textos, imagens, links, tabelas, vídeos e outros elementos de forma 
         que os navegadores possam exibir corretamente. Basicamente, o HTML define o que vai aparecer em uma 
-        página e como esses elementos estão organizados
+        página e como esses elementos estão organizados. Os elementos HTML, no caso, são uma tag inicial,
+        algum conteúdo e a tag final (quando houver).
     </p>
 
     <hr>
@@ -42,15 +44,14 @@
     <p>
         Algumas tags são <strong>autofechantes</strong>, ou seja, não precisam de uma tag de fechamento separada. 
         Elas são encerradas dentro da própria abertura. Exemplos:
-
-        <ul>
-            <li><code>&lt;br /&gt;</code> — quebra de linha</li>
-            <li><code>&lt;img src="imagem.jpg" alt="Descrição" /&gt;</code> — imagem</li>
-            <li><code>&lt;input type="text" /&gt;</code> — campo de entrada</li>
-            <li><code>&lt;meta charset="UTF-8" /&gt;</code> — metadados</li>
-            <li><code>&lt;hr /&gt;</code> — linha horizontal</li>
-        </ul>
     </p>
+    <ul>
+        <li><code>&lt;br&gt;</code> — quebra de linha</li>
+        <li><code>&lt;img src="imagem.jpg" alt="Descrição"&gt;</code> — imagem</li>
+        <li><code>&lt;input type="text"&gt;</code> — campo de entrada</li>
+        <li><code>&lt;meta charset="UTF-8"&gt;</code> — metadados</li>
+        <li><code>&lt;hr&gt;</code> — linha horizontal</li>
+    </ul>
 
     <hr>
 
@@ -70,31 +71,63 @@
 
     <hr>
 
-    <h2>3) Principais tags e exemplos:</h2>
+    <h2>4) Principais tags:</h2>
 
     <p>
-        Aqui estão algumas das principais tags HTML e seus usos:
-
-        <ul>
-            <li><code>&lt;h1&gt;...&lt;/h1&gt;</code> até <code>&lt;h6&gt;...&lt;/h6&gt;</code> — Títulos e subtítulos</li>
-            <li><code>&lt;p&gt;...&lt;/p&gt;</code> — Parágrafo de texto</li>
-            <li><code>&lt;a href="..."&gt;...&lt;/a&gt;</code> — Link para outra página ou recurso</li>
-            <li><code>&lt;img src="..." alt="..." /&gt;</code> — Imagem</li>
-            <li><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code> — Listas não ordenadas, ordenadas e itens de lista</li>
-            <li><code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code>, <code>&lt;th&gt;</code> — Tabelas</li>
-            <li><code>&lt;div&gt;...&lt;/div&gt;</code> — Divisão de bloco para agrupar conteúdo</li>
-            <li><code>&lt;span&gt;...&lt;/span&gt;</code> — Agrupamento em linha de conteúdo</li>
-            <li><code>&lt;form&gt;...&lt;/form&gt;</code> — Formulário para entrada de dados</li>
-            <li><code>&lt;input&gt;</code>, <code>&lt;button&gt;</code>, <code>&lt;label&gt;</code> — Elementos de formulário</li>
-            <li><code>&lt;br /&gt;</code> — Quebra de linha</li>
-            <li><code>&lt;hr /&gt;</code> — Linha horizontal</li>
-            <li><code>&lt;strong&gt;...&lt;/strong&gt;</code>, <code>&lt;em&gt;...&lt;/em&gt;</code> — Destaque e ênfase em textos</li>
-        </ul>
-
-        Elas serão abordadas nas próximas paginas.
+        Aqui estão algumas das tags HTML que serão abordadas nas próximas páginas:
     </p>
 
+    <ul>
+        <li><code>&lt;br&gt;</code> — Quebra de linha</li>
+        <li><code>&lt;hr&gt;</code> — Linha horizontal</li>
+        <li><code>&lt;abbr&gt;</code> - Define uma abreviação/acrônimo, o atributo <code>tittle</code>
+            pode mostrar a descrição quando o mouse passa por cima;</li>
+        <li><code>&lt;style&gt;</code> — Definir informações de estilo para uma única página HTML;</li>
+        <li><code>&lt;script&gt;</code> — Definir JavaScript do lado do cliente;</li>
+        <li><code>&lt;h1&gt;...&lt;/h1&gt;</code> até <code>&lt;h6&gt;...&lt;/h6&gt;</code> — Títulos e subtítulos</li>
+        <li><code>&lt;p&gt;...&lt;/p&gt;</code> — Parágrafo de texto</li>
+        <li><code>&lt;a href="..."&gt;...&lt;/a&gt;</code> — Define um hiperlink (link);</li>
+        <li><code>&lt;img src="..." alt="..." /&gt;</code> — Imagem</li>
+        <li><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code> — Listas não ordenadas, ordenadas e itens de lista</li>
+        <li><code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code>, <code>&lt;th&gt;</code> — Tabelas</li>
+        <li><code>&lt;div&gt;...&lt;/div&gt;</code> — Divisão de bloco para agrupar conteúdo</li>
+        <li><code>&lt;span&gt;...&lt;/span&gt;</code> — Agrupamento em linha de conteúdo</li>
+        <li><code>&lt;form&gt;...&lt;/form&gt;</code> — Formulário para entrada de dados</li>
+        <li><code>&lt;input&gt;</code>, <code>&lt;button&gt;</code>, <code>&lt;label&gt;</code> — Elementos de formulário</li>
+        <li><code>&lt;strong&gt;...&lt;/strong&gt;</code>, <code>&lt;em&gt;...&lt;/em&gt;</code> — Destaque e ênfase em textos</li>
+    </ul>
+
+    <hr>
+
+    <h2>Estrutura inicial de um arquivo HTML</h2>
     <p>
+        A estrutura de um arquivo HTML começa com uma declaração <code>!DOCTYPE HTML</code>, que identifica
+        para os navegadores qual o tipo de documento eles devem esperar. Em seguida, deve ser incluída a tag
+        <code>&lt;html&gt;</code>, que não é autofechante. Ela é o elemento raíz de uma página HTML, ou seja,
+        o documento começa com essa tag e termina com o fechamento dela, sendo que um atributo essencial dessa tag
+        é <code>lang</code>, que significa <b>language</b>, isto é, o idioma da página. Nesse guia, o idioma
+        é PT-BR (português brasileiro.) <br> <br>
+        Dentro da tag <code>&lt;html&gt;</code> é adicionada todas as outras tags, sendo a primeira a tag
+        <code>&lt;head&gt;</code>. Essa tag é um contêiner de metadados (dados sobre dados), ou seja, são dados
+        sobre o documento <abbr title="HyperText Markup Language">HTML</abbr>, os quais não são exibidos. Esses metadados normalmente são:        
+    </p>
+    <ul>
+        <li><b><code>&lt;tittle&gt;</code></b> - define o título do documento, entre sua abertura e fechamento;</li>
+        <li><b><code>&lt;meta&gt;</code></b> - especifica o conjunto de caracteres, descrição da página, autor do documento e configurações gerais;</li>
+        <li><b><code>&lt;link&gt;</code></b> - define a relação do documento atual e um recurso externo (páginas de estilo, favicons).</li>
+        <li><b><code>&lt;base&gt;</code></b> - especifica a URL base de todas da página, isto é, onde elas serão abertas
+        (atributo <code>href</code>) ou como elas serão abertas (argumento <code>_target</code>).</li>
+    </ul>
+    <p>
+        Após isso, é aberta a tag <code>&lt;body&gt;</code> que não é autofechante e, entre ela, é definido
+        o corpo do documento. Nela, é adicionado todo o conteúdo da página. Essa é basicamente a estrutura
+        padrão da página, o que muda é o que é posto dentro.
+    </p>
+
+    <hr>
+
+    <p>
+        Você está na primeira página! <br>
         Próxima página: <a href="/2_tags_texto.html" target="_parent">Tags de texto HTML</a>
     </p>
 </body>
