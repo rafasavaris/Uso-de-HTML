@@ -192,6 +192,51 @@
                 </p>
             </article>
         </section>
+
+        <section id="expansao-celulas">
+            <article>
+                <h2>
+                    Como expandir células?
+                </h2>
+                <p>
+                    Para quem já é acostumado a mexer com tabelas, sabe
+                    que é possível expandir células para elas ocuparem mais
+                    colunas ou mais linhas. Em HTML isso também é possível
+                    com os atributos <code>rowspan</code> e <code>colspan</code>.
+                    Os valores desses atributos são o número de células a serem
+                    expandidas. O exemplo abaixo utiliza o mesmo código do primeiro
+                    exemplo feito, mas com a célula <b>Profissão A</b> ocupando duas
+                    linhas (de forma que <b>Profissão B</b> não existe mais) e <b>Profissão C</b>
+                    ocupa duas colunas, sendo possível perceber que, então, <b>Idade C</b>
+                    é colocada ao lado (numa quarta coluna).
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Função</th>
+                            <th>Idade</th> 
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Fulano A</td>
+                            <td rowspan="2">Profissão A</td>
+                            <td>Idade A</td>
+                        </tr>
+                        <tr>
+                            <td>Fulano B</td>
+                            <td>Idade B</td>
+                        </tr>
+                        <tr>
+                            <td>Fulano C</td>
+                            <td colspan="2">Profissão C</td>
+                            <td>Idade C</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
     </main>
     
     <hr>
