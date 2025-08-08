@@ -179,13 +179,13 @@
                 <li><b>button</b>: não realiza nenhuma ação por padrão, sendo usado para scripts personalizados.</li>
             </ul>
             <p>
-                Um exemplo de uso é:
-                <code><pre>
-                    &lt;button type="submit"&gt;Aperte aqui para enviar!&lt;/button&gt;
-                    &lt;button type="reset"&gt;Aperte aqui para resetar!&lt;/button&gt;
-                    &lt;button type="button"&gt;Botão sem função.&lt;/button&gt;
-                </pre></code>
-                O resultado pode ser visto abaixo:
+                Um exemplo de uso é: <br>
+                <code>
+                    &lt;button type="submit"&gt;Aperte aqui para enviar!&lt;/button&gt; <br>
+                    &lt;button type="reset"&gt;Aperte aqui para resetar!&lt;/button&gt; <br>
+                    &lt;button type="button"&gt;Botão sem função.&lt;/button&gt; <br>
+                </code>
+                O resultado pode ser visto abaixo, dentro de um formulário:
             </p>
             <form action="">
                 <label for="input_texto_button">Escreva seu nome:</label>
@@ -195,6 +195,12 @@
                 <button type="reset">Aperte aqui para resetar!</button>
                 <button type="button">Botão sem função.</button>
             </form>
+            <p>
+                Importante: esse formulário não está com o atributo <code>method</code>
+                especificado, logo, ele é GET. Assim, quando o botão <b>submit</b> é
+                pressionado, ele adiciona o texto preenchido na URL do site, como pode
+                ser visualizado.
+            </p>
 
             <h4>
                 Diferença entre <code>&lt;button&gt;</code> e
@@ -737,6 +743,95 @@
                     <input type="button" value="Botão genérico!">
                 </form>
             </section>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>
+                Outros tipos de entrada
+            </h2>
+
+            <section id="tag-select">
+                <article>
+                    <h3>
+                        Select
+                    </h3>
+                    <p>
+                        A tag <code>&lt;select&gt;</code> é utilizada para
+                        criar uma lista suspensa (dropdown) em formulários,
+                        permitindo que o usuário escolha uma opção entre várias
+                        disponíveis. Cada opção é definida pela tag <code>&lt;option&gt;</code>
+                        dentro do <code>&lt;select&gt;</code>.
+                        A sintaxe básica é: <br>
+                        <code>
+                            &lt;select name="opcao" id="opcao"&gt; <br>
+                            &lt;option value="1"&gt;Opção 1&lt;/option&gt; <br>
+                            &lt;option value="2" select&gt;Opção 2&lt;/option&gt; <br>
+                            &lt;option value="3"&gt;Opção 3&lt;/option&gt; <br>
+                            &lt;/select&gt; <br>
+                        </code>
+                        Principais atributos da tag <code>&lt;option&gt;</code>:
+                    </p>
+                    <ul>
+                        <li><b>value</b>: valor enviado ao servidor ao selecionar a opção;</li>
+                        <li><b>selected</b>: deixa a opção pré-selecionada.</li>
+                    </ul>
+                    <p>
+                        Exemplo de uso:
+                    </p>
+                    <form action="">
+                        <label for="opcao">Escolha uma opção:</label>
+                        <select name="opcao" id="opcao">
+                            <option value="1">Opção 1</option>
+                            <option value="2" selected>Opção 2</option>
+                            <option value="3">Opção 3</option>
+                        </select>
+                    </form>
+                    <p>
+                        No exemplo acima, "Opção 2" aparece selecionada por padrão.
+                    </p>
+                </article>
+            </section>
+
+            <section id="tag-text-area">
+                <article>
+                    <h3>
+                        Text Area
+                    </h3>
+                    <p>
+                        A tag <code>&lt;textarea&gt;</code> é utilizada para
+                        criar campos de texto multilinha em formulários, permitindo
+                        que o usuário digite textos longos, como comentários,
+                        descrições ou mensagens. Diferente do <code>&lt;input type="text"&gt;</code>,
+                        que é limitado a uma única linha, o <code>&lt;textarea&gt;</code>
+                        pode ser redimensionado pelo usuário (dependendo do navegador)
+                        e exibe várias linhas por padrão. O texto inserido entre as tags
+                        <code>&lt;textarea&gt;</code> e <code>&lt;/textarea&gt;</code> será
+                        exibido como valor padrão do campo.
+
+                        A sintaxe básica é:
+                        <code>
+                            &lt;textarea name="mensagem" id="mensagem" rows="4" cols="50"&gt;&lt;/textarea&gt;
+                        </code>
+                        Os principais atributos são:
+                    </p>
+                    <ul>
+                        <li><b>rows</b>: define o número de linhas visíveis;</li>
+                        <li><b>cols</b>: define o número de colunas (largura);</li>
+                        <li><b>maxlength</b>: limita o número máximo de caracteres.</li>
+                    </ul>
+                    <p>
+                        Exemplo de uso:
+                    </p>
+                    <form action="">
+                        <label for="mensagem">Digite sua mensagem:</label><br>
+                        <textarea name="mensagem" id="mensagem" rows="4" cols="50" placeholder="Escreva aqui sua mensagem"></textarea>
+                    </form>
+                </article>
+            </section>
+
+            <hr>
         </section>
     </main>
     <aside>
