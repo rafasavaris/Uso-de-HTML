@@ -8,8 +8,9 @@
 </head>
 
 <body>
-    <h1>1) Tags de header</h1>
+    <h1>Tags de texto em HTML</h1>
 
+    <h2>1) Tags de header</h2>
     <p>
         Tags de header em HTML são usadas para definir títulos e subtítulos em uma página, organizando o conteúdo
         de forma hierárquica e melhorando a semântica e a acessibilidade do site. Cabe ressaltar que elas não são 
@@ -25,8 +26,20 @@
         <h6>Esta é uma tag h6</h6>
     </p>
 
-    <h2 id="inicio-tags">2) Principais tags de formatação</h2>
+    <hr>
 
+    <h2>2) Parágrafos em HTML</h2>
+    <p>
+        A tag <code>&lt;p&gt;</code> é utilizada para definir parágrafos em HTML. Ela delimita blocos de
+        texto, separando visualmente e semanticamente as ideias no conteúdo da página. Todo texto colocado
+        entre <code>&lt;p&gt;</code> e <code>&lt;/p&gt;</code> será exibido como um novo parágrafo, com
+        espaçamento automático antes e depois. É uma das tags mais usadas para estruturar textos em páginas web.
+        Apenas reforçando que, se desejado quebrar uma linha, deve ser usada a tag &lt;br&gt;.
+    </p>
+
+    <hr>
+
+    <h2>3) Principais tags de formatação</h2>
     <p>
         As tags de formatação em HTML são usadas para alterar a aparência e o estilo do texto, sem necessariamente mudar sua estrutura semântica.
         Abaixo, são apresentadas algumas dessas tags, sendo que nenhuma é autofechante. <br>
@@ -61,14 +74,65 @@
         Tag <code>&ltdel&gt</code> —
         "Risca" o <del>texto</del>, dessa maneira <br>
 
+        Tag <code>&ltins&gt</code> —
+        Define um texto que foi inserido num documento. Normalmente, o navegador sublinha, assim: <ins>texto</ins> <br>
+    
+        Tag <code>&ltblockquote&gt</code> —
+        Define uma seção citada de outra fonte. Os navegadores geralmente recuam esses elementos, além de que
+        eles são elementos independentes, usados fora de paragráfos, como em seguida:
     </p>
+
+    <blockquote>Às vezes a vida é um filme e eu sou uma atriz no Vale do Silício. Rimando como se a minha 
+        vida dependesse disso. - Extraordinária, Ebony, 2025.
+    </blockquote>
+    
+    <p>
+        Tag <code>&lt;q&gt;</code> —
+        Define uma citação curta. Navegadores normalmente inserem aspas ao redor, como visto em seguida: <br>
+        <q>Me sinto extraordinária, dona de uma mente brilhante.</q> - Extraordinária, Ebony - 2025 <br>
+    
+        Tag <code>&lt;address&gt;</code> —
+        Define as informações de contato do autor/proprietário de um documento ou artigo. O texto no elemento
+        geralmente é renderizado em itálico, e os navegadores sempre adicionam uma quebra de linha antes e
+        depois desse elemento.
+
+        Tag <code>&lt;address&gt;</code> —
+        Define o título de um trabalho criativo (por exemplo, um livro, um poema, uma música, um filme, uma
+        pintura, uma escultura etc.). O texto geralmente é renderizado em itálico.
+
+        Tag <code>&lt;bdo&gt;</code> —
+        BDO significa substituição bidirecional. Ela é usada para substituir a direção do texto atual.
+    </p>
+
+    <hr>
+
+    <h2>Como comentar o código?</h2>
+    <p>
+        Para comentar o código em HTML, utilize <code>&lt;!--</code> para abrir o comentário e <code>--&gt;</code> para fechar.
+        Tudo que estiver entre essas marcas não será exibido na página. Essa prática é necessária para deixar
+        registrado o que está sendo feito e ajudar na manutenção futura do código. Exemplo:
+        <br>
+        <code>&lt;!-- Este é um comentário em HTML --&gt;</code>
+    </p>
+
+    <hr>
+
+    <h2>
+        Contato
+    </h2>
+    <address>
+        Email: <a href="mailto:savarisf.rafaela@gmail.com">savarisf.rafaela@gmail.com</a> <br>
+        LinkedIn: <a href="https://www.linkedin.com/in/rafaela-fernandes-savaris">Acesse aqui!</a> <br>
+    </address>
 
     <hr>
 
     <p>
-        Próxima página: <a href="3_imagens.html">Imagens em HTML</a>
+        Você está na segunda página! <br>
+        Próxima página: <a href="./3_imagens.html">Imagens em HTML</a> <br>
+        Página anterior: <a href="./1_principais_conceitos.html">Principais Conceitos HTML</a>
     </p>
+    
     <hr>
-
 </body>
 </html>
