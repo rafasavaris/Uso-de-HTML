@@ -53,6 +53,7 @@
 
     <main>
         <hr>
+
         <section id="introducao-formulario">
             <article>
                 <h2>
@@ -114,6 +115,7 @@
                         <li><b>url</b> - urls;</li>
                         <li><b>tel</b> - telefone;</li>
                         <li><b>search</b> - campo de pesquisa;</li>
+                        <li><b>submit/reset/button</b> - tipos de botões.</li>
                     </ul>
                     <p>
                         Eles serão abordados com mais detalhes em sequência. Há também outros
@@ -698,6 +700,42 @@
                         o campo é para pesquisa.
                     </p>
                 </article>
+            </section>
+
+            <section id="tipos-input-botoes">
+                <h3>
+                    Type Sumbit/Reset/Button
+                </h3>
+                <p>
+                    Apesar de ser possível adicionar botões dentro dos formulários com a tag
+                    <code>&lt;button&gt;</code>, também é possível fazer isso com a tag
+                    <code>&lt;input&gt;</code>. Para isso, no atributo <code>type</code>
+                    pode ser posto:
+                </p>
+                <ul>
+                    <li><b>submit</b> - botão para enviar o formulário;</li>
+                    <li><b>reset</b> - botão para limpar o formulário;</li>
+                    <li><b>button</b> - botão sem função.</li>
+                </ul>
+                <p>
+                    Para escrever algo dentro do botão, utiliza-se o atributo <code>value</code>.
+                    Dessa forma, é possível criar botões assim, dentro da tag <code>&lt;form&gt;</code>
+                    como mostrado abaixo: <br>
+                    <code>
+                        &lt;input type="submit" value="Aperte aqui para enviar!"&gt; <br>
+                        &lt;input type="reset" name="Limpar!"&gt; <br>
+                        &lt;input type="button" value="Botão genérico!"&gt; <br>
+                    </code>
+                    O que resulta em:
+                </p>
+                <form action="">
+                    <label for="input_text_type_button">Escreva sua idade:</label>
+                    <input type="text" name="idade" id="input_text_type_button">
+
+                    <input type="submit" value="Aperte aqui para enviar!">
+                    <input type="reset" name="Limpar!">
+                    <input type="button" value="Botão genérico!">
+                </form>
             </section>
         </section>
     </main>
