@@ -79,7 +79,8 @@
         Define um texto que foi inserido num documento. Normalmente, o navegador sublinha, assim: <ins>texto</ins> <br>
     
         Tag <code>&lt;code&gt;</code> —
-        Coloca o texto como monoespaçado, isto é, letra em formato de código, como em: <code>exemplo!</code> <br>
+        Coloca o texto como monoespaçado, isto é, letra em formato de código (tendo esse significado semânticamente),
+        como em: <code>exemplo!</code>. Deve ser escrito dentro de <code>&lt;p&gt;</code> apenas para pequenos códigos. <br>
         
         Tag <code>&lt;blockquote&gt;</code> —
         Define uma seção citada de outra fonte. Os navegadores geralmente recuam esses elementos, além de que
@@ -116,7 +117,16 @@
         </code>
         <bdo dir="ltr">Texto da Esquerda para Direita (normal)</bdo> <br>
         <bdo dir="rtl">Texto da Direita para Esquerda (invertido)</bdo>
+
+        Tag <code>&lt;pre&gt;</code> —
+        Exibe o texto exatamente como ele foi escrito no código-fonte, preservando indentação, vários espaços
+        e quebras de linha. Ele não deve ser escrito dentro de <code>&lt;p&gt;</code> pois é um bloco, além de
+        ter fonte monoespaçada. O uso dele é visto em seguida: <br>
     </p>
+    <pre>
+        Exemplo                  de             (quebra de linha agora)
+        tag            <code>&lt;pre&gt;</code>
+    </pre>
 
     <hr>
 
@@ -129,6 +139,53 @@
         <br>
         <code>&lt;!-- Este é um comentário em HTML --&gt;</code>
     </p>
+
+    <hr>
+
+    <h2>
+        Entidades em HTML
+    </h2>
+    <p>
+        Em HTML, alguns caracteres tem significados reservados ou não podem ser digitadas no código-fonte.
+        Assim, as <strong>entidades</strong> são códigos especiais para escrever tais caracteres. Elas são
+        escritas com & + código + ;. Algumas das entidades estão listadas abaixo: <br>
+        
+        Caractere "&lt;" - código: <code>&amp;lt;</code> <br>
+        Caractere "&gt;" - código: <code>&amp;gt;</code> <br>
+        Caractere "&amp;" - código: <code>&amp;amp;</code> <br>
+        Caractere "&quot;" - código: <code>&amp;quot;</code> <br>
+        Caractere "&apos;" - código: <code>&amp;apos;</code> <br>
+        Caractere "&copy;" - código: <code>&amp;copy;</code> <br>
+        Caractere "&reg;" - código: <code>&amp;reg;</code> <br>
+        Caractere "&trade;" - código: <code>&amp;trade;</code> <br>
+        Espaço não separável: "&nbsp;" - código: <code>&amp;nbsp;</code> <br>
+        Espaço médio: "&ensp;" - código: <code>&amp;ensp;</code> <br>
+        Espaço largo: "&emsp;" - código: <code>&amp;emsp;</code> <br>
+    </p>
+
+    <hr>
+
+    <h2>
+        Detalhes adicionais sob demanda
+    </h2>
+    <p>
+        É possível criar um espaço dentro da página em que o usuário pode abrir e fechar o conteúdo apenas clicando.
+        Para isso, é usado a tag <code>&lt;details&gt;</code> que cria um widget interativo, o qual pode ser
+        fechado e aberto pelo usuário, sendo fechado o seu padrão. Qualquer tipo de conteúdo pode ser posto nessa tag.
+        Além disso, a tag <code>&lt;summary&gt;</code> serve como um cabeçalho para essa tag. Um exemplo de uso pode ser
+        visto abaixo: <br>
+        <code>
+            &lt;details&gt; <br>
+                &lt;summary&gt;Veja o texto escondido!&lt;/summary&gt; <br>
+                Criciúma Esporte Clube campeão moral da Libertadores de 1992. <br>
+            &lt;/details&gt; <br>
+        </code>
+        O que gera:
+    </p>
+    <details>
+        <summary>Veja o texto escondido!</summary>
+        Criciúma Esporte Clube campeão moral da Libertadores de 1992.
+    </details>
 
     <hr>
 
