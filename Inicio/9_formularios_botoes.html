@@ -22,10 +22,10 @@
         </h2>
         <nav>
             <ul>
-                <li><a href="#introducao-formulario"></a>Introdução</li>
-                <li><a href="#botoes">Botoes</a></li>
+                <li><a href="#introducao-formulario">Introdução</a></li>
+                <li><a href="#botoes">Botões</a></li>
                 <li><a href="#tipos-input-text">Campos de entrada - Type Text</a></li>
-                <li><a href="#tipos-input-email">Campos de entrada - Type Email</a></li>
+                <li><a href="#tipos-input-email">Campos de entrada - Type E-mail</a></li>
                 <li>
                     <a href="#tipos-input-number">Campos de entrada - Type Number</a>
                     <ul>
@@ -48,7 +48,14 @@
                 <li><a href="#tipos-input-url">Campos de entrada - Type URL</a></li>
                 <li><a href="#tipos-input-tel">Campos de entrada - Type Tel</a></li>
                 <li><a href="#tipos-input-search">Campos de entrada - Type Search</a></li>
-                <li><a href="#tipos-input-botoes">Campos de entada - Type Sumbit/Reset/Button</a></li>
+                <li>
+                    <a href="#tipos-input-botoes">Campos de entrada - Botões</a>
+                    <ul>
+                        <li><a href="#tipos-input-botoes-SRB">Campos de entrada - Type Submit/Reset/Button</a></li>
+                        <li><a href="#tipos-input-botoes-img">Campos de entrada - Type Image</a></li>
+                    </ul>
+                </li>
+                <li><a href="#atributos-gerais">Atributos gerais</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
@@ -435,25 +442,27 @@
                 </article>
             </section>
 
-            <section id="tipos-input-date">
-                <article>
-                    <h3>
-                        Type Date
-                    </h3>
-                    <p>
-                        O tipo de campo de entrada <code>date</code> é usado para permitir que o usuário
-                        selecione uma data de um calendário. Ele exibe um seletor de data que permite ao
-                        usuário escolher uma data específica de forma fácil e visual. Para criar um campo
-                        de entrada do tipo data, usamos a tag
-                        <code>&lt;input type="date" name="data" id="input_data"&gt;</code>
-                        dentro do formulário, associando também a um rótulo, como no exemplo abaixo:
-                    </p>
-                    <form action="">
-                        <label for="input_data">Escolha uma data:</label>
-                        <input type="date" name="data" id="input_data">
-                    </form>
-                </article>
-
+            <section id="tipos-input-dates">
+                <section id="tipos-input-date">
+                    <article>
+                        <h3>
+                            Type Date
+                        </h3>
+                        <p>
+                            O tipo de campo de entrada <code>date</code> é usado para permitir que o usuário
+                            selecione uma data de um calendário. Ele exibe um seletor de data que permite ao
+                            usuário escolher uma data específica de forma fácil e visual. Para criar um campo
+                            de entrada do tipo data, usamos a tag
+                            <code>&lt;input type="date" name="data" id="input_data"&gt;</code>
+                            dentro do formulário, associando também a um rótulo, como no exemplo abaixo:
+                        </p>
+                        <form action="">
+                            <label for="input_data">Escolha uma data:</label>
+                            <input type="date" name="data" id="input_data">
+                        </form>
+                    </article>
+                </section>
+                
                 <section id="tipos-input-date-time">
                     <article>   
                         <h4>
@@ -530,7 +539,7 @@
                         o valor enviado ao servidor quando o formulário é enviado. Se ele não for
                         especificado, é enviado "on". Assim, uma forma de criar radio buttons é: <br>
                         <code>
-                            &lt;input type="radio" name="opcoes" id="opcao1" value="1"&gt; <br>
+                            &lt;input type="radio" name="opcoes" id="opcao1" value="1" checked&gt; <br>
                             &lt;label for="opcao1"&gt;Opção 1&lt;/label&gt; <br>
                             &lt;input type="radio" name="opcoes" id="opcao2" value="2"&gt; <br>
                             &lt;label for="opcao2"&gt;Opção 2&lt;/label&gt; <br>
@@ -544,6 +553,17 @@
                         <input type="radio" name="opcoes" id="opcao2" value="2">
                         <label for="opcao2">Opção 2</label>
                     </form>
+
+                    <h4>
+                        Atributos específicos do tipo Radio
+                    </h4>
+                    <p>
+                        O principal atributol do tipo <code>radio</code> é:
+                    </p>
+                    <ul>
+                        <li><b>checked</b> - indica que um <code>&lt;input&gt;</code> está selecionado; </li>
+                    </ul>
+                    
                 </article>
             </section>
 
@@ -574,6 +594,15 @@
                         <input type="checkbox" name="grupo" id="opcao2_checkbox" value="2">
                         <label for="opcao2_checkbox">Opção 2</label>
                     </form>
+                    <h4>
+                        Atributos específicos do tipo Checkbox
+                    </h4>
+                    <p>
+                        O principal atributol do tipo <code>checkbox</code> é:
+                    </p>
+                    <ul>
+                        <li><b>checked</b> - indica que um <code>&lt;input&gt;</code> está selecionado; </li>
+                    </ul>
                 </article>
             </section>
             
@@ -714,44 +743,73 @@
 
             <section id="tipos-input-botoes">
                 <h3>
-                    Type Sumbit/Reset/Button
+                    Tipos de botões
                 </h3>
-                <p>
-                    Apesar de ser possível adicionar botões dentro dos formulários com a tag
-                    <code>&lt;button&gt;</code>, também é possível fazer isso com a tag
-                    <code>&lt;input&gt;</code>. Para isso, no atributo <code>type</code>
-                    pode ser posto:
-                </p>
-                <ul>
-                    <li><b>submit</b> - botão para enviar o formulário;</li>
-                    <li><b>reset</b> - botão para limpar o formulário;</li>
-                    <li><b>button</b> - botão sem função.</li>
-                </ul>
-                <p>
-                    Para escrever algo dentro do botão, utiliza-se o atributo <code>value</code>.
-                    Dessa forma, é possível criar botões assim, dentro da tag <code>&lt;form&gt;</code>
-                    como mostrado abaixo: <br>
-                    <code>
-                        &lt;input type="submit" value="Aperte aqui para enviar!"&gt; <br>
-                        &lt;input type="reset" name="Limpar!"&gt; <br>
-                        &lt;input type="button" value="Botão genérico!"&gt; <br>
-                    </code>
-                    O que resulta em:
-                </p>
-                <form action="">
-                    <label for="input_text_type_button">Escreva sua idade:</label>
-                    <input type="text" name="idade" id="input_text_type_button">
+                <section id="tipos-input-botoes-SRB">
+                    <h4>
+                        Type Sumbit/Reset/Button
+                    </h4>
+                    <p>
+                        Apesar de ser possível adicionar botões dentro dos formulários com a tag
+                        <code>&lt;button&gt;</code>, também é possível fazer isso com a tag
+                        <code>&lt;input&gt;</code>. Para isso, no atributo <code>type</code>
+                        pode ser posto:
+                    </p>
+                    <ul>
+                        <li><b>submit</b> - botão para enviar o formulário;</li>
+                        <li><b>reset</b> - botão para limpar o formulário;</li>
+                        <li><b>button</b> - botão sem função.</li>
+                    </ul>
+                    <p>
+                        Para escrever algo dentro do botão, utiliza-se o atributo <code>value</code>.
+                        Dessa forma, é possível criar botões assim, dentro da tag <code>&lt;form&gt;</code>
+                        como mostrado abaixo: <br>
+                        <code>
+                            &lt;input type="submit" value="Aperte aqui para enviar!"&gt; <br>
+                            &lt;input type="reset" name="Limpar!"&gt; <br>
+                            &lt;input type="button" value="Botão genérico!"&gt; <br>
+                        </code>
+                        O que resulta em:
+                    </p>
+                    <form action="">
+                        <label for="input_text_type_button">Escreva sua idade:</label>
+                        <input type="text" name="idade" id="input_text_type_button">
 
-                    <input type="submit" value="Aperte aqui para enviar!">
-                    <input type="reset" name="Limpar!">
-                    <input type="button" value="Botão genérico!">
-                </form>
+                        <input type="submit" value="Aperte aqui para enviar!">
+                        <input type="reset" name="Limpar!">
+                        <input type="button" value="Botão genérico!">
+                    </form>
+                </section>
+                
+                <section id="type-input-botoes-img">
+                    <h4>
+                        Type Image
+                    </h4>
+                    <p>
+                        Outro tipo de botão mais costumizável com o <code>input</code>, é o <code>type</code> image.
+                        Ele é, em resumo, uma imagem cliclável que permite que o usuário envie o formulário quando pressionado.
+                        Assim, ele funciona da mesma forma que um botão do tipo <code>submit</code> e precisa ter o atributo
+                        <code>src</code>, isto é, o caminho da imagem. Também é possível colocar outros atributos comuns de
+                        imagens nessa tag. Assim, essa tag é usada dentro de um <code>&lt;form&gt;</code> da seguinte forma: <br>
+                        <code>
+                            &lt;input type="image" src="./img/header_pink.png" alt="Botão envio" width="100" height="100"&gt; <br>
+                        </code>
+                        O que gera:
+                    </p>
+                    <form action="">
+                        <input type="image" src="./img/header_pink.jpg" alt="Botão envio" width="100" height="50">
+                    </form>
+                    <p>
+                        O uso dessa tag é interessante para, além de ter um botão de envio personalizado, saber onde o
+                        usuário clicou na imagem.
+                    </p>
+                </section>
             </section>
         </section>
 
         <hr>
 
-        <section>
+        <section id="outros-tipos">
             <h2>
                 Outros tipos de entrada
             </h2>
@@ -762,10 +820,8 @@
                         Select
                     </h3>
                     <p>
-                        A tag <code>&lt;select&gt;</code> é utilizada para
-                        criar uma lista suspensa (dropdown) em formulários,
-                        permitindo que o usuário escolha uma opção entre várias
-                        disponíveis. Cada opção é definida pela tag <code>&lt;option&gt;</code>
+                        A tag <code>&lt;select&gt;</code> é utilizada para criar uma lista suspensa (dropdown) em formulários,
+                        permitindo que o usuário escolha uma opção entre várias disponíveis. Cada opção é definida pela tag <code>&lt;option&gt;</code>
                         dentro do <code>&lt;select&gt;</code>.
                         A sintaxe básica é: <br>
                         <code>
@@ -834,9 +890,41 @@
                     </form>
                 </article>
             </section>
-
-            <hr>
         </section>
+
+        <hr>
+
+        <section id="atributos-gerais">
+            <h2>
+                Atributos gerais
+            </h2>
+            <ul>
+                <li>
+                    <b>placeholder</b> - define uma dica do que o campo espera (aceito em campos de escrita);
+                </li>
+                <li>
+                    <b>required</b> - indica um campo obrigatório para o envio do formulário (aceito em todos os campos);
+                </li>
+                <li>
+                    <b>readonly</b> - indica que o campo não pode ser alterado, pois é apenas para leitura (aceito em campos de escrita e tempo);
+                </li>
+                <li>
+                    <b>disabled</b> - indica que o campo não pode ser alterado nem receber foco (aceito em todos os campos);
+                </li>
+                <li>
+                    <b>value</b> - define o valor inicial do campo (aceito em praticamente todos os campos de input);
+                </li>
+                <li>
+                    <b>name</b> - determina o nome do campo no formulário, sendo útil quando ele é enviado 
+                    para o servidor (aceito em todos os campos);
+                </li>
+                <li>
+                    <b>maxlength</b> - determina o número máximo de caracteres de um <code>&lt;input&gt;</code> (aceito em campos de escrita de texto).
+                </li>
+            </ul>
+        </section>
+
+
     </main>
         <aside id="sobre">
         <h2>
@@ -863,7 +951,8 @@
         </section>
 
         <p>
-            <a href="./1_principais_conceitos.html" title="Voltar para a pagina de inicio">Voltar para o início</a>
+            Você está na última página!<h2>
+            Página anterior: <a href="./8_divisoes.html">Contêiners em HTML</a>
         </p>
     </footer>
 </body>
