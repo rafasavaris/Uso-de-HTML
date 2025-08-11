@@ -190,6 +190,34 @@
     <hr>
 
     <h2>
+        Tag &lt;time&gt;
+    </h3>
+    <p>
+        Às vezes, é necessário representar datas, horários ou períodos de tempo de forma que tanto máquina
+        quanto pessoas entendam. Para isso, usa-se o elemento &lt;time&gt;. O que aparece entre a tag é
+        o que o usuário vê, enquanto o atributo <code>datatime</code> contém a versão padronizada para
+        máquinas entenderem. O <code>datetime</code> pode ter os seguintes formatos: <br>
+
+        Data: YYYY-MM-DD<br>
+        Hora: HH:MM <br>
+        Data e hora: YYYY-MM-DDTHH:MM  <br>
+        Com fuso horário: 2025-08-09T14:30-03:00 <br>
+        Mês e ano: 2025-08 <br>
+        Semana: 2025-W32 <br>
+        Duração: P2DT3H <br>
+
+        Um exemplo de uso é: <br>
+        <code>
+            &lt time datetime="2025-08-10";&gt;10 de agosto de 2025&lt;/time&gt; <br>
+        </code>
+
+        Essa tag pode ser usada dentro de um parágrafo, o que gera, segundo o exemplo acima: <br>
+        <time datetime="2025-08-10">10 de agosto de 2025</time>
+    </p>
+
+    <hr>
+
+    <h2>
         Contato
     </h2>
     <address>

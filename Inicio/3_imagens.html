@@ -10,8 +10,6 @@
     <h1>Imagens em HTML</h1>
 
     <h2>1) Como adicionar uma imagem?</h2>
-
-    <h2></h2>
     <p>
         Para adicionar uma imagem, basta colocar a tag <code>&ltimg src= alt= &gt</code>, que é autofechante.
         O atributo <b>src</b> define o caminho da imagem, que pode ser uma URL, enquanto o atributo <b>alt</b> é uma descrição
@@ -67,6 +65,46 @@
         <figcaption>Ícone de um gato preto.</figcaption>
     </figure>
     
+    <hr>
+
+    <h2>
+        4) Tag  <code>&lt;area&gt;</code>
+    </h2>
+    <p>
+        A tag <code>&lt;area&gt;</code> define uma área dentro de um mapa de imagem (uma imagem com áreas clicláveis).
+        Os elementos <code>&lt;area&gt;</code> são sempre aninhados dentro de uma tag <code>&lt;map&gt;</code>.
+        Para tornar uma imagem cliclável, basta adicionar na tag <code>&lt;img&gt;</code> o atributo <code>usemap</code>,
+        em que seu valor é igual ao atributo <code>name</code> da tag <code>&lt;map&gt;</code> acrescido de uma # antes.
+    </p>
+    <h3>
+        4.1) Atributos da tag <code>&lt;area&gt;</code>
+    </h3>
+    <p>
+        <code>shape</code> - define o formato da área. Pode ser: <br>
+        rect - X1, Y1, X2, Y2; <br>
+        circle - CENTROX, CENTROY, RAIO; <br>
+        poly - várias coordenadas; <br>
+        default - toda a imagem. <br>
+        <code>coords</code> - define as coordenadas da área, relativas ao canto superior esquerdo da imagem; <br>
+        <code>href</code> - link para onde a área aponta; <br>
+        <code>alt</code> - texto alternativo para acessibilidade; <br>
+        <code>target</code> - onde abrir o link. <br>
+        Hoje em dia, devido a complexidade para responsividade, não é tão utilizado. Um exemplo é visto abaixo: <br>
+        <code>
+            &lt;img src="./img/michael_scott_thats_what_she_said.png" alt="Meme The Office 'That's what she said'" height="200" usemap="#mapa1"&gt; <br>
+            &lt;map name="mapa1"&gt; <br>
+                &lt;area shape="circle" coords="100, 100, 50" href="./2_tags_texto.html" alt="Voltar para página 2." target="_self"&gt; <br>
+                &lt;area shape="rect" coords="0, 0, 50, 50" href="./4_links.html" alt="Próxima página." target="_self"&gt; <br>
+            &lt;/map&gt; <br>
+        </code>
+        O que gera:
+    </p>
+    <img src="./img/michael_scott_thats_what_she_said.png" alt="Meme The Office 'That's what she said'" height="200" usemap="#mapa1">
+    <map name="mapa1">
+        <area shape="circle" coords="100, 100, 50" href="./2_tags_texto.html" alt="Voltar para página 2." target="_self">
+        <area shape="rect" coords="0, 0, 50, 50" href="./4_links.html" alt="Próxima página." target="_self">
+    </map>
+
     <hr>
 
     <h2>
