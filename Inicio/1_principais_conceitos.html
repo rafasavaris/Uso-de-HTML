@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="PT-br">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,19 +8,23 @@
 </head>
 
 <body>
-    <h1>Guia de conceitos para o corpo HTML!</h1>
+    <h1>
+        Guia de conceitos para o corpo HTML!
+    </h1>
 
     <p>
-        Este é um guia de conceitos iniciais para o <strong>corpo do html</strong>, isto é, o corpo da tag <b><code>&lt;body&gt;&lt;/body&gt;</code></b>.
-        A ideia desse arquivo é funcionar como um "dicionário", que possa ser visitado quando alguma dúvida surgir. Portanto, sinta-se à vontade para usar!
-        A ideia deste arquivo é ser simples, pois o foco são as principais tags e conceitos HTML. Conforme o conteúdo
-        é aprofundado, melhor os documentos se tornam!
+        Este é um guia de conceitos iniciais para o <strong>HTML</strong>, focando no corpo dele, isto é, o
+        corpo da tag <b><code>&lt;body&gt;&lt;/body&gt;</code></b>. A ideia desse arquivo é funcionar como
+        um "dicionário", que possa ser visitado quando alguma dúvida surgir. Portanto, sinta-se à vontade para
+        usar! Será algo simples, pois o foco são as principais tags e conceitos HTML. Conforme o conteúdo
+        é aprofundado, melhor os documentos se tornam.
     </p>
 
     <hr>
 
-    <h2>1) O que é HTML?</h2>
-
+    <h2>
+        1) O que é HTML?
+    </h2>
     <p>
         HTML (HyperText Markup Language) é a linguagem padrão usada para criar páginas na web. Ele serve para 
         estruturar o conteúdo, organizando textos, imagens, links, tabelas, vídeos e outros elementos de forma 
@@ -31,85 +35,98 @@
 
     <hr>
 
-    <h2>2) O que são tags em HTML?</h2>
-
+    <h2>
+        2) O que são tags em HTML?
+    </h2>
     <p>
-        Tags em HTML são usadas para estruturar o conteúdo de uma página. 
-        A maioria das tags possui uma abertura <code>&lt;tag&gt;</code> e um fechamento <code>&lt;/tag&gt;</code>, 
-        como por exemplo: <code>&lt;p&gt;Este é um parágrafo&lt;/p&gt;</code>.
+        Tags em HTML são usadas para estruturar o conteúdo de uma página. A maioria das tags possui uma
+        abertura <code>&lt;tag&gt;</code> e um fechamento <code>&lt;/tag&gt;</code>, como por exemplo:
+        <code>&lt;p&gt;Este é um parágrafo&lt;/p&gt;</code>.
     </p>
 
-    <h3>2.1) Tags autofechantes</h3>
-
+    <h3>
+        2.1) Tags autofechantes
+    </h3>
     <p>
-        Algumas tags são <strong>autofechantes</strong>, ou seja, não precisam de uma tag de fechamento separada. 
-        Elas são encerradas dentro da própria abertura. Exemplos:
+        Algumas tags são <strong>autofechantes</strong>, ou seja, não precisam de uma tag de fechamento
+        separada. Elas são encerradas dentro da própria abertura. Exemplos:
+    </p>
+    <ul>
+        <li><code>&lt;br&gt;</code> — quebra de linha;</li>
+        <li><code>&lt;img src="imagem.jpg" alt="Descrição"&gt;</code> — imagem;</li>
+        <li><code>&lt;input type="text"&gt;</code> — campo de entrada;</li>
+        <li><code>&lt;meta charset="UTF-8"&gt;</code> — metadados;</li>
+        <li><code>&lt;hr&gt;</code> — linha horizontal.</li>
+    </ul>
+
+    <hr>
+
+    <h2>
+        3) O que são atributos?
+    </h2>
+    <p>
+        Atributos são caracteristícas específicas de cada tag. Elas determinam como a tag deve se comportar
+        ou como deve ser exibida. Os atributos são colocados dentro da tag de abertura, após o nome da tag,
+        e são compostos por um nome e um valor, separados por um sinal de igual. Por exemplo, na tag 
+        <code>&lt;img src="imagem.jpg" alt="Descrição" /&gt;</code>, <code>src</code> é o nome do atributo que 
+        define o caminho da imagem, e <code>alt</code> é o atributo que fornece uma descrição alternativa para 
+        a imagem. Alguns atributos comuns incluem:
+    </p>
+    <ul>
+        <li><b>id</b>: identifica de forma única um elemento na página;</li>
+        <li><b>class</b>: permite agrupar elementos para aplicar estilos ou scripts;</li>
+        <li><b>style</b>: define estilos CSS.</li>
+    </ul>
+
+    <hr>
+
+    <h2>
+        4) Principais elementos HTML:
+    </h2>
+    <p>
+        Aqui estão alguns dos elementos HTML que serão abordadas nas próximas páginas:
     </p>
     <ul>
         <li><code>&lt;br&gt;</code> — quebra de linha</li>
-        <li><code>&lt;img src="imagem.jpg" alt="Descrição"&gt;</code> — imagem</li>
-        <li><code>&lt;input type="text"&gt;</code> — campo de entrada</li>
-        <li><code>&lt;meta charset="UTF-8"&gt;</code> — metadados</li>
         <li><code>&lt;hr&gt;</code> — linha horizontal</li>
-    </ul>
-
-    <hr>
-
-    <h2>3) O que são atributos?</h2>
-
-    <p>
-        Atributos são caracteristícas específicas de cada tag. Elas determinam como a tag deve se comportar ou como deve ser exibida.
-        Os atributos são colocados dentro da tag de abertura, após o nome da tag, e são compostos por um nome e um valor, separados por um sinal de igual.
-        Por exemplo, na tag <code>&lt;img src="imagem.jpg" alt="Descrição" /&gt;</code>, <code>src</code> é o nome do atributo que define o caminho da imagem, e <code>alt</code> é o atributo que fornece uma descrição alternativa para a imagem.
-        Alguns atributos comuns incluem:
-        <ul>
-            <li><b>id</b>: identifica de forma única um elemento na página;</li>
-            <li><b>class</b>: permite agrupar elementos para aplicar estilos ou scripts;</li>
-            <li><b>style</b>: define estilos CSS. </li>
-        </ul>
-    </p>
-
-    <hr>
-
-    <h2>4) Principais tags:</h2>
-
-    <p>
-        Aqui estão algumas das tags HTML que serão abordadas nas próximas páginas:
-    </p>
-
-    <ul>
-        <li><code>&lt;br&gt;</code> — Quebra de linha</li>
-        <li><code>&lt;hr&gt;</code> — Linha horizontal</li>
-        <li><code>&lt;abbr&gt;</code> - Define uma abreviação/acrônimo, o atributo <code>tittle</code>
+        <li><code>&lt;abbr&gt;</code> - define uma abreviação/acrônimo, o atributo <code>tittle</code>
             pode mostrar a descrição quando o mouse passa por cima;</li>
-        <li><code>&lt;style&gt;</code> — Definir informações de estilo para uma única página HTML;</li>
-        <li><code>&lt;script&gt;</code> — Definir JavaScript do lado do cliente;</li>
-        <li><code>&lt;h1&gt;...&lt;/h1&gt;</code> até <code>&lt;h6&gt;...&lt;/h6&gt;</code> — Títulos e subtítulos</li>
-        <li><code>&lt;p&gt;...&lt;/p&gt;</code> — Parágrafo de texto</li>
-        <li><code>&lt;a href="..."&gt;...&lt;/a&gt;</code> — Define um hiperlink (link);</li>
-        <li><code>&lt;img src="..." alt="..." /&gt;</code> — Imagem</li>
-        <li><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code> — Listas não ordenadas, ordenadas e itens de lista</li>
-        <li><code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code>, <code>&lt;th&gt;</code> — Tabelas</li>
-        <li><code>&lt;div&gt;...&lt;/div&gt;</code> — Divisão de bloco para agrupar conteúdo</li>
-        <li><code>&lt;span&gt;...&lt;/span&gt;</code> — Agrupamento em linha de conteúdo</li>
-        <li><code>&lt;form&gt;...&lt;/form&gt;</code> — Formulário para entrada de dados</li>
-        <li><code>&lt;input&gt;</code>, <code>&lt;button&gt;</code>, <code>&lt;label&gt;</code> — Elementos de formulário</li>
-        <li><code>&lt;strong&gt;...&lt;/strong&gt;</code>, <code>&lt;em&gt;...&lt;/em&gt;</code> — Destaque e ênfase em textos</li>
+        <li><code>&lt;style&gt;</code> — definir informações de estilo para uma única página HTML;</li>
+        <li><code>&lt;script&gt;</code> — definir JavaScript do lado do cliente;</li>
+        <li><code>&lt;h1&gt;...&lt;/h1&gt;</code> até <code>&lt;h6&gt;...&lt;/h6&gt;</code> — títulos e subtítulos</li>
+        <li><code>&lt;p&gt;...&lt;/p&gt;</code> — parágrafo de texto</li>
+        <li><code>&lt;a href="..."&gt;...&lt;/a&gt;</code> — define um hiperlink (link);</li>
+        <li><code>&lt;img src="..." alt="..." /&gt;</code> — imagem</li>
+        <li><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code> — listas não ordenadas,
+            ordenadas e itens de lista</li>
+        <li><code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code>, <code>&lt;th&gt;</code>
+            — tabelas</li>
+        <li><code>&lt;div&gt;...&lt;/div&gt;</code> — divisão de bloco para agrupar conteúdo</li>
+        <li><code>&lt;span&gt;...&lt;/span&gt;</code> — agrupamento em linha de conteúdo</li>
+        <li><code>&lt;form&gt;...&lt;/form&gt;</code> — formulário para entrada de dados</li>
+        <li><code>&lt;input&gt;</code>, <code>&lt;button&gt;</code>, <code>&lt;label&gt;</code> — elementos
+            de formulário</li>
+        <li><code>&lt;strong&gt;...&lt;/strong&gt;</code>, <code>&lt;em&gt;...&lt;/em&gt;</code> — destaque 
+            e ênfase em textos</li>
     </ul>
 
     <hr>
 
-    <h2>Estrutura inicial de um arquivo HTML</h2>
+    <h2>
+        5) Estrutura inicial de um arquivo HTML
+    </h2>
     <p>
         A estrutura de um arquivo HTML começa com uma declaração <code>!DOCTYPE HTML</code>, que identifica
-        para os navegadores qual o tipo de documento eles devem esperar. Em seguida, deve ser incluída a tag
-        <code>&lt;html&gt;</code>, que não é autofechante. Ela é o elemento raíz de uma página HTML, ou seja,
-        o documento começa com essa tag e termina com o fechamento dela, sendo que um atributo essencial dessa tag
-        é <code>lang</code>, que significa <b>language</b>, isto é, o idioma da página. Nesse guia, o idioma
-        é PT-BR (português brasileiro.) <br> <br>
-        Dentro da tag <code>&lt;html&gt;</code> é adicionada todas as outras tags, sendo a primeira a tag
-        <code>&lt;head&gt;</code>. Essa tag é um contêiner de metadados (dados sobre dados), ou seja, são dados
-        sobre o documento <abbr title="HyperText Markup Language">HTML</abbr>, os quais não são exibidos. Esses metadados normalmente são:        
+        para os navegadores qual o tipo de documento eles devem esperar. Em seguida, deve ser incluído o elemento
+        <code>&lt;html&gt;</code>. Ele é o elemento raíz de uma página HTML, ou seja,o documento começa com a
+        abertura dele e termina com o seu fechamento. Um atributo essencial desse elemento é <code>lang</code>,
+        que significa <b>language</b>, isto é, o idioma da página. Nesse guia, o idioma é PT-BR (português brasileiro).
+    </p>
+    <p>
+        Dentro do elemento <code>&lt;html&gt;</code> é adicionado os outros elementos, sendo <code>&lt;head&gt;</code>
+        o primeiro. Ele é um contêiner de metadados (dados sobre dados), ou seja, são dados sobre o documento
+        <abbr title="HyperText Markup Language">HTML</abbr>, os quais não são exibidos. Esses metadados
+        normalmente são:
     </p>
     <ul>
         <li><b><code>&lt;tittle&gt;</code></b> - define o título do documento, entre sua abertura e fechamento;</li>
@@ -119,10 +136,10 @@
         (atributo <code>href</code>) ou como elas serão abertas (argumento <code>_target</code>).</li>
     </ul>
     <p>
-        Após isso, é aberta a tag <code>&lt;body&gt;</code> que não é autofechante e, entre ela, é definido
-        o corpo do documento. Nela, é adicionado todo o conteúdo da página. Essa é basicamente a estrutura
-        padrão da página, o que muda é o que é posto dentro. É comum adicionar no fim da página o elemento
-        <code>&lt;address&gt;</code> que define informações de contato do autor.
+        Após isso, é aberto o elemento <code>&lt;body&gt;</code> e, entre ele, é definido o corpo do documento,
+        onde é adicionado todo o conteúdo da página. Essa é basicamente a estrutura padrão da página, o que
+        muda é o que é posto dentro. É comum adicionar no fim da página o elemento <code>&lt;address&gt;</code>
+        que define informações de contato do autor.
     </p>
 
     <hr>
@@ -138,7 +155,7 @@
     <hr>
 
     <p>
-        Você está na primeira página! <br>
+        Você está na página inicial! <br>
         Próxima página: <a href="/2_tags_texto.html" target="_parent">Tags de texto HTML</a>
     </p>
 </body>
