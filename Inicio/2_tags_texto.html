@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="PT-br">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,41 +8,49 @@
 </head>
 
 <body>
-    <h1>Tags de texto em HTML</h1>
+    <h1>
+        Texto em HTML
+    </h1>
 
-    <h2>1) Tags de header</h2>
+    <h2>
+        1) Header
+    </h2>
     <p>
-        Tags de header em HTML são usadas para definir títulos e subtítulos em uma página, organizando o conteúdo
-        de forma hierárquica e melhorando a semântica e a acessibilidade do site. Cabe ressaltar que elas não são 
-        autofechantes. Elas podem variar de <code>&lt;h1/&gt;</code> à <code>&lt;h6/&gt;</code>. O texto que deve
-        aparecer como títulos ou subtítulos é escrito entre a abertura e o fechamento da tag. A tag 
-        <code>&lth1/&gt</code> é indicada ser usada só uma vez, pois deve ser o título. Abaixo, estão exemplos dessas tags.
-
-        <h1>Esta é uma tag h1</h1>
-        <h2>Esta é uma tag h2</h2>
-        <h3>Esta é uma tag h3</h3>
-        <h4>Esta é uma tag h4</h4>
-        <h5>Esta é uma tag h5</h5>
-        <h6>Esta é uma tag h6</h6>
+        Elementos de header em HTML são usados para definir títulos e subtítulos em uma página, organizando
+        o conteúdo de forma hierárquica e melhorando a semântica e a acessibilidade do site. Cabe ressaltar
+        que elas não são autofechantes. Elas podem variar de <code>&lt;h1/&gt;</code> à <code>&lt;h6/&gt;</code>.
+        O texto que deve aparecer como títulos ou subtítulos é escrito entre a abertura e o fechamento da tag.
+        A tag <code>&lt;h1/&gt;</code> é indicada ser usada só uma vez, pois deve ser o título. Abaixo, estão exemplos:
     </p>
+    <h1>Esta é uma tag h1</h1>
+    <h2>Esta é uma tag h2</h2>
+    <h3>Esta é uma tag h3</h3>
+    <h4>Esta é uma tag h4</h4>
+    <h5>Esta é uma tag h5</h5>
+    <h6>Esta é uma tag h6</h6>
 
     <hr>
 
-    <h2>2) Parágrafos em HTML</h2>
+    <h2>
+        2) Parágrafos em HTML
+    </h2>
     <p>
-        A tag <code>&lt;p&gt;</code> é utilizada para definir parágrafos em HTML. Ela delimita blocos de
+        O elemento <code>&lt;p&gt;</code> é utilizado para definir parágrafos em HTML. Ele delimita blocos de
         texto, separando visualmente e semanticamente as ideias no conteúdo da página. Todo texto colocado
         entre <code>&lt;p&gt;</code> e <code>&lt;/p&gt;</code> será exibido como um novo parágrafo, com
-        espaçamento automático antes e depois. É uma das tags mais usadas para estruturar textos em páginas web.
-        Apenas reforçando que, se desejado quebrar uma linha, deve ser usada a tag &lt;br&gt;.
+        espaçamento automático antes e depois. É uma das tags mais usadas para estruturar textos em páginas
+        web. Se desejado quebrar uma linha, deve ser usada a tag &lt;br&gt;.
     </p>
 
     <hr>
 
-    <h2>3) Principais tags de formatação</h2>
+    <h2>
+        3) Principais tags de formatação
+    </h2>
     <p>
-        As tags de formatação em HTML são usadas para alterar a aparência e o estilo do texto, sem necessariamente mudar sua estrutura semântica.
-        Abaixo, são apresentadas algumas dessas tags, sendo que nenhuma é autofechante. <br>
+        As tags de formatação em HTML são usadas para alterar a aparência e o estilo do texto, sem
+        necessariamente mudar sua estrutura semântica. Abaixo, são apresentadas algumas dessas tags, sendo que
+        nenhum é autofechante.
     </p>
     <p>
         Tag <code>&lt;b&gt;</code> —
@@ -110,18 +118,20 @@
         BDO significa substituição bidirecional. Ela é usada para substituir a direção do texto atual. Para isso,
         essa tag possui o atributo <code>dir</code>, que pode ser preenchido como <code>ltr</code> (left to right -
         esquerda para direita) ou <code>rtl</code> (right to left - direita para esquerda). Isso é mostrado abaixo,
-        na ordem apresentada: <br>
-        <code>
-            &lt;bdo dir="ltr"&gt;Texto da Esquerda Para Direita (normal)&lt;/bdo&gt; <br>
-             &lt;bdo dir="rtl"&gt;Texto da Direita Para Esquerda (invertido)&lt;/bdo&gt; <br>
-        </code>
+        na ordem apresentada:
+    </p>
+    <code>
+        &lt;bdo dir="ltr"&gt;Texto da Esquerda Para Direita (normal)&lt;/bdo&gt; <br>
+        &lt;bdo dir="rtl"&gt;Texto da Direita Para Esquerda (invertido)&lt;/bdo&gt; <br>
+    </code>
+    <p>
         <bdo dir="ltr">Texto da Esquerda para Direita (normal)</bdo> <br>
         <bdo dir="rtl">Texto da Direita para Esquerda (invertido)</bdo>
 
         Tag <code>&lt;pre&gt;</code> —
         Exibe o texto exatamente como ele foi escrito no código-fonte, preservando indentação, vários espaços
         e quebras de linha. Ele não deve ser escrito dentro de <code>&lt;p&gt;</code> pois é um bloco, além de
-        ter fonte monoespaçada. O uso dele é visto em seguida: <br>
+        ter fonte monoespaçada. O uso dele é visto em seguida:
     </p>
     <pre>
         Exemplo                  de             (quebra de linha agora)
@@ -130,26 +140,28 @@
 
     <hr>
 
-    <h2>Como comentar o código?</h2>
+    <h2>
+        4) Como comentar o código?
+    </h2>
     <p>
         Outra forma de texto, porém, em relação ao código são os comentários! Para comentar o código em HTML,
         utilize <code>&lt;!--</code> para abrir o comentário e <code>--&gt;</code> para fechar. Tudo que
         estiver entre essas marcas não será exibido na página. Essa prática é necessária para deixar registrado
-        o que está sendo feito e ajudar na manutenção futura do código. Exemplo:
-        <br>
+        o que está sendo feito e ajudar na manutenção futura do código. Exemplo: <br>
         <code>&lt;!-- Este é um comentário em HTML --&gt;</code>
     </p>
 
     <hr>
 
     <h2>
-        Entidades em HTML
+        5) Entidades em HTML
     </h2>
     <p>
         Em HTML, alguns caracteres tem significados reservados ou não podem ser digitadas no código-fonte.
         Assim, as <strong>entidades</strong> são códigos especiais para escrever tais caracteres. Elas são
-        escritas com & + código + ;. Algumas das entidades estão listadas abaixo: <br>
-        
+        escritas com & + código + ;. Algumas das entidades estão listadas abaixo:
+    </p>
+    <p>
         Caractere "&lt;" - código: <code>&amp;lt;</code> <br>
         Caractere "&gt;" - código: <code>&amp;gt;</code> <br>
         Caractere "&amp;" - código: <code>&amp;amp;</code> <br>
@@ -166,20 +178,22 @@
     <hr>
 
     <h2>
-        Detalhes adicionais sob demanda
+        6) Detalhes adicionais sob demanda
     </h2>
     <p>
         É possível criar um espaço dentro da página em que o usuário pode abrir e fechar o conteúdo apenas clicando.
         Para isso, é usado a tag <code>&lt;details&gt;</code> que cria um widget interativo, o qual pode ser
         fechado e aberto pelo usuário, sendo fechado o seu padrão. Qualquer tipo de conteúdo pode ser posto nessa tag.
         Além disso, a tag <code>&lt;summary&gt;</code> serve como um cabeçalho para essa tag. Um exemplo de uso pode ser
-        visto abaixo: <br>
-        <code>
-            &lt;details&gt; <br>
-                &lt;summary&gt;Veja o texto escondido!&lt;/summary&gt; <br>
-                Criciúma Esporte Clube campeão moral da Libertadores de 1992. <br>
-            &lt;/details&gt; <br>
-        </code>
+        visto abaixo:
+    </p>
+    <code>
+        &lt;details&gt; <br>
+            &lt;summary&gt;Veja o texto escondido!&lt;/summary&gt; <br>
+            Criciúma Esporte Clube campeão moral da Libertadores de 1992. <br>
+        &lt;/details&gt; <br>
+    </code>
+    <p>
         O que gera:
     </p>
     <details>
@@ -190,14 +204,15 @@
     <hr>
 
     <h2>
-        Tag &lt;time&gt;
+        7) Tag &lt;time&gt;
     </h3>
     <p>
         Às vezes, é necessário representar datas, horários ou períodos de tempo de forma que tanto máquina
         quanto pessoas entendam. Para isso, usa-se o elemento &lt;time&gt;. O que aparece entre a tag é
         o que o usuário vê, enquanto o atributo <code>datatime</code> contém a versão padronizada para
-        máquinas entenderem. O <code>datetime</code> pode ter os seguintes formatos: <br>
-
+        máquinas entenderem. O <code>datetime</code> pode ter os seguintes formatos:
+    </p>
+    <p>
         Data: YYYY-MM-DD<br>
         Hora: HH:MM <br>
         Data e hora: YYYY-MM-DDTHH:MM  <br>
@@ -205,12 +220,12 @@
         Mês e ano: 2025-08 <br>
         Semana: 2025-W32 <br>
         Duração: P2DT3H <br>
-
-        Um exemplo de uso é: <br>
+    </p>
+    <p>
+        Um exemplo de uso é:
         <code>
             &lt time datetime="2025-08-10";&gt;10 de agosto de 2025&lt;/time&gt; <br>
         </code>
-
         Essa tag pode ser usada dentro de um parágrafo, o que gera, segundo o exemplo acima: <br>
         <time datetime="2025-08-10">10 de agosto de 2025</time>
     </p>
