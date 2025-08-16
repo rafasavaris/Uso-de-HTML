@@ -7,9 +7,13 @@
     <link rel="icon" href="./img/fav_icon.jpg">
 </head>
 <body>
-    <h1>Listas em HTML</h1>
+    <h1>
+        Listas em HTML
+    </h1>
 
-    <h2>1) O que são listas em HTML?</h2>
+    <h2>
+        1) O que são listas em HTML?
+    </h2>
     <p>
         Em HTML, listas são usadas para organizar e agrupar conteúdos relacionados. Existem três tipos
         principais de listas: listas ordenada (<code>&lt;ol&gt;</code>); lista não-ordenada (<code>&lt;ul&gt;</code>) e
@@ -17,18 +21,21 @@
         ser adicionadas in-line. As listas são apresentadas abaixo.
     </p>
 
-    <h3>1.1) Lista ordenada</h3>
-
+    <h3>
+        1.1) Lista ordenada
+    </h3>
     <p>
-        Listas ordenadas apresentam ordem, como o próprio nome indica! Para escrevê-las, basta colocar <code>&ltol&gt</code>,
-        (Order List) uma tag que não é autofechante. Para colocar cada item da lista, dentro da tag anterior, coloca-se <code>&ltli&gt</code> (que também
-        não é autofechante) e dentro dela o item propriamente dito. <br>
+        Listas ordenadas apresentam ordem, como o próprio nome indica! Para escrevê-las, basta colocar <code>&lt;ol&gt;</code>,
+        (Order List) uma tag que não é autofechante. Para colocar cada item da lista, dentro da tag anterior, coloca-se <code>&lt;li&gt;</code> (que também
+        não é autofechante) e dentro dela o item propriamente dito.
+    </p>
+    <p>
         É possível determinar qual a ordem da lista, com o atributo <b>style=""</b>, que pode ser 1 (números literais),
         i (números romanos) e a (letras), sendo que os dois últimos podem ser em maiúsculo ou minúsculo, que há diferenças.
         É possível determinar como a ordem começa, com o atributo <b>start=""</b>. Um exemplo é visto abaixo, para iniciar
         a lista de exemplo. <br>
 
-        <b>Exemplo:</b> <code>&ltol type="1" start="0"&gt</code> — contagem númerica, começando em 0. <br>
+        <b>Exemplo:</b> <code>&lt;ol type="1" start="0"&gt;</code> — contagem númerica, começando em 0.
     </p>
     <ol type="1" start="0">
         <li>item 1</li>
@@ -36,14 +43,16 @@
         <li>item 3</li>
     </ol>
 
-    <h3>1.2) Lista não-ordenada</h3>
+    <h3>
+        1.2) Lista não-ordenada
+    </h3>
     <p>
-        Essa lista não possui ordem, são apenas tópicos. Ela é aberta com <code>&ltul&gt</code> (Unorder List) e 
-        também não é autofechante. Dentro dela, também colocamos a tag <code>&ltli&gt</code>, para elencar os
+        Essa lista não possui ordem, são apenas tópicos. Ela é aberta com <code>&lt;ul&gt;</code> (Unorder List) e 
+        também não é autofechante. Dentro dela, também colocamos a tag <code>&lt;li&gt;</code>, para elencar os
         itens da lista. É possível estilizar a lista com o atributo <b>list-style-type:""</b>, em que se define
         a forma do início dos tópicos (square, circle, none, entre outras). Abaixo, um exemplo disso. <br>
 
-        <b>Exemplo:</b> <code>&ltul style="list-style-type: square&gt</code> — lista com quadrados de icones. <br>
+        <b>Exemplo:</b> <code>&lt;ul style="list-style-type: square&gt;</code> — lista com quadrados de icones.
     </p>
     <ul style="list-style-type: square">
         <li>item 1</li>
@@ -51,21 +60,23 @@
         <li>item 3</li>
     </ul>
 
-    <h3>1.3) Lista de descrição</h3>
+    <h3>
+        1.3) Lista de descrição
+    </h3>
     <p>
-        Essa lista é usada para apresentar termos seguidos de suas definições. Ela é aberta com a tag <code>&ltdl&gt</code>
-        (Definition List) e também não é autofechante. Dentro dela, usamos a tag <code>&ltdt&gt</code> para indicar o 
-        termo, e a tag <code>&ltdd&gt</code> para descrever ou definir esse termo, sendo possível adicionar mais de
+        Essa lista é usada para apresentar termos seguidos de suas definições. Ela é aberta com a tag <code>&lt;dl&gt;</code>
+        (Definition List) e também não é autofechante. Dentro dela, usamos a tag <code>&lt;dt&gt;</code> para indicar o 
+        termo, e a tag <code>&lt;dd&gt;</code> para descrever ou definir esse termo, sendo possível adicionar mais de
         uma descrição. Abaixo, um exemplo disso. <br>
 
         <b>Exemplo:</b>
-        <code><br>
-            &ltdl&gt <br>
-            &ltdt&gtItem 1&lt/dt&gt<br>
-            &ltdd&gtDescrição do item 1, explicando o que ele significa ou representa.&lt/dd&gt <br>
-            &lt/dl&gt
-        </code>
     </p>
+    <code>
+        &lt;dl&gt; <br>
+        &emsp;&lt;dt&gt;Item 1&lt;/dt&gt;<br>
+        &emsp;&lt;dd&gt;Descrição do item 1, explicando o que ele significa ou representa.&lt;/dd&gt; <br>
+        &lt;/dl&gt;
+    </code>
     <dl>
         <dt>
             Item 1
@@ -79,26 +90,27 @@
         <dd> Descriçao 2 do item 2</dd>
     </dl>
 
-    <h3>1.4) Listas aninhadas</h3>
+    <h3>
+        1.4) Listas aninhadas
+    </h3>
     <p>
         Listas aninhadas são listas dentro de outras listas. Elas podem ser ordenadas ou não-ordenadas, e são úteis
         para organizar informações de forma hierárquica. Para criar uma lista aninhada, basta colocar uma nova lista
         dentro de um item de lista existente, respeitando a sintaxe de cada uma. Além disso, também é possível colocar
-        outros itens dentro de um elemento <code>&lt;li&gt;</code>, como imagens e links. Veja o exemplo abaixo: <br>
-
-        <code>
-            &lt;ul&gt; <br>
-            &lt;li&gt; <br>
-                HTML Semântico <br>
-                &lt;ol&gt; <br> 
-                &lt;li&gt;section&lt;/li&gt; <br>
-                &lt;li&gt;article&lt;/li&gt; <br>
-                &lt;/ol&gt; <br>
-            &lt;/li&gt; <br>
-            &lt;li&gt;CSS&lt;/li&gt; <br>
-            &lt;/ul&gt; <br>
-        </code>
+        outros itens dentro de um elemento <code>&lt;li&gt;</code>, como imagens e links. Veja o exemplo abaixo:
     </p>
+    <code>
+        &lt;ul&gt; <br>
+        &emsp;&lt;li&gt; <br>
+        &emsp;&emsp;HTML Semântico <br>
+        &emsp;&emsp;&lt;ol&gt; <br> 
+        &emsp;&emsp;&lt;li&gt;section&lt;/li&gt; <br>
+        &emsp;&emsp;&lt;li&gt;article&lt;/li&gt; <br>
+        &emsp;&emsp;&lt;/ol&gt; <br>
+        &emsp;&lt;/li&gt; <br>
+        &emsp;&lt;li&gt;CSS&lt;/li&gt; <br>
+        &lt;/ul&gt; <br>
+    </code>
     <ul>
         <li>
             HTML Semântico
@@ -125,7 +137,10 @@
     <p>
         Você está na quinta página! <br>
         Próxima página: <a href="./6_html_semantico.html">HTML semântico</a> <br>
-        Página anterior: <a href="./4_links.html">Links em HTML</a>
+        Página anterior: <a href="./4_links.html">Links em HTML</a> <br>
+        Primeira página: <a href="./1_principais_conceitos.html">Principais conceitos HTML</a>
     </p>
+    
+    <hr>
 </body>
 </html>
