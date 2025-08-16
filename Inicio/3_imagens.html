@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="PT-br">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +7,13 @@
     <link rel="icon" href="./img/fav_icon.jpg">
 </head>
 <body>
-    <h1>Imagens em HTML</h1>
+    <h1>
+        Imagens em HTML
+    </h1>
 
-    <h2>1) Como adicionar uma imagem?</h2>
+    <h2>
+        1) Como adicionar uma imagem?
+    </h2>
     <p>
         Para adicionar uma imagem, basta colocar a tag <code>&ltimg src= alt= &gt</code>, que é autofechante.
         O atributo <b>src</b> define o caminho da imagem, que pode ser uma URL, enquanto o atributo <b>alt</b> é uma descrição
@@ -17,24 +21,22 @@
         usar o atributo <b>width</b>, que define a largura da imagem, e <b>height</b>, o qual define a altura da imagem. Para 
         esses dois casos, é preciso definir uma medida de tamanho (pixel ou outras). No atributo <b>style</b>, também é possível
         usar essas definições de altura e largura. Essa tag é <i>inline</i>, ou seja, permite que seja colocada
-        dentro de outra tag. <br> 
-
-        <br>
-
+        dentro de outra tag, apesar de não ser recomendado. Nesse guia, será posto fora de outras tags, a não ser
+        que seja necessário.
+    </p>
+    <p>
         Abaixo são inseridas duas imagens, com os respectivos códigos: <br>
         <code>&ltimg src="./img/michael_scott.jpg" alt="Steve Carell como Michael Scott, na série 'The Office'" height="200px"&gt</code> <br>
-        <code>&ltimg src="./img/pyramid_the_office_meme.jpg" alt="Meme 'é um esquema de pirâmide', da série The Office" style="height: 200px;"&gt</code> <br>
-
-        <br>
-
-        <img src="./img/michael_scott.jpg" alt="Steve Carell como Michael Scott, na série 'The Office'" height="200px">
-        <img src="./img/pyramid_the_office_meme.jpg" alt="Meme 'é um esquema de pirâmide', da série The Office" style="height: 200px;">
+        <code>&ltimg src="./img/pyramid_the_office_meme.jpg" alt="Meme 'é um esquema de pirâmide', da série The Office" style="height: 200px;"&gt</code>
     </p>
-    
+    <img src="./img/michael_scott.jpg" alt="Steve Carell como Michael Scott, na série 'The Office'" height="200px">
+    <img src="./img/pyramid_the_office_meme.jpg" alt="Meme 'é um esquema de pirâmide', da série The Office" style="height: 200px;">
+       
     <hr>
 
-    <h2>2) O que é um favicon?</h2>
-
+    <h2>
+        2) O que é um favicon?
+    </h2>
     <p>
         Favicon é uma pequena imagem (ícone) exibida na guia do navegador ao lado do título da página. Os tipos aceitos são: ico, png, jpeg, gif e svg.
         Para adicionar um favicon, usamos a tag <code>&ltlink rel="icon" href="caminho_do_favicon"&gt</code>, que não é autofechante.
@@ -47,19 +49,19 @@
         3) Tag <code>&lt;figure&gt;</code>
     </h2>
     <p>
-        A tag <code>&lt;figure&gt;</code> é usada para agrupar conteúdo de mídia independente como imagens, gráficos,
-        diagramas, trechos de código e etc., junto com sua legenda descritiva. Geralmente, é acompanhada
-        da tag <code>&lt;figcaption&gt;</code> que fornece a legenda/explicação. O uso dessas tags é importante
+        O atributo <code>&lt;figure&gt;</code> é usada para agrupar conteúdo de mídia independente como imagens, gráficos,
+        diagramas, trechos de código e etc., junto com sua legenda descritiva. Geralmente, é acompanhada do
+        atributo <code>&lt;figcaption&gt;</code> que fornece a legenda/explicação. O uso dessas tags é importante
         para acessibilidade (indica que o conteúdo está relacionado ao texto para leitores de tela e navegadores) e
         indica que o texto é independente, ou seja, pode ser movido para outra posição sem perder sentido. Um exemplo
-        é visto abaixo: <br>
-        <code>
-            &lt;figure&gt; <br>
-                &lt;img src="./img/icon_gato.jpg" alt="Ícone de um gato preto" width="100" height="100"&gt; <br>
-                &lt;figcaption>Ícone de um gato preto.&lt;/figcaption&gt; <br>
-            &lt;/figure&gt; <br>
-        </code>
+        é visto abaixo:
     </p>
+    <code>
+            &lt;figure&gt; <br>
+            &emsp;&lt;img src="./img/icon_gato.jpg" alt="Ícone de um gato preto" width="100" height="100"&gt; <br>
+            &emsp;&lt;figcaption>Ícone de um gato preto.&lt;/figcaption&gt; <br>
+            &lt;/figure&gt; <br>
+    </code>
     <figure>
         <img src="./img/icon_gato.jpg" alt="Ícone de um gato preto" width="100" height="100">
         <figcaption>Ícone de um gato preto.</figcaption>
@@ -80,23 +82,25 @@
         4.1) Atributos da tag <code>&lt;area&gt;</code>
     </h3>
     <p>
-        <code>shape</code> - define o formato da área. Pode ser: <br>
-        rect - X1, Y1, X2, Y2; <br>
-        circle - CENTROX, CENTROY, RAIO; <br>
-        poly - várias coordenadas; <br>
-        default - toda a imagem. <br>
-        <code>coords</code> - define as coordenadas da área, relativas ao canto superior esquerdo da imagem; <br>
-        <code>href</code> - link para onde a área aponta; <br>
-        <code>alt</code> - texto alternativo para acessibilidade; <br>
-        <code>target</code> - onde abrir o link. <br>
+        - <code>shape</code> - define o formato da área. Pode ser: <br>
+        &emsp;rect - X1, Y1, X2, Y2; <br>
+        &emsp;circle - CENTROX, CENTROY, RAIO; <br>
+        &emsp;poly - várias coordenadas; <br>
+        &emsp;default - toda a imagem. <br>
+        - <code>coords</code> - define as coordenadas da área, relativas ao canto superior esquerdo da imagem; <br>
+        - <code>href</code> - link para onde a área aponta; <br>
+        - <code>alt</code> - texto alternativo para acessibilidade; <br>
+        - <code>target</code> - onde abrir o link. <br>
         Hoje em dia, devido a complexidade para responsividade, não é tão utilizado. Um exemplo é visto abaixo: <br>
-        <code>
-            &lt;img src="./img/michael_scott_thats_what_she_said.png" alt="Meme The Office 'That's what she said'" height="200" usemap="#mapa1"&gt; <br>
-            &lt;map name="mapa1"&gt; <br>
-                &lt;area shape="circle" coords="100, 100, 50" href="./2_tags_texto.html" alt="Voltar para página 2." target="_self"&gt; <br>
-                &lt;area shape="rect" coords="0, 0, 50, 50" href="./4_links.html" alt="Próxima página." target="_self"&gt; <br>
-            &lt;/map&gt; <br>
-        </code>
+    </p>
+    <code>
+        &lt;img src="./img/michael_scott_thats_what_she_said.png" alt="Meme The Office 'That's what she said'" height="200" usemap="#mapa1"&gt; <br>
+        &lt;map name="mapa1"&gt; <br>
+        &emsp;&lt;area shape="circle" coords="100, 100, 50" href="./2_tags_texto.html" alt="Voltar para página 2." target="_self"&gt; <br>
+        &emsp;&lt;area shape="rect" coords="0, 0, 50, 50" href="./4_links.html" alt="Próxima página." target="_self"&gt; <br>
+        &lt;/map&gt; <br>
+    </code>
+    <p>
         O que gera:
     </p>
     <img src="./img/michael_scott_thats_what_she_said.png" alt="Meme The Office 'That's what she said'" height="200" usemap="#mapa1">
@@ -120,10 +124,10 @@
     <p>
         Você está na terceira página! <br>
         Próxima página: <a href="./4_links.html">Links em HTML</a> <br>
-        Página anterior: <a href="./2_tags_texto.html">Imagens em HTML</a>
+        Página anterior: <a href="./2_tags_texto.html">Imagens em HTML</a> <br>
+        Primeira página: <a href="./1_principais_conceitos.html">Principais conceitos HTML</a>
     </p>
 
     <hr>
-    
 </body>
 </html>
