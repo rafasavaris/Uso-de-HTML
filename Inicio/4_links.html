@@ -7,11 +7,15 @@
     <link rel="icon" href="./img/fav_icon.jpg">
 </head>
 <body>
-    <h1>Links em HTML</h1>
-    <h2 id="inicio">1) Como adicionar links?</h2>
-
+    <h1>
+        Links em HTML
+    </h1>
+    <h2 id="inicio">
+        1) Como adicionar links?
+    </h2>
     <p>
-        Para adicionar links, basta colocar a tag <code>&lta href="" target="" tittle="" &gtnome_do_link&lt/a&gt</code>, que não é autofechante. Nessa tag, há:
+        Para adicionar links, basta colocar o elemento <code>&lta href="" target="" tittle="" &gtnome_do_link&lt/a&gt</code>, que não é autofechante.
+        Nessa tag, há:
     </p>
     <ul>
         <li><b>href</b> - endereço do link;</li>
@@ -29,8 +33,9 @@
         <li><b>_top</b> - abre o link em todo o corpo da janela (ignora outros possíveis links abertos).</li>
     </ul>
 
-    <h2>1.1) Caracteristicas dos links</h2>
-
+    <h2>
+        1.1) Caracteristicas dos links
+    </h2>
     <p>
         Os links podem levar para:
     </p>
@@ -40,41 +45,44 @@
         <li>Realizar contato!</li>
     </ul>
     <p>
-       Os exemplos abaixos, em ordem, abrem o Google numa nova aba, abre uma nova página html e retorna para o topo dessa página. <br> <br>
-        <code>&lta href="https://www.google.com" target="_blank" title="Link para o Google"&gtLink para o google&lt/a&gt</code> - 
+       Os exemplos abaixos, em ordem, abrem o Google numa nova aba, abre uma nova página html e retorna para o topo dessa página. <br>
+    </p>
+    <p> 
+       <code>&lt;a href="https://www.google.com" target="_blank" title="Link para o Google"&gt;Link para o google&lt;/a&gt;</code> - 
         <a href="https://www.google.com" target="_blank" title="Link para o Google">Link para o google</a>
-        <br> <br>
-
-        <code>&lta href="./contato.html" target="_blank"&gtPágina inicial: Guia HTML&lt/a&gt</code> - 
+    </p>
+    <p>
+        <code>&lt;a href="./contato.html" target="_blank"&gt;Página inicial: Guia HTML&lt;/a&gt;</code> - 
         <a href="./1_principais_conceitos.html" target="_self" title="Principais Conceitos HTML">Principais Conceitos HTML</a>
-        <br> <br>
-
+    </p>
+    <p>
         Para retornar para um item da página atual, é preciso que um "id" seja atribuido a essa parte, ou seja, que tal parte tenha
         um atributo id associado. Para isso, foi feito: <br>
-        <code>&lth2 id="#inicio"&gt1) Como adicionar links?&lt/h2&gt</code>. <br>
+        <code>&lt;h2 id="#inicio"&gt;1) Como adicionar links?&lt;/h2&gt;</code>.
+    </p>
+    <p>
         Assim, o <code>href</code> do link é justamente o id associado a parte que queremos acessar, acrescido de uma #. <br> <br>
-        <code>&lta href="#inicio" target="_self"&gtVoltar para o topo da página&lt/a&gt</code> - 
+        <code>&lt;a href="#inicio" target="_self"&gt;Voltar para o topo da página&lt;/a&gt;</code> - 
         <a href="#inicio" target="_self" title="Voltar para o topo">Voltar para o topo</a>
-        <br>
     </p>
 
     <hr>
 
-    <h2>1.2) Como realizar contatos a partir de links?</h2>
+    <h2>
+        1.2) Como realizar contatos a partir de links?
+    </h2>
     <dl>
         <dt>Contato por e-mail:</dt>
         <dd>Colocar no endereço do link (href): "mailto:email_pessoa", o que é: <code>mailto:endereco_email@arroba.com</code></dd>
         <dd>Um exemplo é: <code>&lt;a href="mailto:endereco_email@arroba.com" target="_self"&gt;nome do link&gt;Nome do link&lt;/a&gt;</code></dd>
         <dd>Exemplo: <a href="mailto:fulano@gmail.com" title="Enviar e-mail para fulano">Mandar email!</a></dd>
     </dl>
-
     <dl>
         <dt>Contato por telefone:</dt>
         <dd>Colocar no endereço do link (href): "tel:numero_telefone", isto é, <code>tel:+559999999999</code></code></dd>
         <dd>Exemplificando: <code>&lt;a href="tel:554899999999999" target="_self"&gt;nome do link&gt;Nome do link&lt;/a&gt;</code></dd>
         <dd>Exemplo: <a href="tel:+554899999999" title="Telefonar para beltrano">Telefonar para fulano</a></dd>
     </dl>
-
     <dl>
         <dt>Contato por SMS:</dt>
         <dd>Colocar no endereço do link (href): "sms:numero_telefone", ou seja, <code>sms:+559999999999</code></dd>
@@ -84,15 +92,19 @@
     
     <hr>
 
-    <h2>1.3) Imagens como links:</h2>
-
+    <h2>
+        1.3) Imagens como links:
+    </h2>
     <p>
         É possível fazer com que imagens sejam links clicáveis. Para isso, juntamos as tag de link e de imagem, conforme exemplo abaixo, em que redirecionamos o Ícone
-        do G-mail para o envio de um e-mail: <br>
-        <code>&lta href="mailto:fulano@gmail.com"&gt <br>
-            &lt;img src="./img/gmail_icon.png" alt="Ícone do G-mail" style="height: 50px;"&gt <br>
-        &lt/a&gt
-        </code> <br>
+        do G-mail para o envio de um e-mail:
+    </p>
+    <code>
+        &lt;a href="mailto:fulano@gmail.com"&gt; <br>
+        &emsp;&lt;img src="./img/gmail_icon.png" alt="Ícone do G-mail" style="height: 50px;"&gt; <br>
+        &lt;/a&gt;
+    </code>
+    <p>
         Assim, obtemos: <br>
         <a href="mailto:rafasavaris@gmail.com">
             <img src="./img/gmail_icon.png" alt="Ícone do G-mail" style="height: 50px;">
@@ -112,10 +124,12 @@
     <hr>
 
     <p>
-        Você está na segunda página! <br>
+        Você está na quarta página! <br>
         Próxima página: <a href="./5_listas.html">Listas em HTML</a> <br>
-        Página anterior: <a href="./3_imagens.html">Imagens em HTML</a>
+        Página anterior: <a href="./3_imagens.html">Imagens em HTML</a> <br>
+        Primeira página: <a href="./1_principais_conceitos.html">Principais conceitos HTML</a>
     </p>
-    
+
+    <hr>
 </body>
 </html>
