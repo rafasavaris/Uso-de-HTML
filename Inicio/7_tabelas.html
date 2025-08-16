@@ -27,6 +27,8 @@
         </nav>
     </header>
 
+    <hr>
+
     <main>
         <section id="estrutura-tabela">
             <article>
@@ -48,13 +50,14 @@
                     dentro de <code>&lt;table&gt;</code>.</li>
                 </ul>
                 <h3>
-                    Porque usar &lt;thead&gt;, &lt;tbody&gt; e &lt;tfoot&gt;?
+                    1.1) Porque usar &lt;thead&gt;, &lt;tbody&gt; e &lt;tfoot&gt;?
                 </h3>
                 <p>
                     Caso você tenha reparado, as tags &lt;thead&gt;, &lt;tbody&gt; e &lt;tfoot&gt; não são obrigatórias para a criação de uma tabela.
                     Elas são usadas para melhorar a semântica e a acessibilidade da tabela, além de facilitar a estilização com CSS.
                     A tag &lt;thead&gt; é usada para agrupar os cabeçalhos das colunas, a tag &lt;tbody&gt; é usada para agrupar as linhas de dados e
-                    a tag &lt;tfoot&gt; é usada para agrupar informações adicionais ou totais.
+                    a tag &lt;tfoot&gt; é usada para agrupar informações adicionais ou totais. Cabe ressaltar que não é
+                    um elemento inline.
                 </p>
             </article>
         </section>
@@ -62,7 +65,7 @@
         <section id="exemplo-tabela-simples">
             <article>
                 <h2>
-                    Exemplo de tabela
+                    2) Exemplo de tabela
                 </h2>
                 <p>
                     Abaixo, um exemplo de tabela simples, com três colunas (Nome, Função e Idade) e três linhas de dados. A tabela
@@ -95,36 +98,36 @@
                     </tbody>
                 </table>
                 <p>
-                    O código para essa tabela é: <br>
-                    <code>
-                        &lt;table&gt; <br>
-                        &lt;thead&gt; <br>
-                        &lt;tr&gt; <br>
-                        &lt;th&gt;Nome&lt;/th&gt; <br>
-                        &lt;th&gt;Função&lt;/th&gt; <br>
-                        &lt;th&gt;Idade&lt;/th&gt; <br>
-                        &lt;/tr&gt; <br>
-                        &lt;/thead&gt; <br>
-                        &lt;tbody&gt; <br>
-                        &lt;tr&gt; <br>
-                        &lt;tdFulano&gt; <br>
-                        &lt;td&gt;Profissão A&lt;/td&gt; <br>
-                        &lt;td&gt;Idade A&lt;/td&gt; <br>
-                        &lt;/tr&gt; <br>
-                        &lt;tr&gt; <br>
-                        &lt;td&gt;Fulano B&lt;/td&gt; <br>
-                        &lt;td&gt;Profissão B&lt;/td&gt; <br>
-                        &lt;td&gt;Idade B&lt;/td&gt; <br>
-                        &lt;/tr&gt; <br>
-                        &lt;tr&gt; <br>
-                        &lt;td&gt;Fulano C&lt;/td&gt; <br>
-                        &lt;td&gt;Profissão C&lt;/td&gt; <br>
-                        &lt;td&gt;Idade C&lt;/td&gt; <br>
-                        &lt;/tr&gt; <br>
-                        &lt;/tbody&gt; <br>
-                        &lt;/table&gt; <br>
-                    </code>
+                    O código para essa tabela é:                    
                 </p>
+                <code>
+                    &lt;table&gt; <br>
+                    &emsp;&lt;thead&gt; <br>
+                    &emsp;&emsp;&lt;tr&gt; <br>
+                    &emsp;&emsp;&emsp;&lt;th&gt;Nome&lt;/th&gt; <br>
+                    &emsp;&emsp;&emsp;&lt;th&gt;Função&lt;/th&gt; <br>
+                    &emsp;&emsp;&emsp;&lt;th&gt;Idade&lt;/th&gt; <br>
+                    &emsp;&emsp;&lt;/tr&gt; <br>
+                    &emsp;&lt;/thead&gt; <br>
+                    &emsp;&lt;tbody&gt; <br>
+                    &emsp;&emsp;&lt;tr&gt; <br>
+                    &emsp;&emsp;&emsp;&lt;tdFulano&gt; <br>
+                    &emsp;&emsp;&emsp;&lt;td&gt;Profissão A&lt;/td&gt; <br>
+                    &emsp;&emsp;&emsp;&lt;td&gt;Idade A&lt;/td&gt; <br>
+                    &emsp;&emsp;&lt;/tr&gt; <br>
+                    &emsp;&emsp;&lt;tr&gt; <br>
+                    &emsp;&emsp;&emsp;&lt;td&gt;Fulano B&lt;/td&gt; <br>
+                    &emsp;&emsp;&emsp;&lt;td&gt;Profissão B&lt;/td&gt; <br>
+                    &emsp;&emsp;&emsp;&lt;td&gt;Idade B&lt;/td&gt; <br>
+                    &emsp;&emsp;&lt;/tr&gt; <br>
+                    &emsp;&emsp;&lt;tr&gt; <br>
+                    &emsp;&emsp;&emsp;&lt;td&gt;Fulano C&lt;/td&gt; <br>
+                    &emsp;&emsp;&emsp;&lt;td&gt;Profissão C&lt;/td&gt; <br>
+                    &emsp;&emsp;&emsp;&lt;td&gt;Idade C&lt;/td&gt; <br>
+                    &emsp;&emsp;&lt;/tr&gt; <br>
+                    &emsp;&lt;/tbody&gt; <br>
+                    &lt;/table&gt; <br>
+                </code>
             </article>
         </section>
 
@@ -132,7 +135,7 @@
             <article>
                 <header>
                     <h2>
-                        Como estilizar tabelas?
+                        3) Como estilizar tabelas?
                     </h2>
                     <p>
                         A tabela mostrada anteriormente é simples e sem estilo. Para melhorar
@@ -141,7 +144,7 @@
                     </p>
                 </header>
                 <h3>
-                    Tag <code>&lt;colgroup&gt;</code>
+                    3.1) Tag <code>&lt;colgroup&gt;</code>
                 </h3>
                 <p>
                     A tag <code>&lt;colgroup&gt;</code> é usada para agrupar uma ou mais colunas dentro de uma
@@ -151,39 +154,39 @@
                     A tag <code>&lt;col&gt;</code> é autofechante e pode receber atributos como <b>span</b> (número de colunas que o
                     estilo abrange), <b>width</b> (largura da coluna) e <b>bgcolor</b> (cor de fundo da coluna).
                     Um exemplo é: <br>
-                    <code>
-                        &lt;table&gt; <br>
-                        &lt;colgroup&gt; <br>
-                        &lt;col span="1" width="100" bgcolor="lightblue"&gt; <br>
-                        &lt;col span="2" width="100" bgcolor="lightgreen"&gt; <br>
-                        &lt;thead&gt; <br>
-                        &lt;tr&gt; <br>
-                        &lt;th&gt;Nome&lt;/th&gt; <br>
-                        &lt;th&gt;Função&lt;/th&gt; <br>
-                        &lt;th&gt;Idade&lt;/th&gt; <br>
-                        &lt;/tr&gt; <br>
-                        &lt;/thead&gt; <br>
-                        &lt;tbody&gt; <br>
-                        &lt;tr&gt; <br>
-                        &lt;tdFulano&gt; <br>
-                        &lt;td&gt;Profissão A&lt;/td&gt; <br>
-                        &lt;td&gt;Idade A&lt;/td&gt; <br>
-                        &lt;/tr&gt; <br>
-                        &lt;tr&gt; <br>
-                        &lt;td&gt;Fulano B&lt;/td&gt; <br>
-                        &lt;td&gt;Profissão B&lt;/td&gt; <br>
-                        &lt;td&gt;Idade B&lt;/td&gt; <br>
-                        &lt;/tr&gt; <br>
-                        &lt;tr&gt; <br>
-                        &lt;td&gt;Fulano C&lt;/td&gt; <br>
-                        &lt;td&gt;Profissão C&lt;/td&gt; <br>
-                        &lt;td&gt;Idade C&lt;/td&gt; <br>
-                        &lt;/tr&gt; <br>
-                        &lt;/tbody&gt; <br>
-                        &lt;/table&gt; <br>
-                    </code>
-                    Que gera:
                 </p>
+                <code>
+                    &lt;table&gt; <br>
+                    &emsp;&lt;colgroup&gt; <br>
+                    &emsp;&emsp;&emsp;&lt;col span="1" width="100" bgcolor="lightblue"&gt; <br>
+                    &emsp;&emsp;&emsp;&lt;col span="2" width="100" bgcolor="lightgreen"&gt; <br>
+                    &emsp;&lt;/colgroup&gt; <br>
+                    &emsp;&lt;thead&gt; <br>
+                    &emsp;&emsp;&lt;tr&gt; <br>
+                    &emsp;&emsp;&emsp;&lt;th&gt;Nome&lt;/th&gt; <br>
+                    &emsp;&emsp;&emsp;&lt;th&gt;Função&lt;/th&gt; <br>
+                    &emsp;&emsp;&emsp;&lt;th&gt;Idade&lt;/th&gt; <br>
+                    &emsp;&emsp;&emsp;&lt;/tr&gt; <br>
+                    &emsp;&lt;/thead&gt; <br>
+                    &emsp;&lt;tbody&gt; <br>
+                    &emsp;&emsp;&emsp;&lt;tr&gt; <br>
+                    &emsp;&emsp;&emsp;&emsp;&lt;tdFulano&gt; <br>
+                    &emsp;&emsp;&emsp;&emsp;&lt;td&gt;Profissão A&lt;/td&gt; <br>
+                    &emsp;&emsp;&emsp;&emsp;&lt;td&gt;Idade A&lt;/td&gt; <br>
+                    &emsp;&emsp;&lt;/tr&gt; <br>
+                    &emsp;&emsp;&lt;tr&gt; <br>
+                    &emsp;&emsp;&emsp;&lt;td&gt;Fulano B&lt;/td&gt; <br>
+                    &emsp;&emsp;&emsp;&lt;td&gt;Profissão B&lt;/td&gt; <br>
+                    &emsp;&emsp;&emsp;&lt;td&gt;Idade B&lt;/td&gt; <br>
+                    &emsp;&emsp;&lt;/tr&gt; <br>
+                    &emsp;&emsp;&lt;tr&gt; <br>
+                    &emsp;&emsp;&emsp;&lt;td&gt;Fulano C&lt;/td&gt; <br>
+                    &emsp;&emsp;&emsp;&lt;td&gt;Profissão C&lt;/td&gt; <br>
+                    &emsp;&emsp;&emsp;&lt;td&gt;Idade C&lt;/td&gt; <br>
+                    &emsp;&emsp;&lt;/tr&gt; <br>
+                    &emsp;&lt;/tbody&gt; <br>
+                    &lt;/table&gt; <br>
+                </code>
                 <table>
                     <colgroup>
                         <col span="1" width="100" bgcolor="lightblue">
@@ -215,63 +218,61 @@
                     </tbody>
                 </table>
                 <h3>
-                    Principais atributos para estilizar tabelas
+                    3.2) Principais atributos para estilizar tabelas
                 </h3>
                 <p>
                     Alguns dos principais atributos que podem ser usados para estilizar tabelas são:
-                    <ul>
-                        <li><b>border</b>: define a largura da borda da tabela. Apenas números inteiros;</li>
-                        <li><b>cellpadding</b>: define o espaçamento interno entre o conteúdo da célula e a borda;</li>
-                        <li><b>cellspacing</b>: define o espaçamento entre as células da tabela;</li>
-                        <li><b>width</b>: define a largura da tabela;</li>
-                        <li><b>height</b>: define a altura da tabela;</li>
-                        <li><b>bgcolor</b>: define a cor de fundo da tabela ou das células;</li>
-                        <li><b>align</b>: define o alinhamento do conteúdo dentro das células (left, center, right);</li>
-                        <li><b>valign</b>: define o alinhamento vertical do conteúdo dentro das células (top, middle, bottom).</li>
-                    </ul>
                 </p>
-
+                <ul>
+                    <li><b>border</b>: define a largura da borda da tabela. Apenas números inteiros;</li>
+                    <li><b>cellpadding</b>: define o espaçamento interno entre o conteúdo da célula e a borda;</li>
+                    <li><b>cellspacing</b>: define o espaçamento entre as células da tabela;</li>
+                    <li><b>width</b>: define a largura da tabela;</li>
+                    <li><b>height</b>: define a altura da tabela;</li>
+                    <li><b>bgcolor</b>: define a cor de fundo da tabela ou das células;</li>
+                    <li><b>align</b>: define o alinhamento do conteúdo dentro das células (left, center, right);</li>
+                    <li><b>valign</b>: define o alinhamento vertical do conteúdo dentro das células (top, middle, bottom).</li>
+                </ul>
                 <p>
                     Abaixo, um exemplo de tabela estilizada com bordas, cores e espaçamentos. O código HTML é o mesmo da tabela anterior,
                     mas com a adição dos seguintes atributos na tag &lt;table&gt;:
                     <code>border="1" width="300" height="300" bgcolor="pink" align="center" cellpadding="10" cellspacing="5"</code>.
                     Esses atributos definem a largura da borda, a largura e altura da tabela, a cor de fundo, o alinhamento da tabela e o
                     espaçamento interno e entre as células.
-
-                    <table border="1" width="300" height="300" bgcolor="pink" align="center" cellpadding="10" cellspacing="5">
-                        <thead>
-                            <tr>
-                                <th>Nome</th>
-                                <th>Função</th>
-                                <th>Idade</th> 
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Fulano A</td>
-                                <td>Profissão A</td>
-                                <td>Idade A</td>
-                            </tr>
-                            <tr>
-                                <td>Fulano B</td>
-                                <td>Profissão B</td>
-                                <td>Idade B</td>
-                            </tr>
-                            <tr>
-                                <td>Fulano C</td>
-                                <td>Profissão C</td>
-                                <td>Idade C</td>
-                            </tr>
-                        </tbody>
-                    </table>
                 </p>
+                <table border="1" width="300" height="300" bgcolor="pink" align="center" cellpadding="10" cellspacing="5">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Função</th>
+                            <th>Idade</th> 
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Fulano A</td>
+                            <td>Profissão A</td>
+                            <td>Idade A</td>
+                        </tr>
+                        <tr>
+                            <td>Fulano B</td>
+                            <td>Profissão B</td>
+                            <td>Idade B</td>
+                        </tr>
+                        <tr>
+                            <td>Fulano C</td>
+                            <td>Profissão C</td>
+                            <td>Idade C</td>
+                        </tr>
+                    </tbody>
+                </table>
             </article>
         </section>
 
         <section id="expansao-celulas">
             <article>
                 <h2>
-                    Como expandir células?
+                    4) Como expandir células?
                 </h2>
                 <p>
                     Para quem já é acostumado a mexer com tabelas, sabe que é possível expandir células para elas ocuparem mais
@@ -324,6 +325,8 @@
         </p>
     </aside>
 
+    <hr>
+
     <footer>
         <section id="contato">
             <h2>
@@ -335,11 +338,16 @@
             </address>
         </section>
 
+        <hr>
+
         <p>
-            Você está na sétima página!
+            Você está na sétima página! <br>
             Próxima página: <a href="./8_divisoes.html" title="Acessar próxima página">Divisões em HTML</a> <br>
-            Página anterior: <a href="./6_html_semantico.html">HTML semântico</a>
+            Página anterior: <a href="./6_html_semantico.html">HTML semântico</a> <br>
+            Primeira página: <a href="./1_principais_conceitos.html">Principais conceitos HTML</a>
         </p>
     </footer>
+
+    <hr>
 </body>
 </html>
