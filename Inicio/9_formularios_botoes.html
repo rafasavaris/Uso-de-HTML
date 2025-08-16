@@ -68,7 +68,7 @@
         <section id="introducao-formulario">
             <article>
                 <h2>
-                    Formulário
+                    1) Formulário
                 </h2>
                 <p>
                     Um formulário é um agrupamento de campos de entrada que permitem que o
@@ -80,7 +80,7 @@
                     essencial para o nevio de dados).
                 </p>
                 <h3>
-                    Atributos da tag <code>&lt;form&gt;</code>
+                    1.1) Atributos da tag <code>&lt;form&gt;</code>
                 </h3>
                 <p>
                     A tag <code>&lt;form&gt;</code> pode conter diversos atributos que definem seu
@@ -102,7 +102,7 @@
                 
                 <section id="campos-entrada">
                     <h3>
-                    Campos de entrada
+                    1.2) Campos de entrada
                     </h3>
                     <p>
                         Os campos de entradas são elementos dentro do formulário que permitem ao usuário
@@ -133,7 +133,8 @@
                         tipos que são "variações" de outros, como 
                         <code>
                             datatime-local, month, week   
-                        </code> (variações de <code>date</code>) e <code>range</code> (variação
+                        </code>
+                        (variações de <code>date</code>) e <code>range</code> (variação
                         de input). É também importante mencionar que a tag <code>&lt;input&gt;</code>
                         não possui uma tag de fechamento, ou seja, ela é uma tag auto-fechante. 
                         Além disso, é importante definir o atributo <code>name</code>, o qual 
@@ -157,7 +158,7 @@
                 
                 <section id="rotulos">
                     <h3>
-                        Label
+                        1.3) Label
                     </h3>
                     <p>
                         A tag <code>&lt;label&gt;</code> é usada para associar um rótulo a um campo de entrada.
@@ -174,9 +175,9 @@
         <hr>
 
         <section id="botoes">
-            <h3>
-                Button
-            </h3>
+            <h2>
+                2) Button
+            </h2>
             <p>
                 A tag <code>&lt;button&gt;</code>, que não é autofechante, é utilizada
                 para criar botões em formulários ou em outras partes da página. Ela
@@ -190,12 +191,14 @@
                 <li><b>button</b>: não realiza nenhuma ação por padrão, sendo usado para scripts personalizados.</li>
             </ul>
             <p>
-                Um exemplo de uso é: <br>
-                <code>
-                    &lt;button type="submit"&gt;Aperte aqui para enviar!&lt;/button&gt; <br>
-                    &lt;button type="reset"&gt;Aperte aqui para resetar!&lt;/button&gt; <br>
-                    &lt;button type="button"&gt;Botão sem função.&lt;/button&gt; <br>
-                </code>
+                Um exemplo de uso é:
+            </p>
+            <code>
+                &lt;button type="submit"&gt;Aperte aqui para enviar!&lt;/button&gt; <br>
+                &lt;button type="reset"&gt;Aperte aqui para resetar!&lt;/button&gt; <br>
+                &lt;button type="button"&gt;Botão sem função.&lt;/button&gt; <br>
+            </code>
+            <p>
                 O resultado pode ser visto abaixo, dentro de um formulário:
             </p>
             <form action="">
@@ -213,10 +216,10 @@
                 ser visualizado.
             </p>
 
-            <h4>
-                Diferença entre <code>&lt;button&gt;</code> e
+            <h3>
+                2.1) Diferença entre <code>&lt;button&gt;</code> e
                 <code>&lt;input&gt;</code> dos tipos submit, reset e button
-            </h4>
+            </h3>
             <p>
                 A principal diferença entre usar a tag <code>button</code> e <code>input</code>
                 dos tipos submit, reset ou button está na diferença que <code>button</code>
@@ -224,15 +227,14 @@
                 utilizar a tag <code>span</code>, entre outras personalizações. Assim, se deseja-se
                 um estilo personalizado para o botão, o uso de <code>&lt;button&gt;</code> é melhor. <br>
                 Um exemplo de uso de botão com HTML interno é: <br>
-
-                <code>
-                    &lt;button type="submit"&gt; <br>
-                        &lt;img src="./img/icon_gato.jpg" alt="Icon de envio" height="10"&gt; <br>
-                        Aperte aqui para enviar! <br>
-                    &lt;/button&gt; <br>
-                </code>
-                O que resulta em:
             </p>
+            <code>
+                &lt;button type="submit"&gt; <br>
+                    &emsp;&lt;img src="./img/icon_gato.jpg" alt="Icon de envio" height="10"&gt; <br>
+                    &emsp;Aperte aqui para enviar! <br>
+                &lt;/button&gt;
+            </code>
+
             <form action="">
                 <button type="submit">
                     <img src="./img/icon_gato.jpg" alt="Icon de envio" height="15" width="15">
@@ -245,12 +247,12 @@
 
         <section id="tipos-input">
             <h2>
-                Tipos de <code>&lt;input&gt;</code>
+                3) Tipos de <code>&lt;input&gt;</code>
             </h2>
             <section id="tipos-input-text">
                 <article>
                     <h3>
-                        Type Text
+                        3.1) Type Text
                     </h3>
                     <p>
                         É o tipo de campo de entrada mais comum, usado para inserir textos
@@ -267,7 +269,7 @@
                     </form>
 
                     <h4>
-                        Atributos específicos do tipo texto
+                        3.1.1) Atributos específicos do tipo texto
                     </h4>
                     <p>
                         Existem atributos específicos e comuns ao tipo texto, sendo os principais:
@@ -291,7 +293,7 @@
             <section id="tipos-input-email">
                 <article>
                     <h3>
-                        Type Email
+                        3.2) Type Email
                     </h3>
                 </article>
                 <p>
@@ -311,7 +313,7 @@
             <section id="tipos-input-number">
                 <article>
                     <h3>
-                        Type Number
+                        3.3) Type Number
                     </h3>
                     <p>
                         O tipo de campo de entrada <code>number</code> é usado para inserir apenas números.
@@ -327,7 +329,7 @@
                     </form>
 
                     <h4>
-                        Atributos específicos do tipo number
+                        3.3.1) Atributos específicos do tipo number
                     </h4>
                     <p>
                         Os principais atributos do tipo <code>number</code> são:
@@ -350,7 +352,7 @@
                 <section id="tipos-input-number-range">
                     <article>
                         <h4>
-                            Type Range
+                            3.3.2) Type Range
                         </h4>
                         <p>
                             O tipo de campo de entrada <code>range</code> é usado para selecionar um valor
@@ -385,7 +387,7 @@
             <section id="tipos-input-password">
                 <article>
                     <h3>
-                        Type Password
+                        3.4) Type Password
                     </h3>
                     <p>
                         O tipo de campo de entrada <code>password</code> é usado para inserir senhas.
@@ -404,7 +406,7 @@
             <section id="tipos-input-hidden">
                 <article>
                     <h3>
-                        Type Hidden
+                        3.5) Type Hidden
                     </h3>
                     <p>
                         O tipo de campo de entrada <code>hidden</code> é usado para armazenar dados
@@ -425,7 +427,7 @@
             <section id="tipos-input-file">
                 <article>
                     <h3>
-                        Type File
+                        3.6) Type File
                     </h3>
                     <p>
                         O tipo de campo de entrada <code>file</code> é usado para permitir que o usuário
@@ -446,7 +448,7 @@
                 <section id="tipos-input-date">
                     <article>
                         <h3>
-                            Type Date
+                            3.7) Type Date
                         </h3>
                         <p>
                             O tipo de campo de entrada <code>date</code> é usado para permitir que o usuário
@@ -466,7 +468,7 @@
                 <section id="tipos-input-date-time">
                     <article>   
                         <h4>
-                            Type Datetime-local
+                           3.7.1) Type Datetime-local
                         </h4>
                         <p>
                             O tipo de campo de entrada <code>datetime-local</code> é usado para permitir que o
@@ -486,7 +488,7 @@
                 <section id="tipos-input-date-month">
                     <article>
                         <h4>
-                            Type Month
+                            3.7.2) Type Month
                         </h4>
                         <p>
                             O tipo de campo de entrada <code>month</code> é usado para permitir que o usuário
@@ -505,7 +507,7 @@
                 <section id="tipos-input-date-week">
                     <article>
                         <h4>
-                            Type Week
+                            3.7.3) Type Week
                         </h4>
                         <p>
                             O tipo de campo de entrada <code>week</code> é usado para permitir que o usuário
@@ -526,7 +528,7 @@
             <section id="tipos-input-radio">
                 <article>
                     <h3>
-                        Type Radio
+                        3.8) Type Radio
                     </h3>
                     <p>
                         O tipo de campo de entrada Radio Button solicita que o usuário escolha um valor
@@ -537,15 +539,14 @@
                         é associado a um rótulo para identificar a opção. Além disso, nesse tipo
                         de campo de entrada, o atributo <code>value</code> é essencial, pois define
                         o valor enviado ao servidor quando o formulário é enviado. Se ele não for
-                        especificado, é enviado "on". Assim, uma forma de criar radio buttons é: <br>
-                        <code>
-                            &lt;input type="radio" name="opcoes" id="opcao1" value="1" checked&gt; <br>
-                            &lt;label for="opcao1"&gt;Opção 1&lt;/label&gt; <br>
-                            &lt;input type="radio" name="opcoes" id="opcao2" value="2"&gt; <br>
-                            &lt;label for="opcao2"&gt;Opção 2&lt;/label&gt; <br>
-                        </code>
-                        Em que o resultado pode ser visto abaixo:
+                        especificado, é enviado "on". Assim, uma forma de criar radio buttons é:
                     </p>
+                    <code>
+                        &lt;input type="radio" name="opcoes" id="opcao1" value="1" checked&gt; <br>
+                        &lt;label for="opcao1"&gt;Opção 1&lt;/label&gt; <br>
+                        &lt;input type="radio" name="opcoes" id="opcao2" value="2"&gt; <br>
+                        &lt;label for="opcao2"&gt;Opção 2&lt;/label&gt; <br>
+                    </code>
                     <form action="">
                         <input type="radio" name="opcoes" id="opcao1" value="1" checked>
                         <label for="opcao1">Opção 1</label>
@@ -555,7 +556,7 @@
                     </form>
 
                     <h4>
-                        Atributos específicos do tipo Radio
+                        3.8.1) Atributos específicos do tipo Radio
                     </h4>
                     <p>
                         O principal atributol do tipo <code>radio</code> é:
@@ -563,14 +564,13 @@
                     <ul>
                         <li><b>checked</b> - indica que um <code>&lt;input&gt;</code> está selecionado; </li>
                     </ul>
-                    
                 </article>
             </section>
 
             <section id="tipos-input-checkbox">
                 <article>
                     <h3>
-                        Type Checkbox
+                        3.9) Type Checkbox
                     </h3>
                     <p>
                         Os inputs de tipo <code>checkbox</code> permitem a seleção de valores
@@ -579,14 +579,14 @@
                         para opções do mesmo grupo, cada input deve ter o mesmo atributo
                         <code>name</code>, mas cada um deve ter um valor diferente no atributo
                         <code>value</code>. Além disso, cada input deve ter um rótulo associado.
-                        Um exemplo de como criar checkboxes é: <br>
-                        <code>
-                            &lt;input type="checkbox" name="grupo" id="opcao1_checkbox" value="1"&gt; <br>
-                            &lt;label for="opcao1"&gt;Opção 1&lt;/label&gt; <br>
-                            &lt;input type="checkbox" name="grupo" id="opcao2_checkbox" value="2"&gt; <br>
-                            &lt;label for="opcao2"&gt;Opção 2&lt;/label&gt; <br>
-                        </code>
+                        Um exemplo de como criar checkboxes é:                        
                     </p>
+                    <code>
+                        &lt;input type="checkbox" name="grupo" id="opcao1_checkbox" value="1"&gt; <br>
+                        &lt;label for="opcao1"&gt;Opção 1&lt;/label&gt; <br>
+                        &lt;input type="checkbox" name="grupo" id="opcao2_checkbox" value="2"&gt; <br>
+                        &lt;label for="opcao2"&gt;Opção 2&lt;/label&gt; <br>
+                    </code>
                     <form action="">
                         <input type="checkbox" name="grupo" id="opcao1_checkbox" value="1">
                         <label for="opcao1_checkbox">Opção 1</label>
@@ -595,7 +595,7 @@
                         <label for="opcao2_checkbox">Opção 2</label>
                     </form>
                     <h4>
-                        Atributos específicos do tipo Checkbox
+                        3.9.1) Atributos específicos do tipo Checkbox
                     </h4>
                     <p>
                         O principal atributol do tipo <code>checkbox</code> é:
@@ -609,7 +609,7 @@
             <section id="tipos-input-color">
                 <article>
                     <h3>
-                        Type Color
+                        3.10) Type Color
                     </h3>
                     <p>
                         O tipo de campo de entrada <code>color</code> permite que o usuário escolha
@@ -620,11 +620,13 @@
                         dentro do formulário, associando também a um rótulo. É possível determinar
                         uma cor como pré-selecionada com o atributo "value", que deve ser o código
                         hex da cor desejada. Abaixo, é visto um exemplo desse tipo de campo: <br>
-                        <code>
-                            &lt;input type="color" name="cor" id="input_color"&gt; <br>
-                            &lt;label for="input_color"&gt;Escolha uma cor:&lt;/label&gt; <br>
-                        </code>
-                        No caso desse trecho, exibido a baixo, não há uma cor pré-selecionada,
+                    </p>
+                    <code>
+                        &lt;input type="color" name="cor" id="input_color"&gt; <br>
+                        &lt;label for="input_color"&gt;Escolha uma cor:&lt;/label&gt; <br>
+                    </code>
+                    <p>
+                        No caso desse trecho, exibido abaixo, não há uma cor pré-selecionada,
                         então, irá aparecer a cor preta como padrão.
                     </p>
                     <form action="">
@@ -637,7 +639,7 @@
             <section id="tipos-input-time">
                 <article>
                     <h3>
-                        Tipo Time
+                        3.11) Tipo Time
                     </h3>
                     <p>
                         O tipo de campo de entrada <code>time</code> é usado para permitir que o usuário
@@ -656,7 +658,7 @@
             <section id="tipos-input-url">
                 <article>
                     <h3>
-                        Tipo URL
+                        3.12) Tipo URL
                     </h3>
                     <p>
                         O tipo de campo de entrada <code>URL</code> permite que o usuário insira
@@ -691,7 +693,7 @@
             <section id="tipos-input-tel">
                 <article>
                     <h3>
-                        Tipo Tel
+                        3.13) Tipo Tel
                     </h3>
                     <p>
                         O tipo de campo de entrada <code>tel</code> é utilizado para inserir
@@ -713,7 +715,7 @@
             <section id="tipos-input-search">
                 <article>
                     <h3>
-                        Tipo Search
+                        3.14) Tipo Search
                     </h3>
                     <p>
                         O tipo de campo de entrada <code>search</code> é utilizado para
@@ -730,7 +732,7 @@
                         <input type="search" name="pesquisa" id="input_search" placeholder="Digite sua pesquisa">
                     </form>
                     <h4>
-                        Diferenças pro tipo <code>text</code>
+                        3.14.1) Diferenças pro tipo <code>text</code>
                     </h4>
                     <p>
                         Tecnicamente, o tipo <code>search</code> é igual ao <code>text</code>,
@@ -743,11 +745,11 @@
 
             <section id="tipos-input-botoes">
                 <h3>
-                    Tipos de botões
+                    3.15) Tipos de botões
                 </h3>
                 <section id="tipos-input-botoes-SRB">
                     <h4>
-                        Type Sumbit/Reset/Button
+                        3.15.1) Type Sumbit/Reset/Button
                     </h4>
                     <p>
                         Apesar de ser possível adicionar botões dentro dos formulários com a tag
@@ -763,14 +765,13 @@
                     <p>
                         Para escrever algo dentro do botão, utiliza-se o atributo <code>value</code>.
                         Dessa forma, é possível criar botões assim, dentro da tag <code>&lt;form&gt;</code>
-                        como mostrado abaixo: <br>
-                        <code>
-                            &lt;input type="submit" value="Aperte aqui para enviar!"&gt; <br>
-                            &lt;input type="reset" name="Limpar!"&gt; <br>
-                            &lt;input type="button" value="Botão genérico!"&gt; <br>
-                        </code>
-                        O que resulta em:
+                        como mostrado abaixo:
                     </p>
+                    <code>
+                        &lt;input type="submit" value="Aperte aqui para enviar!"&gt; <br>
+                        &lt;input type="reset" name="Limpar!"&gt; <br>
+                        &lt;input type="button" value="Botão genérico!"&gt; <br>
+                    </code>
                     <form action="">
                         <label for="input_text_type_button">Escreva sua idade:</label>
                         <input type="text" name="idade" id="input_text_type_button">
@@ -783,7 +784,7 @@
                 
                 <section id="type-input-botoes-img">
                     <h4>
-                        Type Image
+                        3.15.1) Type Image
                     </h4>
                     <p>
                         Outro tipo de botão mais costumizável com o <code>input</code>, é o <code>type</code> image.
@@ -811,28 +812,30 @@
 
         <section id="outros-tipos">
             <h2>
-                Outros tipos de entrada
+                4) Outros tipos de entrada
             </h2>
 
             <section id="tag-select">
                 <article>
                     <h3>
-                        Select
+                        4.1) Select
                     </h3>
                     <p>
                         A tag <code>&lt;select&gt;</code> é utilizada para criar uma lista suspensa (dropdown) em formulários,
                         permitindo que o usuário escolha uma opção entre várias disponíveis. Cada opção é definida pela tag <code>&lt;option&gt;</code>
                         dentro do <code>&lt;select&gt;</code>.
-                        A sintaxe básica é: <br>
-                        <code>
-                            &lt;select name="opcao" id="opcao"&gt; <br>
-                            &lt;option value="1"&gt;Opção 1&lt;/option&gt; <br>
-                            &lt;option value="2" select&gt;Opção 2&lt;/option&gt; <br>
-                            &lt;option value="3"&gt;Opção 3&lt;/option&gt; <br>
-                            &lt;/select&gt; <br>
-                        </code>
-                        Principais atributos da tag <code>&lt;option&gt;</code>:
+                        A sintaxe básica é:
                     </p>
+                    <code>
+                        &lt;select name="opcao" id="opcao"&gt; <br>
+                        &emsp;&lt;option value="1"&gt;Opção 1&lt;/option&gt; <br>
+                        &emsp;&lt;option value="2" select&gt;Opção 2&lt;/option&gt; <br>
+                        &emsp;&lt;option value="3"&gt;Opção 3&lt;/option&gt; <br>
+                        &lt;/select&gt; <br>
+                    </code>
+                    <h4>
+                        4.1.1) Principais atributos da tag <code>&lt;option&gt;</code>:
+                    </h4>
                     <ul>
                         <li><b>value</b>: valor enviado ao servidor ao selecionar a opção;</li>
                         <li><b>selected</b>: deixa a opção pré-selecionada.</li>
@@ -857,7 +860,7 @@
             <section id="tag-text-area">
                 <article>
                     <h3>
-                        Text Area
+                        4.2) Text Area
                     </h3>
                     <p>
                         A tag <code>&lt;textarea&gt;</code> é utilizada para
@@ -874,8 +877,10 @@
                         <code>
                             &lt;textarea name="mensagem" id="mensagem" rows="4" cols="50"&gt;&lt;/textarea&gt;
                         </code>
-                        Os principais atributos são:
                     </p>
+                    <h4>
+                        4.2.1) Os principais atributos são:
+                    </h4>
                     <ul>
                         <li><b>rows</b>: define o número de linhas visíveis;</li>
                         <li><b>cols</b>: define o número de colunas (largura);</li>
@@ -896,7 +901,7 @@
 
         <section id="atributos-gerais">
             <h2>
-                Atributos gerais
+                5) Atributos gerais
             </h2>
             <ul>
                 <li>
@@ -923,10 +928,11 @@
                 </li>
             </ul>
         </section>
-
-
     </main>
-        <aside id="sobre">
+
+    <hr>
+
+    <aside id="sobre">
         <h2>
             Sobre a autora
         </h2>
@@ -950,10 +956,15 @@
             </address>
         </section>
 
+        <hr>
+
         <p>
-            Você está na última página!<h2>
-            Página anterior: <a href="./8_divisoes.html">Contêiners em HTML</a>
+            Você está na última página!<br>
+            Página anterior: <a href="./8_divisoes.html">Contêiners em HTML</a> <br>
+            Primeira página: <a href="./1_principais_conceitos.html">Principais conceitos HTML</a>
         </p>
     </footer>
+
+    <hr>
 </body>
 </html>
