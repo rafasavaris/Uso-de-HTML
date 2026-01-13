@@ -10,7 +10,16 @@ A principal função do CSS é separar o conteúdo (HTML) da sua apresentação 
 
 ## Sintaxe
 
-O CSS funciona através de **regras** aplicadas aos elementos HTML. Cada regra é composta por um **seletor** e um **bloco de declaração**. Dentro das chaves, definimos as **propriedades** e seus respectivos **valores**. Após o valor de cada propriedade, deve-se colocar ponto e vírgula.
+O CSS funciona através de **regras** aplicadas aos elementos HTML. Cada regra é composta por um **seletor** e um **bloco de declaração**. Dentro das chaves, definimos as **propriedades** e seus respectivos **valores**.
+
+Cada propriedade é um par chave-valor, em que a chave corresponde a caracteristica da propriedade e o valor corresponde a como essa característica será aplicada. Uma propriedade no CSS aparece com o seu nome e o seu valor separados pelo caractere dois pontos (:). Após o valor de cada propriedade, deve-se colocar ponto e vírgula.
+
+Por fim, é importante notar duas coisas no CSS:
+
+* Em uma regra CSS, mais de uma propriedade pode ser escrita;
+* O navegador lê as regras CSS de cima para baixo, assim, caso existir uma duplicação de propriedade, somente a última será considerada.
+
+Abaixo, está um exemplo de regra CSS para a tag &lt;h1&gt;.
 
 ```css
 h1 {
