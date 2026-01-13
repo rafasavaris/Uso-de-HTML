@@ -5,7 +5,7 @@ Com o CSS, é possível definir as cores dos textos, do fundo de elementos ou at
 * ```color```: define a cor do texto;
 * ```background-color```: define a cor de fundo.
 
-Os valores dessas propriedades podem ser definidos de três formas principais: nomes de cores, hexadecimal e RGB.
+Os valores dessas propriedades podem ser definidos de 4 formas principais: nomes de cores, hexadecimal, RGB e HSL.
 
 ## Nomes das cores
 
@@ -21,8 +21,9 @@ O formato hexadecimal é a forma mais utilizada para definir cores no CSS. Ele c
 * Os dois seguintes, o verde (green);
 * Os dois últimos, o azul (blue).
 
-Também existe uma forma reduzida com 3 caracteres, usada quando os pares são iguais. Alguns exemplos estão abaixo.
+Também existe uma forma reduzida com 3 caracteres, usada quando os **pares** são iguais. Alguns exemplos estão abaixo.
 
+* #ffaacc = #fac - light pink
 * #fff- white
 * #000000 - black
 * #ff0000 - red
@@ -35,9 +36,56 @@ No formato RGB, a cor é definida por três valores numéricos, variando de 0 a 
 * rgb(0, 0, 0) - black
 * rgb(255, 0, 0) - red
 
+### Cores em HSL
+
+HSL é um modelo de cores no CSS baseado em:
+
+* H (Hue/Matiz): a cor em si, de 0 a 360;
+    * 0 = vermelho;
+    * 120 = verde;
+    * 240 = azul;
+* S (Saturation/Saturação): intensidade da cor, de 0 a 100%;
+* L (Lightness/Luminosidade): quão clara ou escura é a cor, de 0 a 100%.
+
+Um exemplo é:
+
+* hsl(0, 100%, 50%) - red
+
+## Transparência
+
+Em CSS, a transparência é controlada pelo canal alpha, que define o nível de opacidade de uma cor. A forma de aplicá-la varia conforme o modelo de cor utilizado:
+
+<dl>
+    <dt>Cores por **nome**</dt>
+    <dd>
+        Não permitem a aplicação direta de transparência. Para isso, é necessário utilizar modelos que suportem o canal alpha, como rgba() ou hsla().
+    </dd>
+    <dt>Cores em **RGB/HSL**</dt>
+    <dd>
+        Para adicionar transparência, utiliza-se o formato RGBA/HSLA, que adiciona o canal alpha ao RGB/HSL. O valor do alpha varia de 0 (totalmente transparente) a 1 (totalmente opaco).</dd>
+    <dd>
+        <code>rgba(0, 255, 0, 0.5)</code> e <code> hsla(120, 100%, 50%, 0.5)</code>
+    <dd>
+    <dt>Cores em **hexadecimal**<dt>
+    <dd>
+        A transparência é definida usando 8 dígitos, em vez de 6. Os dois últimos dígitos representam o valor do alpha. Também é possível usar a forma reduzida, com 4 dígitos, quando os pares de caracteres são iguais
+    </dd>
+    <dd>
+        <code>#ff000088</code> ou <code>#f008</code>
+    </dd>
+
+</dl>
+
 ---
 
 # TEXTOS
+
+É possível personalizar os textos de diversas formas em CSS. Antes disso, é importante considerar algumas informações básicas:
+
+* Os navegadores assumem, por padrão, que o tamanho base das fontes é 16px;
+* Os títulos (```h1``` a ```h6```) vêm em negrito por padrão.
+
+Com base nisso, é possível aplicar modificações e estilos às fontes de forma consciente e consistente.
 
 ## Fontes
 
@@ -91,6 +139,25 @@ O tamanho da fonte é definido pela propriedade ```font-size```, que aceita dive
 ```css
 p {
     font-size: 10px;
+}
+```
+
+> Os tamanhos padrões das principais tags nos navegadores mais comuns são:
+> *  &lt;h1&gt;: 32px
+> *  &lt;h2&gt;: 14px;
+> *  &lt;h3&gt;: 18.72px;
+> *  &lt;h4&gt;: 16px;
+> *  &lt;h5&gt;: 13.28px;
+> *  &lt;h6&gt;: 10.72px;
+> *  &lt;p&gt;: 16px;
+
+## Transformação do texto
+
+É possível alterar a forma de exibição do texto sem precisar reescrevê-lo, utilizando a propriedade CSS ```text-transform```. Essa propriedade controla a capitalização das letras e aceita os seguintes valores: **uppercase, lowercase, capitalize e none (valor padrão)**. Um exemplo de uso é:
+
+```css
+h1 {
+    text-transform: uppercase;
 }
 ```
 
