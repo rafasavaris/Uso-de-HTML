@@ -13,14 +13,14 @@ body {
     text-align: center;
 }
 
-.formacao p {
+section.formacao > p {
     text-transform: uppercase;
 }
 
-.experiencias-profissionais > .descricao-cargo {
+section.experiencias-profissionais > .descricao-cargo {
     color: green;
 }
 
-.contato a {
+section.contato a {
     text-decoration: none;
 }
