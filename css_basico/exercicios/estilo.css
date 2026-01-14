@@ -1,4 +1,4 @@
-body {
+* {
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -17,7 +17,7 @@ section.formacao > p {
     text-transform: uppercase;
 }
 
-section.experiencias-profissionais > .descricao-cargo {
+section.experiencias-profissionais > p.descricao-cargo {
     color: green;
 }
 
