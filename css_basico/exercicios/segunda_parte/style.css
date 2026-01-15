@@ -1,0 +1,56 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: royalblue;
+    padding: 6px;
+}
+
+header > p {
+    display: inline-block;
+    margin: 18px 24px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+img {
+    width: 400px;
+}
+
+h2 {
+    font-size: 48px;
+    margin: 12px 0px;
+}
+
+button {
+    background-color: royalblue;
+    color: white;
+    padding: 18px 48px;
+    border-radius: 60px;
+    border: 1px solid royalblue;
+    font-size: 16px;
+    margin-top: 24px;
+}
+
+section {
+    text-align: center;
+    padding: 48px
+}
+
+hr {
+    border: 0.5px solid lightgray;
+}
+
+footer {
+    padding: 36px;
+}
+
+footer > p {
+    font-size: 14px;
+    text-align: center;
+    color: gray;
+}
